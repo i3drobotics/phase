@@ -1,0 +1,15 @@
+*******
+Install
+*******
+Install I3DR Phase SDK
+------------------------------
+| This python module requires I3DR's Phase SDK.
+| Download and install I3DR Phase SDK from here `Download <www.google.com>`_.
+| To save storage space you can untick 'developer' option in the installer. 
+| Once installed you may need to restart the computer before using this module. 
+
+Install python module
+---------------------
+.. code-block:: console
+
+   pip install i3dr-phase-sdk

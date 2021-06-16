@@ -1,0 +1,13 @@
+.. toctree::
+   :caption: Python API for I3DR's Phase SDK
+   :maxdepth: 2
+
+   installing
+   autocode
+   faq
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`

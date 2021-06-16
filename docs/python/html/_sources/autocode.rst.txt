@@ -1,0 +1,17 @@
+*******
+Module
+*******
+.. automodule:: core
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+.. automodule:: core.stereocamera
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+.. automodule:: core.stereomatcher
+    :members:
+    :undoc-members:
+    :show-inheritance:
