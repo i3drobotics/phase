@@ -9,6 +9,7 @@ Coming soon
  - Windows (tested on Windows 10)
  - Linux (tested on Ubuntu 16.04, 18.04)
  - MacOS (tested on MacOS BigSur)
+ - Jetson (test on Jetson Nano)
 ### Supported languages
  - C++
  - C#
@@ -16,3 +17,5 @@ Coming soon
 ### Additional
  - Unity package (Windows only)
  - ROS package (Ubuntu 16.04 & 18.04 only)
+
+**NOTE: I3DR's proprietary stereo matcher I3DRSGM is not available on MacOS or Jetson platforms.**
