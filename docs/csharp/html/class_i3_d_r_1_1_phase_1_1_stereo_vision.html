@@ -87,15 +87,14 @@ $(document).ready(function(){initNavTree('class_i3_d_r_1_1_phase_1_1_stereo_visi
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_i3_d_r_1_1_phase_1_1_stereo_vision-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">I3DR.Phase.StereoVision Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Stereo Vision class.  
- <a href="class_i3_d_r_1_1_phase_1_1_stereo_vision.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -160,35 +159,102 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>disconnect</b> ()</td
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dispose</b> ()</td></tr>
 <tr class="separator:aab338ac7c4ec69af5ea98e8a4976d16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:abe240842577b9fa9e71f959e87086c2f"><td class="memItemLeft" align="right" valign="top"><a id="abe240842577b9fa9e71f959e87086c2f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_setFlipCImages</b> (IntPtr sv, bool enable)</td></tr>
+<tr class="separator:abe240842577b9fa9e71f959e87086c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a74ca4256678fc8e6327ca138883c3141"><td class="memItemLeft" align="right" valign="top"><a id="a74ca4256678fc8e6327ca138883c3141"></a>
+static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_create</b> (string left_serial, string right_serial, string unique_serial, CameraDeviceType device_type, CameraInterfaceType interface_type, StereoMatcherType matcher_type, string left_yaml, string right_yaml)</td></tr>
+<tr class="separator:a74ca4256678fc8e6327ca138883c3141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac95e929d3cddd34c57f33a887f4c78bd"><td class="memItemLeft" align="right" valign="top"><a id="ac95e929d3cddd34c57f33a887f4c78bd"></a>
+static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_getCamera</b> (IntPtr sv)</td></tr>
+<tr class="separator:ac95e929d3cddd34c57f33a887f4c78bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe913e2f7c488725657f9a75ed335aa5"><td class="memItemLeft" align="right" valign="top"><a id="abe913e2f7c488725657f9a75ed335aa5"></a>
+static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_getMatcher</b> (IntPtr sv)</td></tr>
+<tr class="separator:abe913e2f7c488725657f9a75ed335aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ef0aea3206bad323db4ea4c8c03847"><td class="memItemLeft" align="right" valign="top"><a id="a97ef0aea3206bad323db4ea4c8c03847"></a>
+static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_getCalibration</b> (IntPtr sv)</td></tr>
+<tr class="separator:a97ef0aea3206bad323db4ea4c8c03847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeea047347ac4ce60d852eea938644479"><td class="memItemLeft" align="right" valign="top"><a id="aeea047347ac4ce60d852eea938644479"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_connect</b> (IntPtr sv)</td></tr>
+<tr class="separator:aeea047347ac4ce60d852eea938644479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a023699e4cee4899119755fa587e1fa9c"><td class="memItemLeft" align="right" valign="top"><a id="a023699e4cee4899119755fa587e1fa9c"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_isConnected</b> (IntPtr sv)</td></tr>
+<tr class="separator:a023699e4cee4899119755fa587e1fa9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3812439dfd9722b6425639689e861da4"><td class="memItemLeft" align="right" valign="top"><a id="a3812439dfd9722b6425639689e861da4"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_isValidCalibration</b> (IntPtr sv)</td></tr>
+<tr class="separator:a3812439dfd9722b6425639689e861da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b1751f359293d38a80504ef6c8551f"><td class="memItemLeft" align="right" valign="top"><a id="aa8b1751f359293d38a80504ef6c8551f"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_getWidth</b> (IntPtr sv)</td></tr>
+<tr class="separator:aa8b1751f359293d38a80504ef6c8551f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18493d7b8540a1d9643c70f2b883734e"><td class="memItemLeft" align="right" valign="top"><a id="a18493d7b8540a1d9643c70f2b883734e"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_getHeight</b> (IntPtr sv)</td></tr>
+<tr class="separator:a18493d7b8540a1d9643c70f2b883734e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a586f2db92586267f3db0148a9a51310f"><td class="memItemLeft" align="right" valign="top"><a id="a586f2db92586267f3db0148a9a51310f"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_getHFOV</b> (IntPtr sv)</td></tr>
+<tr class="separator:a586f2db92586267f3db0148a9a51310f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40e38c2fc786b8e46fb3bc1616f02e2a"><td class="memItemLeft" align="right" valign="top"><a id="a40e38c2fc786b8e46fb3bc1616f02e2a"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_getDownsampleFactor</b> (IntPtr sv)</td></tr>
+<tr class="separator:a40e38c2fc786b8e46fb3bc1616f02e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d60f9ce7b03b685f5cd6339c7d4bcd5"><td class="memItemLeft" align="right" valign="top"><a id="a0d60f9ce7b03b685f5cd6339c7d4bcd5"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_setDownsampleFactor</b> (IntPtr sv, float value)</td></tr>
+<tr class="separator:a0d60f9ce7b03b685f5cd6339c7d4bcd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42726651b6a05bb7fefa29cb85903cf7"><td class="memItemLeft" align="right" valign="top"><a id="a42726651b6a05bb7fefa29cb85903cf7"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_setTestImagePaths</b> (IntPtr cam, string left_test_image_path, string right_test_image_path)</td></tr>
+<tr class="separator:a42726651b6a05bb7fefa29cb85903cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94101caa0796f9e644dbb768989998c7"><td class="memItemLeft" align="right" valign="top"><a id="a94101caa0796f9e644dbb768989998c7"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_read</b> (IntPtr sv, int timeout, bool rectify, [In] byte[] left_image, [In] byte[] right_image, [Out] float[] disparity, [Out] float[] depth)</td></tr>
+<tr class="separator:a94101caa0796f9e644dbb768989998c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13181173cd3f3aead42434a7c7aaba70"><td class="memItemLeft" align="right" valign="top"><a id="a13181173cd3f3aead42434a7c7aaba70"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_startReadThread</b> (IntPtr sv, int timeout, bool rectify)</td></tr>
+<tr class="separator:a13181173cd3f3aead42434a7c7aaba70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94591ed36a373bcf79c750a4d65c7d32"><td class="memItemLeft" align="right" valign="top"><a id="a94591ed36a373bcf79c750a4d65c7d32"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_isReadThreadRunning</b> (IntPtr sv)</td></tr>
+<tr class="separator:a94591ed36a373bcf79c750a4d65c7d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0b2467e9c9cdf108f105f3db0ed55a6"><td class="memItemLeft" align="right" valign="top"><a id="ac0b2467e9c9cdf108f105f3db0ed55a6"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_getReadThreadResult</b> (IntPtr sv, [In] byte[] left_image, [In] byte[] right_image, [Out] float[] disparity, [Out] float[] depth)</td></tr>
+<tr class="separator:ac0b2467e9c9cdf108f105f3db0ed55a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f9905028f8e100ae37696589c1de96f"><td class="memItemLeft" align="right" valign="top"><a id="a2f9905028f8e100ae37696589c1de96f"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_disconnect</b> (IntPtr sv)</td></tr>
+<tr class="separator:a2f9905028f8e100ae37696589c1de96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0e12a3e0c1fc81738fe1c49b37f4c1"><td class="memItemLeft" align="right" valign="top"><a id="acf0e12a3e0c1fc81738fe1c49b37f4c1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_dispose</b> (IntPtr sv)</td></tr>
+<tr class="separator:acf0e12a3e0c1fc81738fe1c49b37f4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a34cc01b45d9f99b9803b54c37a80e4ad"><td class="memItemLeft" align="right" valign="top"><a id="a34cc01b45d9f99b9803b54c37a80e4ad"></a>
-StereoVisionWrapper&#160;</td><td class="memItemRight" valign="bottom"><b>m_StereoVisionWrapper</b></td></tr>
-<tr class="separator:a34cc01b45d9f99b9803b54c37a80e4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e57d0911cc9f5a0f69d12af13f9b2be"><td class="memItemLeft" align="right" valign="top"><a id="a8e57d0911cc9f5a0f69d12af13f9b2be"></a>
-AbstractStereoCameraWrapper&#160;</td><td class="memItemRight" valign="bottom"><b>m_stereoCameraWrapper</b></td></tr>
-<tr class="separator:a8e57d0911cc9f5a0f69d12af13f9b2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65bb010782da689814dd7a27800db6d4"><td class="memItemLeft" align="right" valign="top"><a id="a65bb010782da689814dd7a27800db6d4"></a>
-<a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html">AbstractStereoCamera</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_stereoCamera</b></td></tr>
-<tr class="separator:a65bb010782da689814dd7a27800db6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b12563eca5536ff8a66a4e3faa9329e"><td class="memItemLeft" align="right" valign="top"><a id="a3b12563eca5536ff8a66a4e3faa9329e"></a>
-AbstractStereoMatcherWrapper&#160;</td><td class="memItemRight" valign="bottom"><b>m_stereoMatcherWrapper</b></td></tr>
-<tr class="separator:a3b12563eca5536ff8a66a4e3faa9329e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1f4036e16890b8f0bbb027aef35af51"><td class="memItemLeft" align="right" valign="top"><a id="aa1f4036e16890b8f0bbb027aef35af51"></a>
-<a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html">AbstractStereoMatcher</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_stereoMatcher</b></td></tr>
-<tr class="separator:aa1f4036e16890b8f0bbb027aef35af51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade42846cb362ca49b34398d7b55100a8"><td class="memItemLeft" align="right" valign="top"><a id="ade42846cb362ca49b34398d7b55100a8"></a>
-StereoCameraCalibrationWrapper&#160;</td><td class="memItemRight" valign="bottom"><b>m_stereoCameraCalibrationWrapper</b></td></tr>
-<tr class="separator:ade42846cb362ca49b34398d7b55100a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a551fe0c68b88f458a5d9bc89b12dd4c9"><td class="memItemLeft" align="right" valign="top"><a id="a551fe0c68b88f458a5d9bc89b12dd4c9"></a>
+IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>m_StereoVision_instance</b></td></tr>
+<tr class="separator:a551fe0c68b88f458a5d9bc89b12dd4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4779bfea579019941d138dbd71fee652"><td class="memItemLeft" align="right" valign="top"><a id="a4779bfea579019941d138dbd71fee652"></a>
+byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>left_image</b></td></tr>
+<tr class="separator:a4779bfea579019941d138dbd71fee652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97cc0f6436a4f1ed6194273557fbe1ed"><td class="memItemLeft" align="right" valign="top"><a id="a97cc0f6436a4f1ed6194273557fbe1ed"></a>
+byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>right_image</b></td></tr>
+<tr class="separator:a97cc0f6436a4f1ed6194273557fbe1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a509e306f2ddd06aa5e061007530c5acb"><td class="memItemLeft" align="right" valign="top"><a id="a509e306f2ddd06aa5e061007530c5acb"></a>
+float[]&#160;</td><td class="memItemRight" valign="bottom"><b>disparity</b></td></tr>
+<tr class="separator:a509e306f2ddd06aa5e061007530c5acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48eeab6774032368e776b07448d0ba55"><td class="memItemLeft" align="right" valign="top"><a id="a48eeab6774032368e776b07448d0ba55"></a>
+float[]&#160;</td><td class="memItemRight" valign="bottom"><b>depth</b></td></tr>
+<tr class="separator:a48eeab6774032368e776b07448d0ba55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee65f0489d3bc74912b01b4b45f07a1"><td class="memItemLeft" align="right" valign="top"><a id="afee65f0489d3bc74912b01b4b45f07a1"></a>
+<a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html">AbstractStereoCamera</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_abstractStereoCamera</b></td></tr>
+<tr class="separator:afee65f0489d3bc74912b01b4b45f07a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a757875728c73d2a8b1a1bbee6641078a"><td class="memItemLeft" align="right" valign="top"><a id="a757875728c73d2a8b1a1bbee6641078a"></a>
+<a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html">AbstractStereoMatcher</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_abstractStereoMatcher</b></td></tr>
+<tr class="separator:a757875728c73d2a8b1a1bbee6641078a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5223b6caf89ab6d314e5f9f2bfc361c4"><td class="memItemLeft" align="right" valign="top"><a id="a5223b6caf89ab6d314e5f9f2bfc361c4"></a>
 <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">StereoCameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_stereoCameraCalibration</b></td></tr>
 <tr class="separator:a5223b6caf89ab6d314e5f9f2bfc361c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Stereo Vision class. </p>
-<p>Capture images from stereo camera and process with stereo matcher to generate depth. Brings together Stereo Camera and Stereo Matcher classes into single class for easy use. </p>
-
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00044">44</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00023">23</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>wrappers/csharp/modules/core/src/<a class="el" href="stereovision_8cs_source.html">stereovision.cs</a></li>
 </ul>

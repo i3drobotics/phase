@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['phasesdkversion_44',['PhaseSDKVersion',['../class_i3_d_r_1_1_phase_1_1_phase_s_d_k_version.html',1,'I3DR::Phase']]],
-  ['phobosstereocamera_45',['PhobosStereoCamera',['../class_i3_d_r_1_1_phase_1_1_phobos_stereo_camera.html',1,'I3DR::Phase']]],
-  ['pylonstereocamera_46',['PylonStereoCamera',['../class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html',1,'I3DR::Phase']]]
+  ['matrixfloat_37',['MatrixFloat',['../class_i3_d_r_1_1_phase_1_1_matrix_float.html',1,'I3DR::Phase']]],
+  ['matrixuint8_38',['MatrixUInt8',['../class_i3_d_r_1_1_phase_1_1_matrix_u_int8.html',1,'I3DR::Phase']]]
 ];

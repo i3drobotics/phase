@@ -51,7 +51,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_depth_renderer_8cs_source.html",
-"stereocalibration_8cs.html"
+"class_i3_d_r_1_1_phase_1_1_stereo_s_g_b_m.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

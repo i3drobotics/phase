@@ -87,6 +87,8 @@ $(document).ready(function(){initNavTree('class_i3_d_r_1_1_phase_1_1_stereo_came
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -99,9 +101,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a930a125a17d586076196acdcd3d89c"><td class="memItemLeft" align="right" valign="top"><a id="a3a930a125a17d586076196acdcd3d89c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>StereoCameraCalibration</b> (string left_yaml_filepath, string right_yaml_filepath)</td></tr>
 <tr class="separator:a3a930a125a17d586076196acdcd3d89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bb8e23dde4c565b538ab03e912312ff"><td class="memItemLeft" align="right" valign="top"><a id="a3bb8e23dde4c565b538ab03e912312ff"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StereoCameraCalibration</b> (StereoCameraCalibrationWrapper stereoCameraCalibrationWrapper)</td></tr>
-<tr class="separator:a3bb8e23dde4c565b538ab03e912312ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6837f799d335403c54ecc60ea2bac514"><td class="memItemLeft" align="right" valign="top"><a id="a6837f799d335403c54ecc60ea2bac514"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>StereoCameraCalibration</b> (IntPtr stereoCameraCalibration_instance)</td></tr>
+<tr class="separator:a6837f799d335403c54ecc60ea2bac514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6d82230f75c7c0e52becbb202f5aba"><td class="memItemLeft" align="right" valign="top"><a id="aaf6d82230f75c7c0e52becbb202f5aba"></a>
+IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>getInstancePtr</b> ()</td></tr>
+<tr class="separator:aaf6d82230f75c7c0e52becbb202f5aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c838823b835ca5ada5e13bc0334effb"><td class="memItemLeft" align="right" valign="top"><a id="a7c838823b835ca5ada5e13bc0334effb"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isValid</b> ()</td></tr>
 <tr class="separator:a7c838823b835ca5ada5e13bc0334effb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,24 +116,63 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isValidSize</b> (int 
 <tr class="memitem:a76cc9f8ebf31ac524045418d98d8877d"><td class="memItemLeft" align="right" valign="top"><a id="a76cc9f8ebf31ac524045418d98d8877d"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>getHFOV</b> ()</td></tr>
 <tr class="separator:a76cc9f8ebf31ac524045418d98d8877d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2392e6d3e1a51c1fef1c6e4710a1a759"><td class="memItemLeft" align="right" valign="top"><a id="a2392e6d3e1a51c1fef1c6e4710a1a759"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>getDownsampleFactor</b> ()</td></tr>
+<tr class="separator:a2392e6d3e1a51c1fef1c6e4710a1a759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af74458345c4f0c4ded1208ca9e247bd6"><td class="memItemLeft" align="right" valign="top"><a id="af74458345c4f0c4ded1208ca9e247bd6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDownsampleFactor</b> (float value)</td></tr>
+<tr class="separator:af74458345c4f0c4ded1208ca9e247bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2ad1dfed9473e72d23fe021d35b8557"><td class="memItemLeft" align="right" valign="top"><a id="aa2ad1dfed9473e72d23fe021d35b8557"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rectify</b> (byte[] left_image, byte[] right_image, int width, int height, byte[] left_rect_image, byte[] right_rect_image)</td></tr>
 <tr class="separator:aa2ad1dfed9473e72d23fe021d35b8557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b038ab2caa815b0329507c650ab094b"><td class="memItemLeft" align="right" valign="top"><a id="a6b038ab2caa815b0329507c650ab094b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>markDisposed</b> ()</td></tr>
+<tr class="separator:a6b038ab2caa815b0329507c650ab094b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affcec5852086050ff57290cbeb2bbbb7"><td class="memItemLeft" align="right" valign="top"><a id="affcec5852086050ff57290cbeb2bbbb7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dispose</b> ()</td></tr>
 <tr class="separator:affcec5852086050ff57290cbeb2bbbb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0f15f6dda94c6b49a8542b020abcc441"><td class="memItemLeft" align="right" valign="top"><a id="a0f15f6dda94c6b49a8542b020abcc441"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>CRectify</b> (IntPtr matcher, [In] byte[] left_image, [In] byte[] right_image, int width, int height, [Out] byte[] left_rect_image, [Out] byte[] right_rect_image)</td></tr>
+<tr class="separator:a0f15f6dda94c6b49a8542b020abcc441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:add650ed6c11206018c4511cab64b77ee"><td class="memItemLeft" align="right" valign="top"><a id="add650ed6c11206018c4511cab64b77ee"></a>
+static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CStereoCameraCalibration_create</b> (string left_yaml_filepath, string right_yaml_filepath)</td></tr>
+<tr class="separator:add650ed6c11206018c4511cab64b77ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1207766f4bad3b3f488855c102eeb360"><td class="memItemLeft" align="right" valign="top"><a id="a1207766f4bad3b3f488855c102eeb360"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>CIsValid</b> (IntPtr c)</td></tr>
+<tr class="separator:a1207766f4bad3b3f488855c102eeb360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa4f815398b1c188478c5cf6a74973bd"><td class="memItemLeft" align="right" valign="top"><a id="aaa4f815398b1c188478c5cf6a74973bd"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>CIsValidSize</b> (IntPtr c, int width, int height)</td></tr>
+<tr class="separator:aaa4f815398b1c188478c5cf6a74973bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f5cc6abf72fa866b41ba4349a63c9b"><td class="memItemLeft" align="right" valign="top"><a id="ac6f5cc6abf72fa866b41ba4349a63c9b"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><b>CGetHFOV</b> (IntPtr c)</td></tr>
+<tr class="separator:ac6f5cc6abf72fa866b41ba4349a63c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbea6f5e7b352ea67583068daef8c86c"><td class="memItemLeft" align="right" valign="top"><a id="adbea6f5e7b352ea67583068daef8c86c"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><b>CGetDownsampleFactor</b> (IntPtr c)</td></tr>
+<tr class="separator:adbea6f5e7b352ea67583068daef8c86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe8e90059bb267f1340dbd1d7401b990"><td class="memItemLeft" align="right" valign="top"><a id="abe8e90059bb267f1340dbd1d7401b990"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>CSetDownsampleFactor</b> (IntPtr c, float value)</td></tr>
+<tr class="separator:abe8e90059bb267f1340dbd1d7401b990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acff529fa9cf923e0e71286d6ef482638"><td class="memItemLeft" align="right" valign="top"><a id="acff529fa9cf923e0e71286d6ef482638"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>StereoCameraCalibration_dispose</b> (IntPtr c)</td></tr>
+<tr class="separator:acff529fa9cf923e0e71286d6ef482638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a8aaf4ebcf06903f83dc0a2b5206b9b41"><td class="memItemLeft" align="right" valign="top"><a id="a8aaf4ebcf06903f83dc0a2b5206b9b41"></a>
-StereoCameraCalibrationWrapper&#160;</td><td class="memItemRight" valign="bottom"><b>m_StereoCameraCalibrationWrapper</b></td></tr>
-<tr class="separator:a8aaf4ebcf06903f83dc0a2b5206b9b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19517dc405ab6ae79a9b0d19447ee4ae"><td class="memItemLeft" align="right" valign="top"><a id="a19517dc405ab6ae79a9b0d19447ee4ae"></a>
+IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>m_StereoCameraCalibration_instance</b></td></tr>
+<tr class="separator:a19517dc405ab6ae79a9b0d19447ee4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="stereocalibration_8cs_source.html#l00021">21</a> of file <a class="el" href="stereocalibration_8cs_source.html">stereocalibration.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereocalibration_8cs_source.html#l00023">23</a> of file <a class="el" href="stereocalibration_8cs_source.html">stereocalibration.cs</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>wrappers/csharp/modules/core/src/<a class="el" href="stereocalibration_8cs_source.html">stereocalibration.cs</a></li>
+<li>wrappers/csharp/modules/core/src/calib/<a class="el" href="stereocalibration_8cs_source.html">stereocalibration.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

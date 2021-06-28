@@ -46,7 +46,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "abstractstereocamera_8h.html",
-"class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a19f4639c44ca8112ca5d2bf936c42ea1"
+"class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream.html#afa21128021ca7456072f8863c49bf5fd",
+"stereomatcher_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -87,6 +87,8 @@ $(document).ready(function(){initNavTree('class_i3_d_r_1_1_phase_1_1_pylon_stere
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">I3DR.Phase.PylonStereoCamera Class Reference</div>  </div>
@@ -111,9 +113,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9586ecf13a4a3212f03974b6eef8180 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="ab9586ecf13a4a3212f03974b6eef8180"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera</b> (<a class="el" href="struct_i3_d_r_1_1_phase_1_1_camera_device_info.html">CameraDeviceInfo</a> camera_device_info)</td></tr>
 <tr class="separator:ab9586ecf13a4a3212f03974b6eef8180 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a166c25c08621df5d7b2442d917c08e1d inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a166c25c08621df5d7b2442d917c08e1d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera</b> (AbstractStereoCameraWrapper abstractStereoCameraWrapper)</td></tr>
-<tr class="separator:a166c25c08621df5d7b2442d917c08e1d inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65a3a9384892887160b9d677256930c9 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a65a3a9384892887160b9d677256930c9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera</b> (IntPtr abstractStereoCamera_instance)</td></tr>
+<tr class="separator:a65a3a9384892887160b9d677256930c9 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5027a2b15a8ab651766312a4e22a166 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="aa5027a2b15a8ab651766312a4e22a166"></a>
+IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>getInstancePtr</b> ()</td></tr>
+<tr class="separator:aa5027a2b15a8ab651766312a4e22a166 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd15a2c1fcb175e559c9218ec0c07dd2 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="acd15a2c1fcb175e559c9218ec0c07dd2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>connect</b> ()</td></tr>
 <tr class="separator:acd15a2c1fcb175e559c9218ec0c07dd2 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,23 +152,84 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isReadThreadRunning</
 <tr class="memitem:a8622f15548b454a7e758066462fb3025 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a8622f15548b454a7e758066462fb3025"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setFlipCImages</b> (bool enable)</td></tr>
 <tr class="separator:a8622f15548b454a7e758066462fb3025 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeddd941e203aac0182fd7e75f5cebad6 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="aeddd941e203aac0182fd7e75f5cebad6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setDownsampleFactor</b> (float value)</td></tr>
+<tr class="separator:aeddd941e203aac0182fd7e75f5cebad6 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae453a88132b3a674e1d0ac02fa11d554 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="ae453a88132b3a674e1d0ac02fa11d554"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>disconnect</b> ()</td></tr>
 <tr class="separator:ae453a88132b3a674e1d0ac02fa11d554 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e8e2ad4e880acd30aaea58f038dcb5f inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a2e8e2ad4e880acd30aaea58f038dcb5f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>markDisposed</b> ()</td></tr>
+<tr class="separator:a2e8e2ad4e880acd30aaea58f038dcb5f inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0edb725656edfa6923fd308fe5c641d6 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a0edb725656edfa6923fd308fe5c641d6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dispose</b> ()</td></tr>
 <tr class="separator:a0edb725656edfa6923fd308fe5c641d6 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a77a22a4a851042eb2fc2495a5a0ddb01"><td class="memItemLeft" align="right" valign="top"><a id="a77a22a4a851042eb2fc2495a5a0ddb01"></a>
+override void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="struct_i3_d_r_1_1_phase_1_1_camera_device_info.html">CameraDeviceInfo</a> camera_device_info)</td></tr>
+<tr class="separator:a77a22a4a851042eb2fc2495a5a0ddb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html">I3DR.Phase.AbstractStereoCamera</a></td></tr>
+<tr class="memitem:afa6e79ede605b4f770b7c791f490e157 inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="afa6e79ede605b4f770b7c791f490e157"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera_connect</b> (IntPtr cam)</td></tr>
+<tr class="separator:afa6e79ede605b4f770b7c791f490e157 inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eb54815c1fdebd94bbfa670f4f37166 inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a6eb54815c1fdebd94bbfa670f4f37166"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera_isConnected</b> (IntPtr cam)</td></tr>
+<tr class="separator:a6eb54815c1fdebd94bbfa670f4f37166 inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531a98a8ab87ce8e5c9e48a1617a6292 inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a531a98a8ab87ce8e5c9e48a1617a6292"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera_getWidth</b> (IntPtr cam)</td></tr>
+<tr class="separator:a531a98a8ab87ce8e5c9e48a1617a6292 inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa47035f278a525939fe4b983867e4b17 inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="aa47035f278a525939fe4b983867e4b17"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera_getHeight</b> (IntPtr cam)</td></tr>
+<tr class="separator:aa47035f278a525939fe4b983867e4b17 inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab304e7e53fdf0be8e7ba715917af1d inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="aeab304e7e53fdf0be8e7ba715917af1d"></a>
+static float&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera_getFrameRate</b> (IntPtr cam)</td></tr>
+<tr class="separator:aeab304e7e53fdf0be8e7ba715917af1d inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a494993e79050d173bcffac2b996733b1 inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a494993e79050d173bcffac2b996733b1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera_setTestImagePaths</b> (IntPtr cam, string left_test_image_path, string right_test_image_path)</td></tr>
+<tr class="separator:a494993e79050d173bcffac2b996733b1 inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d1b9b847f510c76b2606cd0448a99dc inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a4d1b9b847f510c76b2606cd0448a99dc"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera_read</b> (IntPtr cam, int timeout, [In] byte[] left_img, [In] byte[] right_img)</td></tr>
+<tr class="separator:a4d1b9b847f510c76b2606cd0448a99dc inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade187503860175c1b56e949f3778f28d inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="ade187503860175c1b56e949f3778f28d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera_startReadThread</b> (IntPtr cam, int timeout)</td></tr>
+<tr class="separator:ade187503860175c1b56e949f3778f28d inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad58c405c8b255a810d49e9060239e463 inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="ad58c405c8b255a810d49e9060239e463"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera_isReadThreadRunning</b> (IntPtr cam)</td></tr>
+<tr class="separator:ad58c405c8b255a810d49e9060239e463 inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00d289008c5c26d15c61bafd785c456 inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="ad00d289008c5c26d15c61bafd785c456"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera_getReadThreadResult</b> (IntPtr cam, [In] byte[] left_img, [In] byte[] right_img)</td></tr>
+<tr class="separator:ad00d289008c5c26d15c61bafd785c456 inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d2e74f887c6820dc257e48dd0015b1d inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a8d2e74f887c6820dc257e48dd0015b1d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera_setFlipCImages</b> (IntPtr cam, bool enable)</td></tr>
+<tr class="separator:a8d2e74f887c6820dc257e48dd0015b1d inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5087bc65d8b35c158e45908ce5cd82fc inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a5087bc65d8b35c158e45908ce5cd82fc"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera_setDownsampleFactor</b> (IntPtr cam, float value)</td></tr>
+<tr class="separator:a5087bc65d8b35c158e45908ce5cd82fc inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3c55ad31103fb9f262933d06ebe832 inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a2e3c55ad31103fb9f262933d06ebe832"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera_disconnect</b> (IntPtr cam)</td></tr>
+<tr class="separator:a2e3c55ad31103fb9f262933d06ebe832 inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f836b333aae1227fc1d4feceb19319e inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a1f836b333aae1227fc1d4feceb19319e"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoCamera_dispose</b> (IntPtr cam)</td></tr>
+<tr class="separator:a1f836b333aae1227fc1d4feceb19319e inherit pro_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:adc349090e282b70cc3a1bb7f5b4d49e9"><td class="memItemLeft" align="right" valign="top"><a id="adc349090e282b70cc3a1bb7f5b4d49e9"></a>
+static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>PylonStereoCamera_create</b> (string left_serial, string right_serial, string unique_serial, CameraDeviceType device_type, CameraInterfaceType interface_type)</td></tr>
+<tr class="separator:adc349090e282b70cc3a1bb7f5b4d49e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html">I3DR.Phase.AbstractStereoCamera</a></td></tr>
-<tr class="memitem:aa97144be869f2669e8f0fce7dca804c9 inherit pro_attribs_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="aa97144be869f2669e8f0fce7dca804c9"></a>
-AbstractStereoCameraWrapper&#160;</td><td class="memItemRight" valign="bottom"><b>m_AbstractStereoCameraWrapper</b></td></tr>
-<tr class="separator:aa97144be869f2669e8f0fce7dca804c9 inherit pro_attribs_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79d1b0a46399228810baab20be9c5fbe inherit pro_attribs_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a79d1b0a46399228810baab20be9c5fbe"></a>
+IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>m_AbstractStereoCamera_instance</b></td></tr>
+<tr class="separator:a79d1b0a46399228810baab20be9c5fbe inherit pro_attribs_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8cs_source.html#l00020">20</a> of file <a class="el" href="pylonstereocamera_8cs_source.html">pylonstereocamera.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8cs_source.html#l00022">22</a> of file <a class="el" href="pylonstereocamera_8cs_source.html">pylonstereocamera.cs</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>wrappers/csharp/modules/core/src/stereocamera/<a class="el" href="pylonstereocamera_8cs_source.html">pylonstereocamera.cs</a></li>
 </ul>

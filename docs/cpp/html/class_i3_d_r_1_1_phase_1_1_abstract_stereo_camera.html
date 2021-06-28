@@ -192,18 +192,18 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>getRawHeight</
 <tr class="memitem:a5bf4305f7dec3eecbf9459cb1e874000"><td class="memItemLeft" align="right" valign="top"><a id="a5bf4305f7dec3eecbf9459cb1e874000"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>readRaw</b> (int timeout, cv::Mat &amp;dst_left_image, cv::Mat &amp;dst_right_image)=0</td></tr>
 <tr class="separator:a5bf4305f7dec3eecbf9459cb1e874000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362a831edb25d72375ee5ab1132aa883"><td class="memItemLeft" align="right" valign="top"><a id="a362a831edb25d72375ee5ab1132aa883"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getLeftTestImagePath</b> ()</td></tr>
+<tr class="separator:a362a831edb25d72375ee5ab1132aa883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3afb34504b417c92f8adf207a100d75e"><td class="memItemLeft" align="right" valign="top"><a id="a3afb34504b417c92f8adf207a100d75e"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestImagePath</b> ()</td></tr>
+<tr class="separator:a3afb34504b417c92f8adf207a100d75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:aea794778391ca9457c0f172e5474e9ad"><td class="memItemLeft" align="right" valign="top"><a id="aea794778391ca9457c0f172e5474e9ad"></a>
 <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html">CameraDeviceInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_device_info</b></td></tr>
 <tr class="separator:aea794778391ca9457c0f172e5474e9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa32acb4c89e0528b0f0bdd790f19ad1e"><td class="memItemLeft" align="right" valign="top"><a id="aa32acb4c89e0528b0f0bdd790f19ad1e"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_left_test_image_path</b></td></tr>
-<tr class="separator:aa32acb4c89e0528b0f0bdd790f19ad1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a161c657a2c572ddd184e302429f6b7a8"><td class="memItemLeft" align="right" valign="top"><a id="a161c657a2c572ddd184e302429f6b7a8"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_right_test_image_path</b></td></tr>
-<tr class="separator:a161c657a2c572ddd184e302429f6b7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
@@ -222,6 +222,12 @@ std::mutex *&#160;</td><td class="memItemRight" valign="bottom"><b>readThread_mu
 <tr class="memitem:a489eba644d7dcdf2aae0c8d03086cda9"><td class="memItemLeft" align="right" valign="top"><a id="a489eba644d7dcdf2aae0c8d03086cda9"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>readThread_isRunning</b> = false</td></tr>
 <tr class="separator:a489eba644d7dcdf2aae0c8d03086cda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34287e17cbefc43293d1afd7140114f6"><td class="memItemLeft" align="right" valign="top"><a id="a34287e17cbefc43293d1afd7140114f6"></a>
+std::string *&#160;</td><td class="memItemRight" valign="bottom"><b>m_left_test_image_path</b></td></tr>
+<tr class="separator:a34287e17cbefc43293d1afd7140114f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8f13496499b7eff7048740dce196ea9"><td class="memItemLeft" align="right" valign="top"><a id="ab8f13496499b7eff7048740dce196ea9"></a>
+std::string *&#160;</td><td class="memItemRight" valign="bottom"><b>m_right_test_image_path</b></td></tr>
+<tr class="separator:ab8f13496499b7eff7048740dce196ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63807c88810eab6250cfe977142aac46"><td class="memItemLeft" align="right" valign="top"><a id="a63807c88810eab6250cfe977142aac46"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>flip_x_l</b> = false</td></tr>
 <tr class="separator:a63807c88810eab6250cfe977142aac46"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,7 +249,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>downsample_rate</b> 
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00121">121</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00033">33</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>modules/core/include/phase/core/stereocamera/<a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a></li>
 </ul>

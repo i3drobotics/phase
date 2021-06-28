@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('class_i3_d_r_1_1_phase_1_1_stereo_supp
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_i3_d_r_1_1_phase_1_1_stereo_support-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">I3DR.Phase.StereoSupport Class Reference</div>  </div>
@@ -113,10 +114,31 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>showImage</b> (
 <tr class="memitem:afcd28af9422454abd11b0ec14d1ae465"><td class="memItemLeft" align="right" valign="top"><a id="afcd28af9422454abd11b0ec14d1ae465"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>showImage</b> (string window_name, float[] image, int width, int height)</td></tr>
 <tr class="separator:afcd28af9422454abd11b0ec14d1ae465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a035c21d04fe4fbbe2186957186ccb204"><td class="memItemLeft" align="right" valign="top"><a id="a035c21d04fe4fbbe2186957186ccb204"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>CScaleImage</b> ([In] byte[] in_img, int in_width, int in_height, float scale_factor, [Out] byte[] out_img)</td></tr>
+<tr class="separator:a035c21d04fe4fbbe2186957186ccb204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8616885cccfef24f21975745570e3209"><td class="memItemLeft" align="right" valign="top"><a id="a8616885cccfef24f21975745570e3209"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>CXyz2depth</b> ([In] float[] in_img, int in_width, int in_height, [Out] float[] out_img)</td></tr>
+<tr class="separator:a8616885cccfef24f21975745570e3209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a296a07eb28afc5b5a0137e99af730560"><td class="memItemLeft" align="right" valign="top"><a id="a296a07eb28afc5b5a0137e99af730560"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>CBgra2rgba</b> ([In] byte[] in_img, int in_width, int in_height, [Out] byte[] out_img)</td></tr>
+<tr class="separator:a296a07eb28afc5b5a0137e99af730560"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1c22f38c015343a878473aae837595"><td class="memItemLeft" align="right" valign="top"><a id="aaf1c22f38c015343a878473aae837595"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>CNormaliseDisparity</b> ([In] float[] in_img, int in_width, int in_height, [Out] byte[] out_img)</td></tr>
+<tr class="separator:aaf1c22f38c015343a878473aae837595"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c38ae177c9249a97bc1e7761d90ca5f"><td class="memItemLeft" align="right" valign="top"><a id="a2c38ae177c9249a97bc1e7761d90ca5f"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>CShowImageUChar</b> (string window_name, [In] byte[] in_img, int in_width, int in_height)</td></tr>
+<tr class="separator:a2c38ae177c9249a97bc1e7761d90ca5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb20837c0fc2d096d3921a73ff32c0a9"><td class="memItemLeft" align="right" valign="top"><a id="adb20837c0fc2d096d3921a73ff32c0a9"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>CShowImageFloat</b> (string window_name, [In] float[] in_img, int in_width, int in_height)</td></tr>
+<tr class="separator:adb20837c0fc2d096d3921a73ff32c0a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="stereosupport_8cs_source.html#l00019">19</a> of file <a class="el" href="stereosupport_8cs_source.html">stereosupport.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereosupport_8cs_source.html#l00022">22</a> of file <a class="el" href="stereosupport_8cs_source.html">stereosupport.cs</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>wrappers/csharp/modules/core/src/<a class="el" href="stereosupport_8cs_source.html">stereosupport.cs</a></li>
 </ul>

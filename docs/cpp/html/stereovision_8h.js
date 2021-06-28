@@ -1,6 +1,5 @@
 var stereovision_8h =
 [
-    [ "StereoVisionReadResult", "struct_i3_d_r_1_1_phase_1_1_stereo_vision_read_result.html", "struct_i3_d_r_1_1_phase_1_1_stereo_vision_read_result" ],
     [ "StereoVision", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html", "class_i3_d_r_1_1_phase_1_1_stereo_vision" ],
     [ "I3DR_StereoVision_CConnect", "stereovision_8h.html#a298eb9f4cce631ea273644df424047c3", null ],
     [ "I3DR_StereoVision_CDisconnect", "stereovision_8h.html#a16e1e5242806213d666b2fce56ec541c", null ],

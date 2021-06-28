@@ -1,23 +1,7 @@
 var searchData=
 [
-  ['stereobm_18',['StereoBM',['../class_i3_d_r_1_1_phase_1_1_stereo_b_m.html',1,'I3DR::Phase']]],
-  ['stereobm_2eh_19',['stereobm.h',['../stereobm_8h.html',1,'']]],
-  ['stereocalibration_2eh_20',['stereocalibration.h',['../stereocalibration_8h.html',1,'']]],
-  ['stereocamera_2eh_21',['stereocamera.h',['../stereocamera_8h.html',1,'']]],
-  ['stereocameracalibration_22',['StereoCameraCalibration',['../class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html',1,'I3DR::Phase']]],
-  ['stereohobm_23',['StereoHOBM',['../class_i3_d_r_1_1_phase_1_1_stereo_h_o_b_m.html',1,'I3DR::Phase']]],
-  ['stereohobm_2eh_24',['stereohobm.h',['../stereohobm_8h.html',1,'']]],
-  ['stereoi3drsgm_25',['StereoI3DRSGM',['../class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html',1,'I3DR::Phase']]],
-  ['stereoi3drsgm_2eh_26',['stereoi3drsgm.h',['../stereoi3drsgm_8h.html',1,'']]],
-  ['stereoimagepair_27',['StereoImagePair',['../struct_i3_d_r_1_1_phase_1_1_stereo_image_pair.html',1,'I3DR::Phase']]],
-  ['stereomapper_28',['StereoMapper',['../class_i3_d_r_1_1_phase_1_1_stereo_mapper.html',1,'I3DR::Phase']]],
-  ['stereomapper_2eh_29',['stereomapper.h',['../stereomapper_8h.html',1,'']]],
-  ['stereomatcher_2eh_30',['stereomatcher.h',['../stereomatcher_8h.html',1,'']]],
-  ['stereomatchercomputeresult_31',['StereoMatcherComputeResult',['../struct_i3_d_r_1_1_phase_1_1_stereo_matcher_compute_result.html',1,'I3DR::Phase']]],
-  ['stereosgbm_32',['StereoSGBM',['../class_i3_d_r_1_1_phase_1_1_stereo_s_g_b_m.html',1,'I3DR::Phase']]],
-  ['stereosgbm_2eh_33',['stereosgbm.h',['../stereosgbm_8h.html',1,'']]],
-  ['stereosupport_2eh_34',['stereosupport.h',['../stereosupport_8h.html',1,'']]],
-  ['stereovision_35',['StereoVision',['../class_i3_d_r_1_1_phase_1_1_stereo_vision.html',1,'I3DR::Phase']]],
-  ['stereovision_2eh_36',['stereovision.h',['../stereovision_8h.html',1,'']]],
-  ['stereovisionreadresult_37',['StereoVisionReadResult',['../struct_i3_d_r_1_1_phase_1_1_stereo_vision_read_result.html',1,'I3DR::Phase']]]
+  ['rgbdvideoframe_21',['RGBDVideoFrame',['../struct_i3_d_r_1_1_phase_1_1_r_g_b_d_video_frame.html',1,'I3DR::Phase']]],
+  ['rgbdvideostream_22',['RGBDVideoStream',['../class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream.html',1,'I3DR::Phase']]],
+  ['rgbdvideostream_2eh_23',['rgbdvideostream.h',['../rgbdvideostream_8h.html',1,'']]],
+  ['rgbdvideowriter_24',['RGBDVideoWriter',['../class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_writer.html',1,'I3DR::Phase']]]
 ];

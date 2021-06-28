@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('class_i3_d_r_1_1_phase_1_1_camera_devi
 <p>Structure to hold stereo camera information.  
  <a href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -111,15 +111,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a98ad3b1d4c7b93c0f4f63b9a2bca0312"><td class="memItemLeft" align="right" valign="top"><a id="a98ad3b1d4c7b93c0f4f63b9a2bca0312"></a>
 <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html">CameraDeviceInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html">CameraDeviceInfo</a> &amp;other)</td></tr>
 <tr class="separator:a98ad3b1d4c7b93c0f4f63b9a2bca0312"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d1534c04a25a39e48217840206a28df"><td class="memItemLeft" align="right" valign="top"><a id="a3d1534c04a25a39e48217840206a28df"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getLeftCameraSerial</b> () const</td></tr>
-<tr class="separator:a3d1534c04a25a39e48217840206a28df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a523f4c6aecee4afe02a70c33e688d1a2"><td class="memItemLeft" align="right" valign="top"><a id="a523f4c6aecee4afe02a70c33e688d1a2"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightCameraSerial</b> () const</td></tr>
-<tr class="separator:a523f4c6aecee4afe02a70c33e688d1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f9848822a5fa29ede87fbfc6c10a63c"><td class="memItemLeft" align="right" valign="top"><a id="a8f9848822a5fa29ede87fbfc6c10a63c"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getUniqueSerial</b> () const</td></tr>
-<tr class="separator:a8f9848822a5fa29ede87fbfc6c10a63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4caae93dbc46f94c366f368f6d2c9613"><td class="memItemLeft" align="right" valign="top"><a id="a4caae93dbc46f94c366f368f6d2c9613"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getLeftCameraSerial</b> ()</td></tr>
+<tr class="separator:a4caae93dbc46f94c366f368f6d2c9613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65ff8f965072ee3ed6a0663ee46f088b"><td class="memItemLeft" align="right" valign="top"><a id="a65ff8f965072ee3ed6a0663ee46f088b"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightCameraSerial</b> ()</td></tr>
+<tr class="separator:a65ff8f965072ee3ed6a0663ee46f088b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6699ee505e5d2a99ff4afc508deecc2e"><td class="memItemLeft" align="right" valign="top"><a id="a6699ee505e5d2a99ff4afc508deecc2e"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getUniqueSerial</b> ()</td></tr>
+<tr class="separator:a6699ee505e5d2a99ff4afc508deecc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -132,22 +132,22 @@ CameraInterfaceType&#160;</td><td class="memItemRight" valign="bottom"><b>interf
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a18d5e710090625faaa28ef84905b9bef"><td class="memItemLeft" align="right" valign="top"><a id="a18d5e710090625faaa28ef84905b9bef"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>left_camera_serial</b></td></tr>
-<tr class="separator:a18d5e710090625faaa28ef84905b9bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96856031014c4855acedca2f8151258e"><td class="memItemLeft" align="right" valign="top"><a id="a96856031014c4855acedca2f8151258e"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>right_camera_serial</b></td></tr>
-<tr class="separator:a96856031014c4855acedca2f8151258e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0e7291d365b1020e33073120d83170b"><td class="memItemLeft" align="right" valign="top"><a id="ac0e7291d365b1020e33073120d83170b"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>unique_serial</b></td></tr>
-<tr class="separator:ac0e7291d365b1020e33073120d83170b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03256ef4f495e6f52bd8fbee6fac4959"><td class="memItemLeft" align="right" valign="top"><a id="a03256ef4f495e6f52bd8fbee6fac4959"></a>
+std::string *&#160;</td><td class="memItemRight" valign="bottom"><b>left_camera_serial</b></td></tr>
+<tr class="separator:a03256ef4f495e6f52bd8fbee6fac4959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2e6131b8121346a8ef6697cc17a3f40"><td class="memItemLeft" align="right" valign="top"><a id="ae2e6131b8121346a8ef6697cc17a3f40"></a>
+std::string *&#160;</td><td class="memItemRight" valign="bottom"><b>right_camera_serial</b></td></tr>
+<tr class="separator:ae2e6131b8121346a8ef6697cc17a3f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde05b97c68a4d8bef045f44d570e5ed"><td class="memItemLeft" align="right" valign="top"><a id="abde05b97c68a4d8bef045f44d570e5ed"></a>
+std::string *&#160;</td><td class="memItemRight" valign="bottom"><b>unique_serial</b></td></tr>
+<tr class="separator:abde05b97c68a4d8bef045f44d570e5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure to hold stereo camera information. </p>
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00043">43</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cameradeviceinfo_8h_source.html#l00026">26</a> of file <a class="el" href="cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>modules/core/include/phase/core/stereocamera/<a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a></li>
+<li>modules/core/include/phase/core/types/<a class="el" href="cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

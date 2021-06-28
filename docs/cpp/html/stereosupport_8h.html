@@ -86,8 +86,6 @@ $(document).ready(function(){initNavTree('stereosupport_8h.html',''); initResiza
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">stereosupport.h File Reference</div>  </div>
@@ -105,33 +103,17 @@ $(document).ready(function(){initNavTree('stereosupport_8h.html',''); initResiza
 </div>
 <p><a href="stereosupport_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_matrix.html">I3DR::Phase::Matrix&lt; T &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_image_pair.html">I3DR::Phase::StereoImagePair</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a87458f71405110913f06392a0e15f693"><td class="memItemLeft" align="right" valign="top"><a id="a87458f71405110913f06392a0e15f693"></a>
-typedef PHASE_SDK_EXPORT Matrix&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR::Phase::MatrixFloat</b></td></tr>
-<tr class="separator:a87458f71405110913f06392a0e15f693"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a818d0e453cf702d2e6f159565122835c"><td class="memItemLeft" align="right" valign="top"><a id="a818d0e453cf702d2e6f159565122835c"></a>
-typedef PHASE_SDK_EXPORT Matrix&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR::Phase::MatrixUInt8</b></td></tr>
-<tr class="separator:a818d0e453cf702d2e6f159565122835c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a32d655317b215be903ba0f374b05d905"><td class="memItemLeft" align="right" valign="top"><a id="a32d655317b215be903ba0f374b05d905"></a>
-MatrixFloat PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR::Phase::tmpInternalMatTest</b> (MatrixFloat image)</td></tr>
-<tr class="separator:a32d655317b215be903ba0f374b05d905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c0b0f08d3eaa8248f58dfcf6557b416"><td class="memItemLeft" align="right" valign="top"><a id="a6c0b0f08d3eaa8248f58dfcf6557b416"></a>
 cv::Mat PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR::Phase::scaleImage</b> (cv::Mat image, float scale_factor)</td></tr>
 <tr class="separator:a6c0b0f08d3eaa8248f58dfcf6557b416"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30c2f8acffe09c2a863b392f2670ccce"><td class="memItemLeft" align="right" valign="top"><a id="a30c2f8acffe09c2a863b392f2670ccce"></a>
 bool PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR::Phase::toMono</b> (cv::Mat image_in, cv::Mat &amp;image_out)</td></tr>
 <tr class="separator:a30c2f8acffe09c2a863b392f2670ccce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab564ea4daafb83639d19f2865265549d"><td class="memItemLeft" align="right" valign="top"><a id="ab564ea4daafb83639d19f2865265549d"></a>
+cv::Mat PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR::Phase::normaliseDepth16</b> (cv::Mat depth16)</td></tr>
+<tr class="separator:ab564ea4daafb83639d19f2865265549d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a7d3c7e7438a88711bcdfe4d3918ac4"><td class="memItemLeft" align="right" valign="top"><a id="a0a7d3c7e7438a88711bcdfe4d3918ac4"></a>
 cv::Mat PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR::Phase::normaliseDisparity</b> (cv::Mat disparity)</td></tr>
 <tr class="separator:a0a7d3c7e7438a88711bcdfe4d3918ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,30 +135,6 @@ cv::Mat PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I
 <tr class="memitem:a47061e84f68e012247db6e02f2964331"><td class="memItemLeft" align="right" valign="top"><a id="a47061e84f68e012247db6e02f2964331"></a>
 int PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR::Phase::showImage</b> (const char *window_name, cv::Mat image)</td></tr>
 <tr class="separator:a47061e84f68e012247db6e02f2964331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35bdee8d04790fe8e16eaf47366ceb9f"><td class="memItemLeft" align="right" valign="top"><a id="a35bdee8d04790fe8e16eaf47366ceb9f"></a>
-I3DR::Phase::MatrixFloat PHASE_SDK_EXPORT *&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_MatrixFloat_create</b> (int rows, int columns, int layers)</td></tr>
-<tr class="separator:a35bdee8d04790fe8e16eaf47366ceb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53d7d8a25ecff65297788f5276871c20"><td class="memItemLeft" align="right" valign="top"><a id="a53d7d8a25ecff65297788f5276871c20"></a>
-void PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_MatrixFloat_dispose</b> (I3DR::Phase::MatrixFloat *mat)</td></tr>
-<tr class="separator:a53d7d8a25ecff65297788f5276871c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09f9b8342da5bde4ce4b5e288d774704"><td class="memItemLeft" align="right" valign="top"><a id="a09f9b8342da5bde4ce4b5e288d774704"></a>
-int PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_MatrixFloat_getRows</b> (I3DR::Phase::MatrixFloat *mat)</td></tr>
-<tr class="separator:a09f9b8342da5bde4ce4b5e288d774704"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cc328a91b0538d67e2799b139b54e73"><td class="memItemLeft" align="right" valign="top"><a id="a5cc328a91b0538d67e2799b139b54e73"></a>
-int PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_MatrixFloat_getColumns</b> (I3DR::Phase::MatrixFloat *mat)</td></tr>
-<tr class="separator:a5cc328a91b0538d67e2799b139b54e73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7aa39669daadeb2227c46ac41f138d31"><td class="memItemLeft" align="right" valign="top"><a id="a7aa39669daadeb2227c46ac41f138d31"></a>
-int PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_MatrixFloat_getLayers</b> (I3DR::Phase::MatrixFloat *mat)</td></tr>
-<tr class="separator:a7aa39669daadeb2227c46ac41f138d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a697bd1427e34be11fe53f0e221af2459"><td class="memItemLeft" align="right" valign="top"><a id="a697bd1427e34be11fe53f0e221af2459"></a>
-void PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_MatrixFloat_setAt</b> (I3DR::Phase::MatrixFloat *mat, int row, int column, int layer, float value)</td></tr>
-<tr class="separator:a697bd1427e34be11fe53f0e221af2459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af06a4680d21e602bbaf2ae2219d73459"><td class="memItemLeft" align="right" valign="top"><a id="af06a4680d21e602bbaf2ae2219d73459"></a>
-float PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_MatrixFloat_getAt</b> (I3DR::Phase::MatrixFloat *mat, int row, int column, int layer)</td></tr>
-<tr class="separator:af06a4680d21e602bbaf2ae2219d73459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52591da2dbc9d46b2152ae630e626d90"><td class="memItemLeft" align="right" valign="top"><a id="a52591da2dbc9d46b2152ae630e626d90"></a>
-I3DR::Phase::MatrixFloat PHASE_SDK_EXPORT *&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_CtmpInternalMatTest</b> (I3DR::Phase::MatrixFloat *image)</td></tr>
-<tr class="separator:a52591da2dbc9d46b2152ae630e626d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a78c5c416ff5c9bfb8c5ef6f7065762"><td class="memItemLeft" align="right" valign="top"><a id="a8a78c5c416ff5c9bfb8c5ef6f7065762"></a>
 void PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_CScaleImage</b> (unsigned char *in_img, int in_width, int in_height, float scale_factor, unsigned char *out_img)</td></tr>
 <tr class="separator:a8a78c5c416ff5c9bfb8c5ef6f7065762"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +153,9 @@ int PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_
 <tr class="memitem:a60128e19fd963d643d876a624bdb3cc4"><td class="memItemLeft" align="right" valign="top"><a id="a60128e19fd963d643d876a624bdb3cc4"></a>
 int PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_CShowImageFloat</b> (const char *window_name, float *in_img, int in_width, int in_height)</td></tr>
 <tr class="separator:a60128e19fd963d643d876a624bdb3cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f65b7b1036ef88e213f238179472499"><td class="memItemLeft" align="right" valign="top"><a id="a4f65b7b1036ef88e213f238179472499"></a>
+int PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_CTestInt</b> (int input)</td></tr>
+<tr class="separator:a4f65b7b1036ef88e213f238179472499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Useful functions/structures for stereo. </p>

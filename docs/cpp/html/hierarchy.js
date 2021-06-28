@@ -19,6 +19,9 @@ var hierarchy =
       [ "I3DR::Phase::CPylonStereoCameraImageEventHandler", "class_i3_d_r_1_1_phase_1_1_c_pylon_stereo_camera_image_event_handler.html", null ]
     ] ],
     [ "I3DR::Phase::Matrix< T >", "class_i3_d_r_1_1_phase_1_1_matrix.html", null ],
+    [ "I3DR::Phase::RGBDVideoFrame", "struct_i3_d_r_1_1_phase_1_1_r_g_b_d_video_frame.html", null ],
+    [ "I3DR::Phase::RGBDVideoStream", "class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream.html", null ],
+    [ "I3DR::Phase::RGBDVideoWriter", "class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_writer.html", null ],
     [ "I3DR::Phase::StereoCameraCalibration", "class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html", null ],
     [ "I3DR::Phase::StereoImagePair", "struct_i3_d_r_1_1_phase_1_1_stereo_image_pair.html", null ],
     [ "I3DR::Phase::StereoMapper", "class_i3_d_r_1_1_phase_1_1_stereo_mapper.html", null ],

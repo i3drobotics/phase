@@ -1,6 +1,7 @@
 var class_i3_d_r_1_1_phase_1_1_matrix =
 [
     [ "Matrix", "class_i3_d_r_1_1_phase_1_1_matrix.html#ac507d93920b738f1f781362ec0441b56", null ],
+    [ "Matrix", "class_i3_d_r_1_1_phase_1_1_matrix.html#aa0fb38e9ea4435d5f5b49e79144f4cbb", null ],
     [ "Matrix", "class_i3_d_r_1_1_phase_1_1_matrix.html#ace5413f4e1c8156339bb73589344cf1e", null ],
     [ "Matrix", "class_i3_d_r_1_1_phase_1_1_matrix.html#a8a92485ba80f0800f84868f4e3f9f025", null ],
     [ "~Matrix", "class_i3_d_r_1_1_phase_1_1_matrix.html#af1b63ee533776083ae75c5f7b21ba7b0", null ],
@@ -12,6 +13,7 @@ var class_i3_d_r_1_1_phase_1_1_matrix =
     [ "getIndex", "class_i3_d_r_1_1_phase_1_1_matrix.html#a1cbd8def2b0e47b3dd5d702fc99fb79e", null ],
     [ "getLayers", "class_i3_d_r_1_1_phase_1_1_matrix.html#a3e5945eecbcda739a6636f635a3135a5", null ],
     [ "getRows", "class_i3_d_r_1_1_phase_1_1_matrix.html#a9ebbf99f5cdab2dfe6bb731c4b355d0f", null ],
+    [ "isEmpty", "class_i3_d_r_1_1_phase_1_1_matrix.html#a30cd7667f5219cf29e67f028363941cf", null ],
     [ "length", "class_i3_d_r_1_1_phase_1_1_matrix.html#a061410a11b4e52d4944691193051eb54", null ],
     [ "operator=", "class_i3_d_r_1_1_phase_1_1_matrix.html#a1a1c21b6fd176da20cbeaf1d23a088cd", null ],
     [ "setAt", "class_i3_d_r_1_1_phase_1_1_matrix.html#a0144defa97a8e622ce7458d411cd5a72", null ],
@@ -19,6 +21,7 @@ var class_i3_d_r_1_1_phase_1_1_matrix =
     [ "columns", "class_i3_d_r_1_1_phase_1_1_matrix.html#a54e5cc1b91637cfdf6a708764b32a4bf", null ],
     [ "data", "class_i3_d_r_1_1_phase_1_1_matrix.html#ac8b704f43a2b06123d711c260f146d2a", null ],
     [ "data_deallocate", "class_i3_d_r_1_1_phase_1_1_matrix.html#a064ab683572b0e8b5aad0e265b24aec6", null ],
+    [ "empty", "class_i3_d_r_1_1_phase_1_1_matrix.html#a33c8020b9c0cced049e9370b33231ebc", null ],
     [ "layers", "class_i3_d_r_1_1_phase_1_1_matrix.html#a8487ab741d8e507b058ee173ffe21d47", null ],
     [ "rows", "class_i3_d_r_1_1_phase_1_1_matrix.html#a2d91ffcf631eb7be81f630c40c6d03ef", null ]
 ];

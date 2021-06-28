@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>I3DR Phase SDK: modules/core/include/phase/core/stereocalibration.h File Reference</title>
+<title>I3DR Phase SDK: modules/core/include/phase/core/calib/stereocalibration.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,8 +87,7 @@ $(document).ready(function(){initNavTree('stereocalibration_8h.html',''); initRe
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">stereocalibration.h File Reference</div>  </div>
 </div><!--header-->
@@ -107,15 +106,13 @@ $(document).ready(function(){initNavTree('stereocalibration_8h.html',''); initRe
 <code>#include &lt;opencv2/highgui.hpp&gt;</code><br />
 <code>#include &lt;opencv2/calib3d.hpp&gt;</code><br />
 <code>#include &lt;<a class="el" href="phase__export_8h_source.html">phase/phase_export.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="stereosupport_8h_source.html">phase/core/stereosupport.h</a>&gt;</code><br />
+<code>#include &lt;phase/core/types/common.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="cameracalibration_8h_source.html">phase/core/calib/cameracalibration.h</a>&gt;</code><br />
 </div>
 <p><a href="stereocalibration_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">I3DR::Phase::CameraCalibration</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Camera Calibration class.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -145,15 +142,6 @@ void PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR
 <tr class="memitem:a468a9f03a329e0bbd988d1babcb39789"><td class="memItemLeft" align="right" valign="top"><a id="a468a9f03a329e0bbd988d1babcb39789"></a>
 void PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoCameraCalibration_dispose</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a> *calibration)</td></tr>
 <tr class="separator:a468a9f03a329e0bbd988d1babcb39789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:af286ee3501a2f2886d60fd7f352d90dc"><td class="memItemLeft" align="right" valign="top"><a id="af286ee3501a2f2886d60fd7f352d90dc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ROS_YAML</b></td></tr>
-<tr class="separator:af286ee3501a2f2886d60fd7f352d90dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac25cc9037a99ca14beddc9e1d0f31d84"><td class="memItemLeft" align="right" valign="top"><a id="ac25cc9037a99ca14beddc9e1d0f31d84"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>OPENCV_YAML</b></td></tr>
-<tr class="separator:ac25cc9037a99ca14beddc9e1d0f31d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stereo Calibration class. </p>

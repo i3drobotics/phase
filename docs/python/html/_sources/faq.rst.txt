@@ -20,20 +20,3 @@ phase python module is not installed.
 .. code-block:: console
 
    pip install phase
-
-Invalid I3DR_PHASE_SDK_PATH
-###########################
-
-**Issue:**
-
-.. code-block:: python
-   
-   Exception: Invalid path in I3DR_PHASE_SDK_PATH environment variable. Please set I3DR_PHASE_SDK_PATH to install path of I3DR's Phase SDK.
-
-**Cause:**
-
-I3DR_PHASE_SDK_PATH environment variable is set to an invalid path or is missing. Usually because I3DR Phase SDK is not installed.
-
-**Solution:**
-
-Install I3DR's Phase SDK.
