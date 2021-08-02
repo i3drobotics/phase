@@ -5,8 +5,6 @@ var class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher =
     [ "compute", "class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#ad78ee6faa1f20341814e87cf2f235833", null ],
     [ "getComputeThreadResult", "class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a934610b01523ccec0a3a6a806c6e05af", null ],
     [ "isComputeThreadRunning", "class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#abf7559220cc9b08a1a73b1c10578801a", null ],
-    [ "isFlipCImages", "class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#aeb29d6c91b75be70737f194a0df6858c", null ],
-    [ "setFlipCImages", "class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a9af62d577e12f541cb4e9e62e40a1c25", null ],
     [ "startComputeThread", "class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a868717e22c586065d2a4a8b93769e680", null ],
     [ "computeThread_isRunning", "class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a4c4f8819424556f06b16702017b30944", null ],
     [ "computeThread_mutex", "class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a25f7195644862744c6d903940ef99baf", null ],

@@ -3,6 +3,7 @@
    :maxdepth: 2
 
    installing
+   examples
    autocode
    faq
 

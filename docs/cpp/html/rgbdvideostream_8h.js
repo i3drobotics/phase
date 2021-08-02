@@ -9,7 +9,6 @@ var rgbdvideostream_8h =
     [ "I3DR_RGBDVideoStream_CGetReadThreadResult", "rgbdvideostream_8h.html#a52703dcfa4b8900bbb09c4a87ab648be", null ],
     [ "I3DR_RGBDVideoStream_CGetWidth", "rgbdvideostream_8h.html#ad42634c9961e1c9b514a819fc191185d", null ],
     [ "I3DR_RGBDVideoStream_CIsFinished", "rgbdvideostream_8h.html#ad634b5838c399cab55bbc349494a2a08", null ],
-    [ "I3DR_RGBDVideoStream_CIsFlipCImages", "rgbdvideostream_8h.html#a619174b25581dfd90f1ea4c9cc38c42e", null ],
     [ "I3DR_RGBDVideoStream_CIsLoaded", "rgbdvideostream_8h.html#a2a7a5ff8cb0a714fbbb844394f439097", null ],
     [ "I3DR_RGBDVideoStream_CIsLoadThreadRunning", "rgbdvideostream_8h.html#a32b9424adf68ce07d7b16cfdabe8de08", null ],
     [ "I3DR_RGBDVideoStream_CIsOpened", "rgbdvideostream_8h.html#a14ce654103e3af492eb6ad8eb3a024ed", null ],
@@ -21,6 +20,5 @@ var rgbdvideostream_8h =
     [ "I3DR_RGBDVideoStream_create", "rgbdvideostream_8h.html#a37caaef799485ec2367fef65d4358cc0", null ],
     [ "I3DR_RGBDVideoStream_CRestart", "rgbdvideostream_8h.html#a908b4fff2e2aceea291606283daf1337", null ],
     [ "I3DR_RGBDVideoStream_CSetDownsampleFactor", "rgbdvideostream_8h.html#ab5945f910eca10cb4134ab64b4ac97bb", null ],
-    [ "I3DR_RGBDVideoStream_CSetFlipCImages", "rgbdvideostream_8h.html#a4ec7e2d54d83d7d64a14f5802f23e325", null ],
     [ "I3DR_RGBDVideoStream_dispose", "rgbdvideostream_8h.html#aa6ff3b1a0dc271a478aa92ddc7050e55", null ]
 ];

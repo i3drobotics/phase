@@ -103,6 +103,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a78d783018d0b7dbd7f9598f1e7e5e48d"><td class="memItemLeft" align="right" valign="top"><a id="a78d783018d0b7dbd7f9598f1e7e5e48d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MatrixFloat</b> (int rows, int cols, int channels)</td></tr>
 <tr class="separator:a78d783018d0b7dbd7f9598f1e7e5e48d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad72cc5986888808d01977169c81e3e06"><td class="memItemLeft" align="right" valign="top"><a id="ad72cc5986888808d01977169c81e3e06"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixFloat</b> (int rows, int cols, int channels, float[] data, bool copy)</td></tr>
+<tr class="separator:ad72cc5986888808d01977169c81e3e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63a92f35c237ae1b19375c97195a36b9"><td class="memItemLeft" align="right" valign="top"><a id="a63a92f35c237ae1b19375c97195a36b9"></a>
 IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>getInstancePtr</b> ()</td></tr>
 <tr class="separator:a63a92f35c237ae1b19375c97195a36b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,12 +118,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getColumns</b> ()</td>
 <tr class="memitem:a71c83820e53a329f4e5d3ea6aecc69c9"><td class="memItemLeft" align="right" valign="top"><a id="a71c83820e53a329f4e5d3ea6aecc69c9"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getLayers</b> ()</td></tr>
 <tr class="separator:a71c83820e53a329f4e5d3ea6aecc69c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec74ebf834a15bad9d59594adb9b127"><td class="memItemLeft" align="right" valign="top"><a id="abec74ebf834a15bad9d59594adb9b127"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isEmpty</b> ()</td></tr>
+<tr class="separator:abec74ebf834a15bad9d59594adb9b127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb87eb19ec4533cce03a071cc26110e6"><td class="memItemLeft" align="right" valign="top"><a id="abb87eb19ec4533cce03a071cc26110e6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getLength</b> ()</td></tr>
+<tr class="separator:abb87eb19ec4533cce03a071cc26110e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a7fd48891cf766d240ffe6a15eb2d8"><td class="memItemLeft" align="right" valign="top"><a id="a11a7fd48891cf766d240ffe6a15eb2d8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getSize</b> ()</td></tr>
+<tr class="separator:a11a7fd48891cf766d240ffe6a15eb2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20beaa1dc7e9a34e3aa083422b081afc"><td class="memItemLeft" align="right" valign="top"><a id="a20beaa1dc7e9a34e3aa083422b081afc"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setAt</b> (int row, int column, int layer, float value)</td></tr>
 <tr class="separator:a20beaa1dc7e9a34e3aa083422b081afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceca2858806e30746238a4e0c1d6383b"><td class="memItemLeft" align="right" valign="top"><a id="aceca2858806e30746238a4e0c1d6383b"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>getAt</b> (int row, int column, int layer)</td></tr>
 <tr class="separator:aceca2858806e30746238a4e0c1d6383b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b46c55598c999fba2f92ce6ff481e5"><td class="memItemLeft" align="right" valign="top"><a id="a15b46c55598c999fba2f92ce6ff481e5"></a>
+float[]&#160;</td><td class="memItemRight" valign="bottom"><b>getData</b> ()</td></tr>
+<tr class="separator:a15b46c55598c999fba2f92ce6ff481e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8df00f23a480a58e5c977106383932c3"><td class="memItemLeft" align="right" valign="top"><a id="a8df00f23a480a58e5c977106383932c3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dispose</b> ()</td></tr>
 <tr class="separator:a8df00f23a480a58e5c977106383932c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +145,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:aa8ab76b80a16bf78968ad8efc708404d"><td class="memItemLeft" align="right" valign="top"><a id="aa8ab76b80a16bf78968ad8efc708404d"></a>
 static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixFloat_create</b> (int rows, int columns, int layers)</td></tr>
 <tr class="separator:aa8ab76b80a16bf78968ad8efc708404d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c9bf8fe8a41226b907dcbce146797fd"><td class="memItemLeft" align="right" valign="top"><a id="a3c9bf8fe8a41226b907dcbce146797fd"></a>
+static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixFloat_createData</b> (int rows, int columns, int layers, [In] float[] data, bool copy)</td></tr>
+<tr class="separator:a3c9bf8fe8a41226b907dcbce146797fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd01dcf9ccc831577215d46e3be2ef28"><td class="memItemLeft" align="right" valign="top"><a id="acd01dcf9ccc831577215d46e3be2ef28"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixFloat_dispose</b> (IntPtr MatrixFloat_ptr)</td></tr>
 <tr class="separator:acd01dcf9ccc831577215d46e3be2ef28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,22 +160,37 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixFloat_get
 <tr class="memitem:aee25df9583acd662f3203429be8f2c3c"><td class="memItemLeft" align="right" valign="top"><a id="aee25df9583acd662f3203429be8f2c3c"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixFloat_getLayers</b> (IntPtr mat)</td></tr>
 <tr class="separator:aee25df9583acd662f3203429be8f2c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea76594aa64aee427d516446ddde998"><td class="memItemLeft" align="right" valign="top"><a id="a9ea76594aa64aee427d516446ddde998"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixFloat_isEmpty</b> (IntPtr mat)</td></tr>
+<tr class="separator:a9ea76594aa64aee427d516446ddde998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bcea5db760495d7e4358ca525e39ff1"><td class="memItemLeft" align="right" valign="top"><a id="a8bcea5db760495d7e4358ca525e39ff1"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixFloat_getLength</b> (IntPtr mat)</td></tr>
+<tr class="separator:a8bcea5db760495d7e4358ca525e39ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9444c06727c8da9bdb1743d995a3dca6"><td class="memItemLeft" align="right" valign="top"><a id="a9444c06727c8da9bdb1743d995a3dca6"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixFloat_getSize</b> (IntPtr mat)</td></tr>
+<tr class="separator:a9444c06727c8da9bdb1743d995a3dca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ad07d72509fc65f1b0b62f3db251b3a"><td class="memItemLeft" align="right" valign="top"><a id="a7ad07d72509fc65f1b0b62f3db251b3a"></a>
 static float&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixFloat_getAt</b> (IntPtr mat, int row, int column, int layer)</td></tr>
 <tr class="separator:a7ad07d72509fc65f1b0b62f3db251b3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1b56dfbf8f7ca28dab3c9d567b00dd3"><td class="memItemLeft" align="right" valign="top"><a id="ae1b56dfbf8f7ca28dab3c9d567b00dd3"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixFloat_setAt</b> (IntPtr mat, int row, int column, int layer, float value)</td></tr>
 <tr class="separator:ae1b56dfbf8f7ca28dab3c9d567b00dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79084e1499dd7de31976ed6be33a4299"><td class="memItemLeft" align="right" valign="top"><a id="a79084e1499dd7de31976ed6be33a4299"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixFloat_getData</b> (IntPtr mat, [Out] float[] data)</td></tr>
+<tr class="separator:a79084e1499dd7de31976ed6be33a4299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a2c72d6c3ba520b3afc44fb75d6443149"><td class="memItemLeft" align="right" valign="top"><a id="a2c72d6c3ba520b3afc44fb75d6443149"></a>
+float[]&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b></td></tr>
+<tr class="separator:a2c72d6c3ba520b3afc44fb75d6443149"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d8f1a2f83260c419fb1b3729f3c1a14"><td class="memItemLeft" align="right" valign="top"><a id="a7d8f1a2f83260c419fb1b3729f3c1a14"></a>
 IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>m_MatrixFloat_ptr</b></td></tr>
 <tr class="separator:a7d8f1a2f83260c419fb1b3729f3c1a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="mat_8cs_source.html#l00023">23</a> of file <a class="el" href="mat_8cs_source.html">mat.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mat_8cs_source.html#l00020">20</a> of file <a class="el" href="mat_8cs_source.html">mat.cs</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>wrappers/csharp/modules/core/src/types/<a class="el" href="mat_8cs_source.html">mat.cs</a></li>
 </ul>

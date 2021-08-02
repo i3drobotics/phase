@@ -1,6 +1,6 @@
 var class_i3_d_r_1_1_phase_1_1_stereo_vision =
 [
-    [ "StereoVision", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#af2d6fc6d27282d232f4b2b52134116be", null ],
+    [ "StereoVision", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#ac40654c54e33e0df4baf21182aeedf45", null ],
     [ "~StereoVision", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#ac5129afb841589cd12a11477f867da70", null ],
     [ "connect", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#a9ec5cc53de3f1220b6e2394a4c70ca38", null ],
     [ "disconnect", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#a688266af92f63635018e607dd0a6f9ee", null ],
@@ -13,12 +13,10 @@ var class_i3_d_r_1_1_phase_1_1_stereo_vision =
     [ "getReadThreadResult", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#acf054a6020d01438c9ea5e639d4b1824", null ],
     [ "getWidth", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#a97ca0bfcb3c278bbfcdfc9df65380141", null ],
     [ "isConnected", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#a4816ed48ae658d35a1820224b0f69284", null ],
-    [ "isFlipCImages", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#a5215396acf59765107f8f64cd98f1992", null ],
     [ "isReadThreadRunning", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#ad3d4bb441e6c01c3812c7315b8fbc70f", null ],
     [ "isValidCalibration", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#ade76b4d88f212f7745d9a6370c3982ed", null ],
     [ "read", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#a96dc5c718bb0b25fa63dd26423d40ebb", null ],
     [ "setDownsampleFactor", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#a5798ca61fb8622325f0cffb0f2474351", null ],
-    [ "setFlipCImages", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#afa487bfd1e18de0648887289bbbf394e", null ],
     [ "setTestImagePaths", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#a326a6d4fd077ba080d4906e20786eea2", null ],
     [ "startReadThread", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#a8b45f239b87ab915c41fba5949f0aaac", null ],
     [ "flip_Cimages", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html#a1b8604da605a6bda54c8cbd42a63fdfc", null ],

@@ -104,19 +104,19 @@ $(document).ready(function(){initNavTree('stereoprocess_8h_source.html',''); ini
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="stereovision_8h.html">phase/core/stereovision.h</a>&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="stereomatcher_8h.html">phase/core/stereomatcher/stereomatcher.h</a>&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="stereoi3drsgm_8h.html">phase/core/stereomatcher/stereoi3drsgm.h</a>&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="stereosupport_8h.html">phase/core/stereosupport.h</a>&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="utils_8h.html">phase/core/utils.h</a>&gt;</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>I3DR {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">namespace </span>Phase {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">bool</span> PHASE_SDK_EXPORT processStereoFiles(</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            StereoMatcherType stereo_matcher_type, <span class="keyword">const</span> <span class="keywordtype">char</span>* left_yaml, <span class="keyword">const</span> <span class="keywordtype">char</span>* right_yaml,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            StereoParams stereo_params, <span class="keyword">const</span> <span class="keywordtype">char</span>* left_yaml, <span class="keyword">const</span> <span class="keywordtype">char</span>* right_yaml,</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">char</span>* left_image_path, <span class="keyword">const</span> <span class="keywordtype">char</span>* right_image_path, <span class="keyword">const</span> <span class="keywordtype">char</span>* output_folder,</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordtype">bool</span> rectify = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        MatrixFloat PHASE_SDK_EXPORT processStereo(</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            StereoMatcherType stereo_matcher_type, MatrixUInt8 left_image, MatrixUInt8 right_image,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            StereoParams stereo_params, MatrixUInt8 left_image, MatrixUInt8 right_image,</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            StereoCameraCalibration calibration, <span class="keywordtype">bool</span> rectify = <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
@@ -125,21 +125,22 @@ $(document).ready(function(){initNavTree('stereoprocess_8h_source.html',''); ini
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> PHASE_SDK_EXPORT I3DR_ProcessStereoFiles(</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        I3DR::Phase::StereoMatcherType stereo_matcher_type, <span class="keyword">const</span> <span class="keywordtype">char</span>* left_yaml, <span class="keyword">const</span> <span class="keywordtype">char</span>* right_yaml,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="struct_i3_d_r_1_1_phase_1_1_stereo_params.html">I3DR::Phase::StereoParams</a> stereo_params, <span class="keyword">const</span> <span class="keywordtype">char</span>* left_yaml, <span class="keyword">const</span> <span class="keywordtype">char</span>* right_yaml,</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* left_image_path, <span class="keyword">const</span> <span class="keywordtype">char</span>* right_image_path, <span class="keyword">const</span> <span class="keywordtype">char</span>* output_folder, <span class="keywordtype">bool</span> rectify);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    I3DR::Phase::MatrixFloat PHASE_SDK_EXPORT * I3DR_ProcessStereo(</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        I3DR::Phase::StereoMatcherType stereo_matcher_type, I3DR::Phase::MatrixUInt8 &amp;left_image, I3DR::Phase::MatrixUInt8 &amp;right_image,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="struct_i3_d_r_1_1_phase_1_1_stereo_params.html">I3DR::Phase::StereoParams</a> stereo_params, I3DR::Phase::MatrixUInt8 &amp;left_image, I3DR::Phase::MatrixUInt8 &amp;right_image,</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a> &amp;calibration, <span class="keywordtype">bool</span> rectify);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="ttc" id="acameradeviceinfo_8h_html"><div class="ttname"><a href="cameradeviceinfo_8h.html">cameradeviceinfo.h</a></div><div class="ttdoc">Abstract Stereo Camera class.</div></div>
-<div class="ttc" id="aclass_i3_d_r_1_1_phase_1_1_stereo_camera_calibration_html"><div class="ttname"><a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a></div><div class="ttdef"><b>Definition:</b> <a href="stereocalibration_8h_source.html#l00035">stereocalibration.h:35</a></div></div>
+<div class="ttc" id="aclass_i3_d_r_1_1_phase_1_1_stereo_camera_calibration_html"><div class="ttname"><a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a></div><div class="ttdef"><b>Definition:</b> <a href="stereocalibration_8h_source.html#l00037">stereocalibration.h:37</a></div></div>
 <div class="ttc" id="amat_8h_html"><div class="ttname"><a href="mat_8h.html">mat.h</a></div><div class="ttdoc">Useful functions/structures for stereo.</div></div>
 <div class="ttc" id="aphase__export_8h_html"><div class="ttname"><a href="phase__export_8h.html">phase_export.h</a></div><div class="ttdoc">Phase SDK dlls export header.</div></div>
 <div class="ttc" id="astereoi3drsgm_8h_html"><div class="ttname"><a href="stereoi3drsgm_8h.html">stereoi3drsgm.h</a></div><div class="ttdoc">I3DR's Semi-Global Matcher class.</div></div>
 <div class="ttc" id="astereomatcher_8h_html"><div class="ttname"><a href="stereomatcher_8h.html">stereomatcher.h</a></div><div class="ttdoc">Stereo Matcher class.</div></div>
-<div class="ttc" id="astereosupport_8h_html"><div class="ttname"><a href="stereosupport_8h.html">stereosupport.h</a></div><div class="ttdoc">Useful functions/structures for stereo.</div></div>
 <div class="ttc" id="astereovision_8h_html"><div class="ttname"><a href="stereovision_8h.html">stereovision.h</a></div><div class="ttdoc">Stereo Vision class.</div></div>
+<div class="ttc" id="astruct_i3_d_r_1_1_phase_1_1_stereo_params_html"><div class="ttname"><a href="struct_i3_d_r_1_1_phase_1_1_stereo_params.html">I3DR::Phase::StereoParams</a></div><div class="ttdef"><b>Definition:</b> <a href="abstractstereomatcher_8h_source.html#l00035">abstractstereomatcher.h:35</a></div></div>
+<div class="ttc" id="autils_8h_html"><div class="ttname"><a href="utils_8h.html">utils.h</a></div><div class="ttdoc">Utility functions.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <footer>

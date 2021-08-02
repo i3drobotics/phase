@@ -11,6 +11,7 @@ var dir_03b23bc7283e257a5c1bf96d216e6822 =
       [ "StereoMapper", "class_i3_d_r_1_1_phase_1_1_stereo_mapper.html", "class_i3_d_r_1_1_phase_1_1_stereo_mapper" ]
     ] ],
     [ "stereoprocess.h", "stereoprocess_8h.html", "stereoprocess_8h" ],
-    [ "stereosupport.h", "stereosupport_8h.html", "stereosupport_8h" ],
-    [ "stereovision.h", "stereovision_8h.html", "stereovision_8h" ]
+    [ "stereovision.h", "stereovision_8h.html", "stereovision_8h" ],
+    [ "tinyply.h", "tinyply_8h_source.html", null ],
+    [ "utils.h", "utils_8h.html", "utils_8h" ]
 ];

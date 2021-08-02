@@ -100,6 +100,7 @@ $(document).ready(function(){initNavTree('stereocalibration_8h.html',''); initRe
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &quot;yaml-cpp/yaml.h&quot;</code><br />
 <code>#include &lt;opencv2/core.hpp&gt;</code><br />
 <code>#include &lt;opencv2/imgproc.hpp&gt;</code><br />
 <code>#include &lt;opencv2/imgcodecs.hpp&gt;</code><br />
@@ -118,9 +119,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a17aad03279b98c3dc1ca884d8a7d119b"><td class="memItemLeft" align="right" valign="top"><a id="a17aad03279b98c3dc1ca884d8a7d119b"></a>
-<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a> PHASE_SDK_EXPORT *&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_CStereoCameraCalibration_create</b> (const char *left_calibration_filepath, const char *right_calibration_filepath)</td></tr>
-<tr class="separator:a17aad03279b98c3dc1ca884d8a7d119b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1850087b1fc34e849a2398ed13bcbad"><td class="memItemLeft" align="right" valign="top"><a id="af1850087b1fc34e849a2398ed13bcbad"></a>
+<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a> PHASE_SDK_EXPORT *&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoCameraCalibration_CalibrationFromYAML</b> (const char *left_calibration_filepath, const char *right_calibration_filepath)</td></tr>
+<tr class="separator:af1850087b1fc34e849a2398ed13bcbad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e4edc28755526f7dfb561e160c475a2"><td class="memItemLeft" align="right" valign="top"><a id="a5e4edc28755526f7dfb561e160c475a2"></a>
+<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a> PHASE_SDK_EXPORT *&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoCameraCalibration_CalibrationFromIdeal</b> (int width, int height, double pixel_pitch, double focal_length, double baseline)</td></tr>
+<tr class="separator:a5e4edc28755526f7dfb561e160c475a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c02359545798f8842212c6f052f6dc9"><td class="memItemLeft" align="right" valign="top"><a id="a7c02359545798f8842212c6f052f6dc9"></a>
 void PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoCameraCalibration_CRectify</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a> *calibration, unsigned char *left_image, unsigned char *right_image, int width, int height, unsigned char *left_rect_image, unsigned char *right_rect_image)</td></tr>
 <tr class="separator:a7c02359545798f8842212c6f052f6dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,9 +134,15 @@ bool PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR
 <tr class="memitem:a0048b2fa614fbbca3a363c102ebba0d9"><td class="memItemLeft" align="right" valign="top"><a id="a0048b2fa614fbbca3a363c102ebba0d9"></a>
 bool PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoCameraCalibration_CIsValidSize</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a> *calibration, int width, int height)</td></tr>
 <tr class="separator:a0048b2fa614fbbca3a363c102ebba0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc64b2f029cabe3ef0df84f69e50b8b"><td class="memItemLeft" align="right" valign="top"><a id="a8cc64b2f029cabe3ef0df84f69e50b8b"></a>
+void PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoCameraCalibration_CGetQ</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a> *calibration, float *out_Q)</td></tr>
+<tr class="separator:a8cc64b2f029cabe3ef0df84f69e50b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa80736a6a39a8033cc5c6d0d873758d"><td class="memItemLeft" align="right" valign="top"><a id="aaa80736a6a39a8033cc5c6d0d873758d"></a>
 float PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoCameraCalibration_CGetHFOV</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a> *calibration)</td></tr>
 <tr class="separator:aaa80736a6a39a8033cc5c6d0d873758d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70664419aad3a8e287ff399a3026f834"><td class="memItemLeft" align="right" valign="top"><a id="a70664419aad3a8e287ff399a3026f834"></a>
+double PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoCameraCalibration_CGetBaseline</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a> *calibration)</td></tr>
+<tr class="separator:a70664419aad3a8e287ff399a3026f834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83760c0467bef3fd73ebf08cfb379939"><td class="memItemLeft" align="right" valign="top"><a id="a83760c0467bef3fd73ebf08cfb379939"></a>
 float PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoCameraCalibration_CGetDownsampleFactor</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a> *calibration)</td></tr>
 <tr class="separator:a83760c0467bef3fd73ebf08cfb379939"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +152,9 @@ void PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR
 <tr class="memitem:a468a9f03a329e0bbd988d1babcb39789"><td class="memItemLeft" align="right" valign="top"><a id="a468a9f03a329e0bbd988d1babcb39789"></a>
 void PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoCameraCalibration_dispose</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a> *calibration)</td></tr>
 <tr class="separator:a468a9f03a329e0bbd988d1babcb39789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a613c0c10ea1986064c4fe66afa4ff94d"><td class="memItemLeft" align="right" valign="top"><a id="a613c0c10ea1986064c4fe66afa4ff94d"></a>
+bool PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoCameraCalibration_CSaveToYAML</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a> *calibration, const char *left_calibration_filepath, const char *right_calibration_filepath, I3DR::Phase::CalibrationFileType cal_file_type)</td></tr>
+<tr class="separator:a613c0c10ea1986064c4fe66afa4ff94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Stereo Calibration class. </p>

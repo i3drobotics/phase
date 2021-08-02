@@ -11,7 +11,7 @@ var abstractstereocamera_8h =
     [ "I3DR_AbstractStereoCamera_CIsReadThreadRunning", "abstractstereocamera_8h.html#aff69fa5a32239b5bb08455f47c84f77f", null ],
     [ "I3DR_AbstractStereoCamera_CRead", "abstractstereocamera_8h.html#a9da5a1b137bb0ced07c069c36d3292c8", null ],
     [ "I3DR_AbstractStereoCamera_CSetDownsampleFactor", "abstractstereocamera_8h.html#a68bd9c9fff79abfe92a5805545a92d26", null ],
-    [ "I3DR_AbstractStereoCamera_CSetFlipCImages", "abstractstereocamera_8h.html#a4898abd87f2c540cb65b17fc697b97c9", null ],
+    [ "I3DR_AbstractStereoCamera_CSetExposure", "abstractstereocamera_8h.html#a6d176d644389a87a21715f74cd019897", null ],
     [ "I3DR_AbstractStereoCamera_CSetTestImagePaths", "abstractstereocamera_8h.html#a41d607544bf20113f0ec095752611b97", null ],
     [ "I3DR_AbstractStereoCamera_CStartReadThread", "abstractstereocamera_8h.html#a8576c6823ed833133735ad49e5a8a695", null ],
     [ "I3DR_AbstractStereoCamera_dispose", "abstractstereocamera_8h.html#a6b6bcc57f1093c7a6eb51ad5eda327ee", null ]

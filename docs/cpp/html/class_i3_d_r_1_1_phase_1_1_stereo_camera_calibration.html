@@ -87,6 +87,8 @@ $(document).ready(function(){initNavTree('class_i3_d_r_1_1_phase_1_1_stereo_came
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration-members.html">List of all members</a>  </div>
@@ -100,12 +102,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b0bea20d61051fbc536bd1b341416fa"><td class="memItemLeft" align="right" valign="top"><a id="a6b0bea20d61051fbc536bd1b341416fa"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>StereoCameraCalibration</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a> left_calibration, <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a> right_calibration)</td></tr>
 <tr class="separator:a6b0bea20d61051fbc536bd1b341416fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfc56af02a91097af005b32439ea0f03"><td class="memItemLeft" align="right" valign="top"><a id="abfc56af02a91097af005b32439ea0f03"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StereoCameraCalibration</b> (std::string left_calibration_filepath, std::string right_calibration_filepath)</td></tr>
-<tr class="separator:abfc56af02a91097af005b32439ea0f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ece13b6d48bf6594670b65b1e8260c8"><td class="memItemLeft" align="right" valign="top"><a id="a0ece13b6d48bf6594670b65b1e8260c8"></a>
-<a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_image_pair.html">StereoImagePair</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rectifyStereoPair</b> (cv::Mat left_image, cv::Mat right_image)</td></tr>
-<tr class="separator:a0ece13b6d48bf6594670b65b1e8260c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900e84e0cf0e5b57be01e7d606835de0"><td class="memItemLeft" align="right" valign="top"><a id="a900e84e0cf0e5b57be01e7d606835de0"></a>
+<a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_image_pair.html">StereoImagePair</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rectify</b> (cv::Mat left_image, cv::Mat right_image)</td></tr>
+<tr class="separator:a900e84e0cf0e5b57be01e7d606835de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32ef6571894db4ceb4245b004ac9d95b"><td class="memItemLeft" align="right" valign="top"><a id="a32ef6571894db4ceb4245b004ac9d95b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rectify</b> (cv::Mat left_image, cv::Mat right_image, cv::Mat &amp;left_rect_image, cv::Mat &amp;right_rect_image)</td></tr>
 <tr class="separator:a32ef6571894db4ceb4245b004ac9d95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,12 +120,36 @@ cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>getQ</b> ()</td></
 <tr class="memitem:ad3d32f739c5758907464b9d912c64ecb"><td class="memItemLeft" align="right" valign="top"><a id="ad3d32f739c5758907464b9d912c64ecb"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>getHFOV</b> ()</td></tr>
 <tr class="separator:ad3d32f739c5758907464b9d912c64ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d1bd5ab0af4598b1dfb1e689537458a"><td class="memItemLeft" align="right" valign="top"><a id="a3d1bd5ab0af4598b1dfb1e689537458a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>getBaseline</b> ()</td></tr>
+<tr class="separator:a3d1bd5ab0af4598b1dfb1e689537458a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a929ae9721a320bd96e757c5f1912b2bf"><td class="memItemLeft" align="right" valign="top"><a id="a929ae9721a320bd96e757c5f1912b2bf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setDownsampleFactor</b> (float value)</td></tr>
 <tr class="separator:a929ae9721a320bd96e757c5f1912b2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf93817a5aa56ce7a6b7832bd3be95ce"><td class="memItemLeft" align="right" valign="top"><a id="adf93817a5aa56ce7a6b7832bd3be95ce"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>getDownsampleFactor</b> ()</td></tr>
 <tr class="separator:adf93817a5aa56ce7a6b7832bd3be95ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67aea519689c702b41c6f31c37818625"><td class="memItemLeft" align="right" valign="top"><a id="a67aea519689c702b41c6f31c37818625"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>saveToYAML</b> (const char *left_calibration_filepath, const char *right_calibration_filepath, CalibrationFileType cal_file_type=CalibrationFileType::ROS_YAML)</td></tr>
+<tr class="separator:a67aea519689c702b41c6f31c37818625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a59890d6dcdc152d9791e7714ca2ec2e4"><td class="memItemLeft" align="right" valign="top"><a id="a59890d6dcdc152d9791e7714ca2ec2e4"></a>
+static <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">StereoCameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>calibrationFromIdeal</b> (int width, int height, double pixel_pitch, double focal_length, double baseline)</td></tr>
+<tr class="separator:a59890d6dcdc152d9791e7714ca2ec2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c549d868a4a37f4931c509bc21fea2"><td class="memItemLeft" align="right" valign="top"><a id="ae0c549d868a4a37f4931c509bc21fea2"></a>
+static <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">StereoCameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>calibrationFromYAML</b> (const char *left_calibration_filepath, const char *right_calibration_filepath)</td></tr>
+<tr class="separator:ae0c549d868a4a37f4931c509bc21fea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad8fa9d103d0893b65c9aa5eb5d68e587"><td class="memItemLeft" align="right" valign="top"><a id="ad8fa9d103d0893b65c9aa5eb5d68e587"></a>
+<a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>left_calibration</b></td></tr>
+<tr class="separator:ad8fa9d103d0893b65c9aa5eb5d68e587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8b3b524e749bca924911bdbf5e7ce6b"><td class="memItemLeft" align="right" valign="top"><a id="ae8b3b524e749bca924911bdbf5e7ce6b"></a>
+<a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>right_calibration</b></td></tr>
+<tr class="separator:ae8b3b524e749bca924911bdbf5e7ce6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -142,12 +165,6 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a65a405cf11546d2265583023dae27a6a"><td class="memItemLeft" align="right" valign="top"><a id="a65a405cf11546d2265583023dae27a6a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>valid</b> = false</td></tr>
 <tr class="separator:a65a405cf11546d2265583023dae27a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8fa9d103d0893b65c9aa5eb5d68e587"><td class="memItemLeft" align="right" valign="top"><a id="ad8fa9d103d0893b65c9aa5eb5d68e587"></a>
-<a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>left_calibration</b></td></tr>
-<tr class="separator:ad8fa9d103d0893b65c9aa5eb5d68e587"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8b3b524e749bca924911bdbf5e7ce6b"><td class="memItemLeft" align="right" valign="top"><a id="ae8b3b524e749bca924911bdbf5e7ce6b"></a>
-<a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>right_calibration</b></td></tr>
-<tr class="separator:ae8b3b524e749bca924911bdbf5e7ce6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a834dc7073c5601886ec832e703009667"><td class="memItemLeft" align="right" valign="top"><a id="a834dc7073c5601886ec832e703009667"></a>
 cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>Q</b></td></tr>
 <tr class="separator:a834dc7073c5601886ec832e703009667"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,7 +180,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>downsample_rate</b> 
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="stereocalibration_8h_source.html#l00035">35</a> of file <a class="el" href="stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereocalibration_8h_source.html#l00037">37</a> of file <a class="el" href="stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>modules/core/include/phase/core/calib/<a class="el" href="stereocalibration_8h_source.html">stereocalibration.h</a></li>
 </ul>

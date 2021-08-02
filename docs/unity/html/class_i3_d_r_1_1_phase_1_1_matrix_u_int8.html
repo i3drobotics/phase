@@ -103,6 +103,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abb5982da7317d0b16309437d00199d92"><td class="memItemLeft" align="right" valign="top"><a id="abb5982da7317d0b16309437d00199d92"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MatrixUInt8</b> (int rows, int cols, int channels)</td></tr>
 <tr class="separator:abb5982da7317d0b16309437d00199d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa460e6c2df763b324853934c9ee1b9b2"><td class="memItemLeft" align="right" valign="top"><a id="aa460e6c2df763b324853934c9ee1b9b2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixUInt8</b> (int rows, int cols, int channels, byte[] data, bool copy)</td></tr>
+<tr class="separator:aa460e6c2df763b324853934c9ee1b9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f0d1658ea5dfb7c66fcbede94b3ab3a"><td class="memItemLeft" align="right" valign="top"><a id="a9f0d1658ea5dfb7c66fcbede94b3ab3a"></a>
 IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>getInstancePtr</b> ()</td></tr>
 <tr class="separator:a9f0d1658ea5dfb7c66fcbede94b3ab3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,12 +118,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>getColumns</b> ()</td>
 <tr class="memitem:ae3e05f26d2ce9329f087500ea1e45fed"><td class="memItemLeft" align="right" valign="top"><a id="ae3e05f26d2ce9329f087500ea1e45fed"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getLayers</b> ()</td></tr>
 <tr class="separator:ae3e05f26d2ce9329f087500ea1e45fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12859c82bcfba061a09220293a621d5f"><td class="memItemLeft" align="right" valign="top"><a id="a12859c82bcfba061a09220293a621d5f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAt</b> (int row, int column, int layer, float value)</td></tr>
-<tr class="separator:a12859c82bcfba061a09220293a621d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42a4741605e3ba906978167e34f92e23"><td class="memItemLeft" align="right" valign="top"><a id="a42a4741605e3ba906978167e34f92e23"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>getAt</b> (int row, int column, int layer)</td></tr>
-<tr class="separator:a42a4741605e3ba906978167e34f92e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac81b3aa8140c6ea3355d6ae5ef7c0f56"><td class="memItemLeft" align="right" valign="top"><a id="ac81b3aa8140c6ea3355d6ae5ef7c0f56"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isEmpty</b> ()</td></tr>
+<tr class="separator:ac81b3aa8140c6ea3355d6ae5ef7c0f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846bdc6830a791c90a60738254efbeb9"><td class="memItemLeft" align="right" valign="top"><a id="a846bdc6830a791c90a60738254efbeb9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getLength</b> ()</td></tr>
+<tr class="separator:a846bdc6830a791c90a60738254efbeb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dbc3dd4c7bb8270b15f0379dd637a70"><td class="memItemLeft" align="right" valign="top"><a id="a6dbc3dd4c7bb8270b15f0379dd637a70"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getSize</b> ()</td></tr>
+<tr class="separator:a6dbc3dd4c7bb8270b15f0379dd637a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36dabb09734063bd5c618667080f2fd7"><td class="memItemLeft" align="right" valign="top"><a id="a36dabb09734063bd5c618667080f2fd7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAt</b> (int row, int column, int layer, byte value)</td></tr>
+<tr class="separator:a36dabb09734063bd5c618667080f2fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a616feda39b30ca281d6111cc946bb3fe"><td class="memItemLeft" align="right" valign="top"><a id="a616feda39b30ca281d6111cc946bb3fe"></a>
+byte&#160;</td><td class="memItemRight" valign="bottom"><b>getAt</b> (int row, int column, int layer)</td></tr>
+<tr class="separator:a616feda39b30ca281d6111cc946bb3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070fcf71ffe3d35d934c0c4d4f819dd8"><td class="memItemLeft" align="right" valign="top"><a id="a070fcf71ffe3d35d934c0c4d4f819dd8"></a>
+byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>getData</b> ()</td></tr>
+<tr class="separator:a070fcf71ffe3d35d934c0c4d4f819dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b2a78979da7bc813de921493f7494e2"><td class="memItemLeft" align="right" valign="top"><a id="a8b2a78979da7bc813de921493f7494e2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dispose</b> ()</td></tr>
 <tr class="separator:a8b2a78979da7bc813de921493f7494e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +145,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a3e53bf7ee2038ad99de7bdd8076e29a6"><td class="memItemLeft" align="right" valign="top"><a id="a3e53bf7ee2038ad99de7bdd8076e29a6"></a>
 static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixUInt8_create</b> (int rows, int columns, int layers)</td></tr>
 <tr class="separator:a3e53bf7ee2038ad99de7bdd8076e29a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b67a396e44e471a02cf6be6cc9e628b"><td class="memItemLeft" align="right" valign="top"><a id="a1b67a396e44e471a02cf6be6cc9e628b"></a>
+static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixUInt8_createData</b> (int rows, int columns, int layers, [In] byte[] data, bool copy)</td></tr>
+<tr class="separator:a1b67a396e44e471a02cf6be6cc9e628b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7505efa3db32616818e7b4a0bf46982e"><td class="memItemLeft" align="right" valign="top"><a id="a7505efa3db32616818e7b4a0bf46982e"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixUInt8_dispose</b> (IntPtr MatrixUInt8_ptr)</td></tr>
 <tr class="separator:a7505efa3db32616818e7b4a0bf46982e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,22 +160,37 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixUInt8_get
 <tr class="memitem:acec31a9c0a1116b5ea140766e5612162"><td class="memItemLeft" align="right" valign="top"><a id="acec31a9c0a1116b5ea140766e5612162"></a>
 static int&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixUInt8_getLayers</b> (IntPtr mat)</td></tr>
 <tr class="separator:acec31a9c0a1116b5ea140766e5612162"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5af2ec745983e64defc3099f00713d23"><td class="memItemLeft" align="right" valign="top"><a id="a5af2ec745983e64defc3099f00713d23"></a>
-static float&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixUInt8_getAt</b> (IntPtr mat, int row, int column, int layer)</td></tr>
-<tr class="separator:a5af2ec745983e64defc3099f00713d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb0e14c6c35f44cb3143efbd98a4fa25"><td class="memItemLeft" align="right" valign="top"><a id="adb0e14c6c35f44cb3143efbd98a4fa25"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixUInt8_setAt</b> (IntPtr mat, int row, int column, int layer, float value)</td></tr>
-<tr class="separator:adb0e14c6c35f44cb3143efbd98a4fa25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7fd094ac23b5f8eb62e5ffe9764418"><td class="memItemLeft" align="right" valign="top"><a id="afc7fd094ac23b5f8eb62e5ffe9764418"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixUInt8_isEmpty</b> (IntPtr mat)</td></tr>
+<tr class="separator:afc7fd094ac23b5f8eb62e5ffe9764418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390c1ade0fca230994e8b1abacbff167"><td class="memItemLeft" align="right" valign="top"><a id="a390c1ade0fca230994e8b1abacbff167"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixUInt8_getLength</b> (IntPtr mat)</td></tr>
+<tr class="separator:a390c1ade0fca230994e8b1abacbff167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb50e1da48a97fd24065ab5d047ec81"><td class="memItemLeft" align="right" valign="top"><a id="a1eb50e1da48a97fd24065ab5d047ec81"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixUInt8_getSize</b> (IntPtr mat)</td></tr>
+<tr class="separator:a1eb50e1da48a97fd24065ab5d047ec81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35a458f4da73a7084ddb6f0407eb84ef"><td class="memItemLeft" align="right" valign="top"><a id="a35a458f4da73a7084ddb6f0407eb84ef"></a>
+static byte&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixUInt8_getAt</b> (IntPtr mat, int row, int column, int layer)</td></tr>
+<tr class="separator:a35a458f4da73a7084ddb6f0407eb84ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63009676417e9f4de965f09e1b605056"><td class="memItemLeft" align="right" valign="top"><a id="a63009676417e9f4de965f09e1b605056"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixUInt8_setAt</b> (IntPtr mat, int row, int column, int layer, byte value)</td></tr>
+<tr class="separator:a63009676417e9f4de965f09e1b605056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad646ee65a67a43d5f75bb8a63c4f4383"><td class="memItemLeft" align="right" valign="top"><a id="ad646ee65a67a43d5f75bb8a63c4f4383"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixUInt8_getData</b> (IntPtr mat, [Out] byte[] data)</td></tr>
+<tr class="separator:ad646ee65a67a43d5f75bb8a63c4f4383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a4f2f32915b58f77edbc77d0b670bda38"><td class="memItemLeft" align="right" valign="top"><a id="a4f2f32915b58f77edbc77d0b670bda38"></a>
+byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b></td></tr>
+<tr class="separator:a4f2f32915b58f77edbc77d0b670bda38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9597ad34ed519449b1173dd5f1c0b95b"><td class="memItemLeft" align="right" valign="top"><a id="a9597ad34ed519449b1173dd5f1c0b95b"></a>
 IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>m_MatrixUInt8_ptr</b></td></tr>
 <tr class="separator:a9597ad34ed519449b1173dd5f1c0b95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="mat_8cs_source.html#l00104">104</a> of file <a class="el" href="mat_8cs_source.html">mat.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mat_8cs_source.html#l00143">143</a> of file <a class="el" href="mat_8cs_source.html">mat.cs</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>wrappers/csharp/modules/core/src/types/<a class="el" href="mat_8cs_source.html">mat.cs</a></li>
 </ul>

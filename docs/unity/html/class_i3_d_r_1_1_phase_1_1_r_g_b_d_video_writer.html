@@ -100,6 +100,33 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6ecee36e2f6884fec30d5b3130b34d51"><td class="memItemLeft" align="right" valign="top"><a id="a6ecee36e2f6884fec30d5b3130b34d51"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>RGBDVideoWriter</b> (string rgb_video_filepath, string depth_video_filepath, int width, int height)</td></tr>
 <tr class="separator:a6ecee36e2f6884fec30d5b3130b34d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af361a53f91e69fac616ccb16fe9ee700"><td class="memItemLeft" align="right" valign="top"><a id="af361a53f91e69fac616ccb16fe9ee700"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getWidth</b> ()</td></tr>
+<tr class="separator:af361a53f91e69fac616ccb16fe9ee700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362c177c89d5be90e8506f621f84a11e"><td class="memItemLeft" align="right" valign="top"><a id="a362c177c89d5be90e8506f621f84a11e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getHeight</b> ()</td></tr>
+<tr class="separator:a362c177c89d5be90e8506f621f84a11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5d22c4276b91f155362c1ee84f853b"><td class="memItemLeft" align="right" valign="top"><a id="a2e5d22c4276b91f155362c1ee84f853b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (byte[] rgb, float[] depth)</td></tr>
+<tr class="separator:a2e5d22c4276b91f155362c1ee84f853b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2480ff7f5c0522aa403cc84181eef607"><td class="memItemLeft" align="right" valign="top"><a id="a2480ff7f5c0522aa403cc84181eef607"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isOpened</b> ()</td></tr>
+<tr class="separator:a2480ff7f5c0522aa403cc84181eef607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54290c4949ee55c7c5ac11402a06a2fa"><td class="memItemLeft" align="right" valign="top"><a id="a54290c4949ee55c7c5ac11402a06a2fa"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>save</b> ()</td></tr>
+<tr class="separator:a54290c4949ee55c7c5ac11402a06a2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5fc18708864f0de80601b8824987bf"><td class="memItemLeft" align="right" valign="top"><a id="adf5fc18708864f0de80601b8824987bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>saveThreaded</b> ()</td></tr>
+<tr class="separator:adf5fc18708864f0de80601b8824987bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab465428b6a6d7600f6a5dd2e7e8157d6"><td class="memItemLeft" align="right" valign="top"><a id="ab465428b6a6d7600f6a5dd2e7e8157d6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isSaveThreadRunning</b> ()</td></tr>
+<tr class="separator:ab465428b6a6d7600f6a5dd2e7e8157d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeaa0c86cc5bef37d0ce352e0873fba8"><td class="memItemLeft" align="right" valign="top"><a id="afeaa0c86cc5bef37d0ce352e0873fba8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>getSaveThreadResult</b> ()</td></tr>
+<tr class="separator:afeaa0c86cc5bef37d0ce352e0873fba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47a211dc3f002314605e69b6886c19b"><td class="memItemLeft" align="right" valign="top"><a id="ab47a211dc3f002314605e69b6886c19b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()</td></tr>
+<tr class="separator:ab47a211dc3f002314605e69b6886c19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa29f47cfb997a8d9338fabaf346f55ee"><td class="memItemLeft" align="right" valign="top"><a id="aa29f47cfb997a8d9338fabaf346f55ee"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dispose</b> ()</td></tr>
 <tr class="separator:aa29f47cfb997a8d9338fabaf346f55ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,25 +136,46 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a8b3d2ca2b54e235a0dca9e5daeb3052d"><td class="memItemLeft" align="right" valign="top"><a id="a8b3d2ca2b54e235a0dca9e5daeb3052d"></a>
 static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>RGBDVideoWriter_create</b> (string rgb_video_filepath, string depth_video_filepath, int width, int height)</td></tr>
 <tr class="separator:a8b3d2ca2b54e235a0dca9e5daeb3052d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa257888dc96beae5f927e7445dd39e7e"><td class="memItemLeft" align="right" valign="top"><a id="aa257888dc96beae5f927e7445dd39e7e"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>RGBDVideoWriter_dispose</b> (IntPtr sv)</td></tr>
-<tr class="separator:aa257888dc96beae5f927e7445dd39e7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9e61ee20930418a18831059b2109ac4"><td class="memItemLeft" align="right" valign="top"><a id="aa9e61ee20930418a18831059b2109ac4"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>RGBDVideoWriter_getWidth</b> (IntPtr writer)</td></tr>
+<tr class="separator:aa9e61ee20930418a18831059b2109ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a273b49f84d3e945fb9da56c1079fc7db"><td class="memItemLeft" align="right" valign="top"><a id="a273b49f84d3e945fb9da56c1079fc7db"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>RGBDVideoWriter_getHeight</b> (IntPtr writer)</td></tr>
+<tr class="separator:a273b49f84d3e945fb9da56c1079fc7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a176a521aeca76341ead005407fe4e6dc"><td class="memItemLeft" align="right" valign="top"><a id="a176a521aeca76341ead005407fe4e6dc"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RGBDVideoWriter_add</b> (IntPtr writer, [In] byte[] rgb, [In] float[] depth)</td></tr>
+<tr class="separator:a176a521aeca76341ead005407fe4e6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a8e615cbf905f35e7a7f70ec7cdda3"><td class="memItemLeft" align="right" valign="top"><a id="a20a8e615cbf905f35e7a7f70ec7cdda3"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>RGBDVideoWriter_isOpened</b> (IntPtr writer)</td></tr>
+<tr class="separator:a20a8e615cbf905f35e7a7f70ec7cdda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c566208ff88ef748e1e238d4e62c2eb"><td class="memItemLeft" align="right" valign="top"><a id="a6c566208ff88ef748e1e238d4e62c2eb"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>RGBDVideoWriter_save</b> (IntPtr writer)</td></tr>
+<tr class="separator:a6c566208ff88ef748e1e238d4e62c2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade92bf8b085d40e9a8381efb2dda31ef"><td class="memItemLeft" align="right" valign="top"><a id="ade92bf8b085d40e9a8381efb2dda31ef"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RGBDVideoWriter_saveThreaded</b> (IntPtr writer)</td></tr>
+<tr class="separator:ade92bf8b085d40e9a8381efb2dda31ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a6a1aac39b0a453f315d393bde40bf"><td class="memItemLeft" align="right" valign="top"><a id="ae7a6a1aac39b0a453f315d393bde40bf"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>RGBDVideoWriter_isSaveThreadRunning</b> (IntPtr writer)</td></tr>
+<tr class="separator:ae7a6a1aac39b0a453f315d393bde40bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bdfd4a3371ec2f968ca65097f66d294"><td class="memItemLeft" align="right" valign="top"><a id="a8bdfd4a3371ec2f968ca65097f66d294"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>RGBDVideoWriter_getSaveThreadResult</b> (IntPtr writer)</td></tr>
+<tr class="separator:a8bdfd4a3371ec2f968ca65097f66d294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49e602899e3ef27f89a39dae72a700ba"><td class="memItemLeft" align="right" valign="top"><a id="a49e602899e3ef27f89a39dae72a700ba"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RGBDVideoWriter_close</b> (IntPtr writer)</td></tr>
+<tr class="separator:a49e602899e3ef27f89a39dae72a700ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70563cce44bd3108487099e5dc9d728b"><td class="memItemLeft" align="right" valign="top"><a id="a70563cce44bd3108487099e5dc9d728b"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>RGBDVideoWriter_dispose</b> (IntPtr writer)</td></tr>
+<tr class="separator:a70563cce44bd3108487099e5dc9d728b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ac85ce9630564756625046ad1d4553888"><td class="memItemLeft" align="right" valign="top"><a id="ac85ce9630564756625046ad1d4553888"></a>
 IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>m_RGBDVideoWriter_instance</b></td></tr>
 <tr class="separator:ac85ce9630564756625046ad1d4553888"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82c8f9c9532f087d17f6a524aadf53cd"><td class="memItemLeft" align="right" valign="top"><a id="a82c8f9c9532f087d17f6a524aadf53cd"></a>
-byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>rgb</b></td></tr>
-<tr class="separator:a82c8f9c9532f087d17f6a524aadf53cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8b14cb274e778b2e09479b6fe6cebd3"><td class="memItemLeft" align="right" valign="top"><a id="af8b14cb274e778b2e09479b6fe6cebd3"></a>
-float[]&#160;</td><td class="memItemRight" valign="bottom"><b>depth</b></td></tr>
-<tr class="separator:af8b14cb274e778b2e09479b6fe6cebd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="rgbdvideowriter_8cs_source.html#l00023">23</a> of file <a class="el" href="rgbdvideowriter_8cs_source.html">rgbdvideowriter.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="rgbdvideowriter_8cs_source.html#l00020">20</a> of file <a class="el" href="rgbdvideowriter_8cs_source.html">rgbdvideowriter.cs</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>wrappers/csharp/modules/core/src/<a class="el" href="rgbdvideowriter_8cs_source.html">rgbdvideowriter.cs</a></li>
 </ul>

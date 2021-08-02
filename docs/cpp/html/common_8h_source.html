@@ -124,38 +124,37 @@ $(document).ready(function(){initNavTree('common_8h_source.html',''); initResiza
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            cv::Mat left_image;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            cv::Mat right_image;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            cv::Mat disparity;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            cv::Mat depth;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        };</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_i3_d_r_1_1_phase_1_1_r_g_b_d_video_frame.html">   48</a></span>&#160;        <span class="keyword">struct </span>PHASE_SDK_EXPORT <a class="code" href="struct_i3_d_r_1_1_phase_1_1_r_g_b_d_video_frame.html">RGBDVideoFrame</a> {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordtype">bool</span> valid;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            cv::Mat image;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            cv::Mat depth;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        };</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">enum</span> PHASE_SDK_EXPORT  StereoMatcherType { </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            STEREO_MATCHER_BM,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            STEREO_MATCHER_SGBM,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            STEREO_MATCHER_I3DRSGM,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            STEREO_MATCHER_HOBM,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        };</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">enum</span> PHASE_SDK_EXPORT CameraDeviceType {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            DEVICE_TYPE_GENERIC_PYLON, </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            DEVICE_TYPE_PHOBOS,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            DEVICE_TYPE_TITANIA,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            DEVICE_TYPE_INVALID </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        };</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">enum</span> PHASE_SDK_EXPORT CameraInterfaceType { </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            INTERFACE_TYPE_USB, INTERFACE_TYPE_GIGE, INTERFACE_TYPE_VIRTUAL, INTERFACE_TYPE_INVALID</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        };</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        };</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="struct_i3_d_r_1_1_phase_1_1_r_g_b_d_video_frame.html">   47</a></span>&#160;        <span class="keyword">struct </span>PHASE_SDK_EXPORT <a class="code" href="struct_i3_d_r_1_1_phase_1_1_r_g_b_d_video_frame.html">RGBDVideoFrame</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">bool</span> valid;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            cv::Mat image;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            cv::Mat depth;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        };</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">enum</span> PHASE_SDK_EXPORT  StereoMatcherType { </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            STEREO_MATCHER_BM,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            STEREO_MATCHER_SGBM,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            STEREO_MATCHER_I3DRSGM,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            STEREO_MATCHER_HOBM,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        };</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">enum</span> PHASE_SDK_EXPORT CameraDeviceType {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            DEVICE_TYPE_GENERIC_PYLON, </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            DEVICE_TYPE_PHOBOS,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            DEVICE_TYPE_TITANIA,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            DEVICE_TYPE_INVALID </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        };</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">enum</span> PHASE_SDK_EXPORT CameraInterfaceType { </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            INTERFACE_TYPE_USB, INTERFACE_TYPE_GIGE, INTERFACE_TYPE_VIRTUAL, INTERFACE_TYPE_INVALID</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        };</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 <div class="ttc" id="aphase__export_8h_html"><div class="ttname"><a href="phase__export_8h.html">phase_export.h</a></div><div class="ttdoc">Phase SDK dlls export header.</div></div>
 <div class="ttc" id="astruct_i3_d_r_1_1_phase_1_1_camera_read_result_html"><div class="ttname"><a href="struct_i3_d_r_1_1_phase_1_1_camera_read_result.html">I3DR::Phase::CameraReadResult</a></div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00029">common.h:29</a></div></div>
-<div class="ttc" id="astruct_i3_d_r_1_1_phase_1_1_r_g_b_d_video_frame_html"><div class="ttname"><a href="struct_i3_d_r_1_1_phase_1_1_r_g_b_d_video_frame.html">I3DR::Phase::RGBDVideoFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00048">common.h:48</a></div></div>
+<div class="ttc" id="astruct_i3_d_r_1_1_phase_1_1_r_g_b_d_video_frame_html"><div class="ttname"><a href="struct_i3_d_r_1_1_phase_1_1_r_g_b_d_video_frame.html">I3DR::Phase::RGBDVideoFrame</a></div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00047">common.h:47</a></div></div>
 <div class="ttc" id="astruct_i3_d_r_1_1_phase_1_1_stereo_image_pair_html"><div class="ttname"><a href="struct_i3_d_r_1_1_phase_1_1_stereo_image_pair.html">I3DR::Phase::StereoImagePair</a></div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00024">common.h:24</a></div></div>
 <div class="ttc" id="astruct_i3_d_r_1_1_phase_1_1_stereo_matcher_compute_result_html"><div class="ttname"><a href="struct_i3_d_r_1_1_phase_1_1_stereo_matcher_compute_result.html">I3DR::Phase::StereoMatcherComputeResult</a></div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00035">common.h:35</a></div></div>
 <div class="ttc" id="astruct_i3_d_r_1_1_phase_1_1_stereo_vision_read_result_html"><div class="ttname"><a href="struct_i3_d_r_1_1_phase_1_1_stereo_vision_read_result.html">I3DR::Phase::StereoVisionReadResult</a></div><div class="ttdef"><b>Definition:</b> <a href="common_8h_source.html#l00040">common.h:40</a></div></div>

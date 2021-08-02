@@ -1,6 +1,7 @@
 var class_i3_d_r_1_1_phase_1_1_stereo_b_m =
 [
     [ "StereoBM", "class_i3_d_r_1_1_phase_1_1_stereo_b_m.html#a8be551f10f40aad7034c6302d818502b", null ],
+    [ "StereoBM", "class_i3_d_r_1_1_phase_1_1_stereo_b_m.html#ac7a87bcf6299de2efeaddba801f30381", null ],
     [ "~StereoBM", "class_i3_d_r_1_1_phase_1_1_stereo_b_m.html#ae5fc187a0031b095850dfce5dd2bf4c0", null ],
     [ "compute", "class_i3_d_r_1_1_phase_1_1_stereo_b_m.html#a706023a5ae948240e452cdc95d2c7519", null ],
     [ "setMinDisparity", "class_i3_d_r_1_1_phase_1_1_stereo_b_m.html#a779148bf2a2ef78f34f3e99958130423", null ],

@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('class_i3_d_r_1_1_phase_1_1_stereo_came
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -98,9 +99,6 @@ $(document).ready(function(){initNavTree('class_i3_d_r_1_1_phase_1_1_stereo_came
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3a930a125a17d586076196acdcd3d89c"><td class="memItemLeft" align="right" valign="top"><a id="a3a930a125a17d586076196acdcd3d89c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StereoCameraCalibration</b> (string left_yaml_filepath, string right_yaml_filepath)</td></tr>
-<tr class="separator:a3a930a125a17d586076196acdcd3d89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6837f799d335403c54ecc60ea2bac514"><td class="memItemLeft" align="right" valign="top"><a id="a6837f799d335403c54ecc60ea2bac514"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>StereoCameraCalibration</b> (IntPtr stereoCameraCalibration_instance)</td></tr>
 <tr class="separator:a6837f799d335403c54ecc60ea2bac514"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,15 +114,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isValidSize</b> (int 
 <tr class="memitem:a76cc9f8ebf31ac524045418d98d8877d"><td class="memItemLeft" align="right" valign="top"><a id="a76cc9f8ebf31ac524045418d98d8877d"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>getHFOV</b> ()</td></tr>
 <tr class="separator:a76cc9f8ebf31ac524045418d98d8877d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0206a0036af7807a4f210031950152ce"><td class="memItemLeft" align="right" valign="top"><a id="a0206a0036af7807a4f210031950152ce"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>getBaseline</b> ()</td></tr>
+<tr class="separator:a0206a0036af7807a4f210031950152ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2392e6d3e1a51c1fef1c6e4710a1a759"><td class="memItemLeft" align="right" valign="top"><a id="a2392e6d3e1a51c1fef1c6e4710a1a759"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>getDownsampleFactor</b> ()</td></tr>
 <tr class="separator:a2392e6d3e1a51c1fef1c6e4710a1a759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a62e6afea9ce40c4f4fa112fda3bb21"><td class="memItemLeft" align="right" valign="top"><a id="a5a62e6afea9ce40c4f4fa112fda3bb21"></a>
+float[]&#160;</td><td class="memItemRight" valign="bottom"><b>getQ</b> ()</td></tr>
+<tr class="separator:a5a62e6afea9ce40c4f4fa112fda3bb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af74458345c4f0c4ded1208ca9e247bd6"><td class="memItemLeft" align="right" valign="top"><a id="af74458345c4f0c4ded1208ca9e247bd6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setDownsampleFactor</b> (float value)</td></tr>
 <tr class="separator:af74458345c4f0c4ded1208ca9e247bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2ad1dfed9473e72d23fe021d35b8557"><td class="memItemLeft" align="right" valign="top"><a id="aa2ad1dfed9473e72d23fe021d35b8557"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rectify</b> (byte[] left_image, byte[] right_image, int width, int height, byte[] left_rect_image, byte[] right_rect_image)</td></tr>
-<tr class="separator:aa2ad1dfed9473e72d23fe021d35b8557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab4b9344f0f02d660d4b098afcebb5dc"><td class="memItemLeft" align="right" valign="top"><a id="aab4b9344f0f02d660d4b098afcebb5dc"></a>
+<a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_image_pair.html">StereoImagePair</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rectify</b> (byte[] left_image, byte[] right_image, int width, int height)</td></tr>
+<tr class="separator:aab4b9344f0f02d660d4b098afcebb5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b23b4502545a5fde2526f4951fda1da"><td class="memItemLeft" align="right" valign="top"><a id="a3b23b4502545a5fde2526f4951fda1da"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>saveToYAML</b> (string left_calibration_filepath, string right_calibration_filepath, CalibrationFileType cal_file_type=CalibrationFileType.ROS_YAML)</td></tr>
+<tr class="separator:a3b23b4502545a5fde2526f4951fda1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b038ab2caa815b0329507c650ab094b"><td class="memItemLeft" align="right" valign="top"><a id="a6b038ab2caa815b0329507c650ab094b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>markDisposed</b> ()</td></tr>
 <tr class="separator:a6b038ab2caa815b0329507c650ab094b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,17 +139,29 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>markDisposed</b> ()</
 void&#160;</td><td class="memItemRight" valign="bottom"><b>dispose</b> ()</td></tr>
 <tr class="separator:affcec5852086050ff57290cbeb2bbbb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a33170b7d4c2b82a84890af3712c1e0f5"><td class="memItemLeft" align="right" valign="top"><a id="a33170b7d4c2b82a84890af3712c1e0f5"></a>
+static <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">StereoCameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>calibrationFromYAML</b> (string left_yaml_filepath, string right_yaml_filepath)</td></tr>
+<tr class="separator:a33170b7d4c2b82a84890af3712c1e0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7df77ebef20e521748c52f7a55307981"><td class="memItemLeft" align="right" valign="top"><a id="a7df77ebef20e521748c52f7a55307981"></a>
+static <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">StereoCameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>calibrationFromIdeal</b> (int width, int height, double pixel_pitch, double focal_length, double baseline)</td></tr>
+<tr class="separator:a7df77ebef20e521748c52f7a55307981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a0f15f6dda94c6b49a8542b020abcc441"><td class="memItemLeft" align="right" valign="top"><a id="a0f15f6dda94c6b49a8542b020abcc441"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>CRectify</b> (IntPtr matcher, [In] byte[] left_image, [In] byte[] right_image, int width, int height, [Out] byte[] left_rect_image, [Out] byte[] right_rect_image)</td></tr>
-<tr class="separator:a0f15f6dda94c6b49a8542b020abcc441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e7fea2131d3ac82c1ddb385785b062a"><td class="memItemLeft" align="right" valign="top"><a id="a1e7fea2131d3ac82c1ddb385785b062a"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>CRectify</b> (IntPtr c, [In] byte[] left_image, [In] byte[] right_image, int width, int height, [Out] byte[] left_rect_image, [Out] byte[] right_rect_image)</td></tr>
+<tr class="separator:a1e7fea2131d3ac82c1ddb385785b062a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:add650ed6c11206018c4511cab64b77ee"><td class="memItemLeft" align="right" valign="top"><a id="add650ed6c11206018c4511cab64b77ee"></a>
-static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CStereoCameraCalibration_create</b> (string left_yaml_filepath, string right_yaml_filepath)</td></tr>
-<tr class="separator:add650ed6c11206018c4511cab64b77ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f842edc228856dd0abaab56f8f39cfc"><td class="memItemLeft" align="right" valign="top"><a id="a7f842edc228856dd0abaab56f8f39cfc"></a>
+static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CCalibrationFromYAML</b> (string left_yaml_filepath, string right_yaml_filepath)</td></tr>
+<tr class="separator:a7f842edc228856dd0abaab56f8f39cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac381e1b029f5a4f858f097024e8f9bf6"><td class="memItemLeft" align="right" valign="top"><a id="ac381e1b029f5a4f858f097024e8f9bf6"></a>
+static IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CCalibrationFromIdeal</b> (int width, int height, double pixel_pitch, double focal_length, double baseline)</td></tr>
+<tr class="separator:ac381e1b029f5a4f858f097024e8f9bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1207766f4bad3b3f488855c102eeb360"><td class="memItemLeft" align="right" valign="top"><a id="a1207766f4bad3b3f488855c102eeb360"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>CIsValid</b> (IntPtr c)</td></tr>
 <tr class="separator:a1207766f4bad3b3f488855c102eeb360"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,12 +171,21 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>CIsValidSize</
 <tr class="memitem:ac6f5cc6abf72fa866b41ba4349a63c9b"><td class="memItemLeft" align="right" valign="top"><a id="ac6f5cc6abf72fa866b41ba4349a63c9b"></a>
 static float&#160;</td><td class="memItemRight" valign="bottom"><b>CGetHFOV</b> (IntPtr c)</td></tr>
 <tr class="separator:ac6f5cc6abf72fa866b41ba4349a63c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50cffff161a518122484a7d9cca2b0b0"><td class="memItemLeft" align="right" valign="top"><a id="a50cffff161a518122484a7d9cca2b0b0"></a>
+static double&#160;</td><td class="memItemRight" valign="bottom"><b>CGetBaseline</b> (IntPtr c)</td></tr>
+<tr class="separator:a50cffff161a518122484a7d9cca2b0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a708fbfcd351600878f3514d298b448dc"><td class="memItemLeft" align="right" valign="top"><a id="a708fbfcd351600878f3514d298b448dc"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>CGetQ</b> (IntPtr c, [Out] float[] out_Q)</td></tr>
+<tr class="separator:a708fbfcd351600878f3514d298b448dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbea6f5e7b352ea67583068daef8c86c"><td class="memItemLeft" align="right" valign="top"><a id="adbea6f5e7b352ea67583068daef8c86c"></a>
 static float&#160;</td><td class="memItemRight" valign="bottom"><b>CGetDownsampleFactor</b> (IntPtr c)</td></tr>
 <tr class="separator:adbea6f5e7b352ea67583068daef8c86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe8e90059bb267f1340dbd1d7401b990"><td class="memItemLeft" align="right" valign="top"><a id="abe8e90059bb267f1340dbd1d7401b990"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>CSetDownsampleFactor</b> (IntPtr c, float value)</td></tr>
 <tr class="separator:abe8e90059bb267f1340dbd1d7401b990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27b6b7c1cdebc28599d0ba7ccdb888e6"><td class="memItemLeft" align="right" valign="top"><a id="a27b6b7c1cdebc28599d0ba7ccdb888e6"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>CSaveToYAML</b> (IntPtr c, string left_calibration_filepath, string right_calibration_filepath, CalibrationFileType cal_file_type)</td></tr>
+<tr class="separator:a27b6b7c1cdebc28599d0ba7ccdb888e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff529fa9cf923e0e71286d6ef482638"><td class="memItemLeft" align="right" valign="top"><a id="acff529fa9cf923e0e71286d6ef482638"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>StereoCameraCalibration_dispose</b> (IntPtr c)</td></tr>
 <tr class="separator:acff529fa9cf923e0e71286d6ef482638"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,10 +195,19 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a19517dc405ab6ae79a9b0d19447ee4ae"><td class="memItemLeft" align="right" valign="top"><a id="a19517dc405ab6ae79a9b0d19447ee4ae"></a>
 IntPtr&#160;</td><td class="memItemRight" valign="bottom"><b>m_StereoCameraCalibration_instance</b></td></tr>
 <tr class="separator:a19517dc405ab6ae79a9b0d19447ee4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81cda4227cf83db9b637ba8a0987ca65"><td class="memItemLeft" align="right" valign="top"><a id="a81cda4227cf83db9b637ba8a0987ca65"></a>
+byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>left_rect_image</b></td></tr>
+<tr class="separator:a81cda4227cf83db9b637ba8a0987ca65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cdea0a51240d6b4cb22cde52c54c0db"><td class="memItemLeft" align="right" valign="top"><a id="a0cdea0a51240d6b4cb22cde52c54c0db"></a>
+byte[]&#160;</td><td class="memItemRight" valign="bottom"><b>right_rect_image</b></td></tr>
+<tr class="separator:a0cdea0a51240d6b4cb22cde52c54c0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2482c8ab969fe548263aabe42a4ec7ec"><td class="memItemLeft" align="right" valign="top"><a id="a2482c8ab969fe548263aabe42a4ec7ec"></a>
+float[]&#160;</td><td class="memItemRight" valign="bottom"><b>Q</b></td></tr>
+<tr class="separator:a2482c8ab969fe548263aabe42a4ec7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="stereocalibration_8cs_source.html#l00023">23</a> of file <a class="el" href="stereocalibration_8cs_source.html">stereocalibration.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereocalibration_8cs_source.html#l00020">20</a> of file <a class="el" href="stereocalibration_8cs_source.html">stereocalibration.cs</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>wrappers/csharp/modules/core/src/calib/<a class="el" href="stereocalibration_8cs_source.html">stereocalibration.cs</a></li>
 </ul>

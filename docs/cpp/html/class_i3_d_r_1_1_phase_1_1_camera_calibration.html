@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('class_i3_d_r_1_1_phase_1_1_camera_cali
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -106,9 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa11f8b0611dec4b7e3e5cf489762eb12"><td class="memItemLeft" align="right" valign="top"><a id="aa11f8b0611dec4b7e3e5cf489762eb12"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>CameraCalibration</b> (int width, int height, cv::Mat camera_matrix, cv::Mat distortion_coefficients, cv::Mat rectification_matrix, cv::Mat projection_matrix)</td></tr>
 <tr class="separator:aa11f8b0611dec4b7e3e5cf489762eb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa9a8430049cb1da8cf9d1b36d643f07"><td class="memItemLeft" align="right" valign="top"><a id="aaa9a8430049cb1da8cf9d1b36d643f07"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CameraCalibration</b> (std::string calibration_filepath)</td></tr>
-<tr class="separator:aaa9a8430049cb1da8cf9d1b36d643f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bf251d424970974268ff2b1e466c2bd"><td class="memItemLeft" align="right" valign="top"><a id="a2bf251d424970974268ff2b1e466c2bd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CameraCalibration</b> (const char *calibration_filepath)</td></tr>
+<tr class="separator:a2bf251d424970974268ff2b1e466c2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeef5926282775852647153c8d8eaed2"><td class="memItemLeft" align="right" valign="top"><a id="afeef5926282775852647153c8d8eaed2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>rectify</b> (cv::Mat image, cv::Mat &amp;rect_image)</td></tr>
 <tr class="separator:afeef5926282775852647153c8d8eaed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,6 +155,24 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>getProjectionCY</b>
 <tr class="memitem:ac51686ffb31d16e9e66d7e378830faa2"><td class="memItemLeft" align="right" valign="top"><a id="ac51686ffb31d16e9e66d7e378830faa2"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>getProjectionTX</b> ()</td></tr>
 <tr class="separator:ac51686ffb31d16e9e66d7e378830faa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b15918727f8e3b377dc874d67a7ac3a"><td class="memItemLeft" align="right" valign="top"><a id="a0b15918727f8e3b377dc874d67a7ac3a"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>getCameraMatrix</b> ()</td></tr>
+<tr class="separator:a0b15918727f8e3b377dc874d67a7ac3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab009df1ee1fdda169f97ae8a552b55e4"><td class="memItemLeft" align="right" valign="top"><a id="ab009df1ee1fdda169f97ae8a552b55e4"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>getDistortionCoefficients</b> ()</td></tr>
+<tr class="separator:ab009df1ee1fdda169f97ae8a552b55e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae828bd1e659c73f98382b89edcb48047"><td class="memItemLeft" align="right" valign="top"><a id="ae828bd1e659c73f98382b89edcb48047"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>getRectificationMatrix</b> ()</td></tr>
+<tr class="separator:ae828bd1e659c73f98382b89edcb48047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38a2ca8573a724a4036af114ad8a45f"><td class="memItemLeft" align="right" valign="top"><a id="ab38a2ca8573a724a4036af114ad8a45f"></a>
+cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>getProjectionMatrix</b> ()</td></tr>
+<tr class="separator:ab38a2ca8573a724a4036af114ad8a45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a23a298c95124a56e206afff37568d9a9"><td class="memItemLeft" align="right" valign="top"><a id="a23a298c95124a56e206afff37568d9a9"></a>
+static <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>calibrationFromIdeal</b> (int width, int height, double pixel_pitch, double focal_length, double translation_x, double translation_y)</td></tr>
+<tr class="separator:a23a298c95124a56e206afff37568d9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -163,12 +182,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (int width, 
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:abe1df1c0acf46f0c4841f730ae67ec9d"><td class="memItemLeft" align="right" valign="top"><a id="abe1df1c0acf46f0c4841f730ae67ec9d"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadROSYaml</b> (std::string calibration_filepath, int &amp;out_width, int &amp;out_height, cv::Mat &amp;out_camera_matrix, cv::Mat &amp;out_distortion_coefficients, cv::Mat &amp;out_rectification_matrix, cv::Mat &amp;out_projection_matrix)</td></tr>
-<tr class="separator:abe1df1c0acf46f0c4841f730ae67ec9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a272d9b9f965595c742f18e8df0bafafb"><td class="memItemLeft" align="right" valign="top"><a id="a272d9b9f965595c742f18e8df0bafafb"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadCVYaml</b> (std::string calibration_filepath, int &amp;out_width, int &amp;out_height, cv::Mat &amp;out_camera_matrix, cv::Mat &amp;out_distortion_coefficients, cv::Mat &amp;out_rectification_matrix, cv::Mat &amp;out_projection_matrix)</td></tr>
-<tr class="separator:a272d9b9f965595c742f18e8df0bafafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa54ce04445b6f24b3f8bb6f0bc254f80"><td class="memItemLeft" align="right" valign="top"><a id="aa54ce04445b6f24b3f8bb6f0bc254f80"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadROSYaml</b> (const char *calibration_filepath, int &amp;out_width, int &amp;out_height, cv::Mat &amp;out_camera_matrix, cv::Mat &amp;out_distortion_coefficients, cv::Mat &amp;out_rectification_matrix, cv::Mat &amp;out_projection_matrix)</td></tr>
+<tr class="separator:aa54ce04445b6f24b3f8bb6f0bc254f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae060a4b84f0f3f6e7373f85329af0bf5"><td class="memItemLeft" align="right" valign="top"><a id="ae060a4b84f0f3f6e7373f85329af0bf5"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadCVYaml</b> (const char *calibration_filepath, int &amp;out_width, int &amp;out_height, cv::Mat &amp;out_camera_matrix, cv::Mat &amp;out_distortion_coefficients, cv::Mat &amp;out_rectification_matrix, cv::Mat &amp;out_projection_matrix)</td></tr>
+<tr class="separator:ae060a4b84f0f3f6e7373f85329af0bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -231,7 +250,7 @@ cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>rect_map_y_downsam
 <div class="textblock"><p>Camera Calibration class. </p>
 <p>Structure to store camera calibration data with rectification function to use the calibration data to rectify images. </p>
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00044">44</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00045">45</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>modules/core/include/phase/core/calib/<a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a></li>
 </ul>

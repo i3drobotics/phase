@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('stereovision_8h.html',''); initResizab
 <code>#include &lt;<a class="el" href="stereocalibration_8h_source.html">phase/core/calib/stereocalibration.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="stereocamera_8h_source.html">phase/core/stereocamera/stereocamera.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="stereomatcher_8h_source.html">phase/core/stereomatcher/stereomatcher.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="stereosupport_8h_source.html">phase/core/stereosupport.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="utils_8h_source.html">phase/core/utils.h</a>&gt;</code><br />
 </div>
 <p><a href="stereovision_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -156,21 +156,18 @@ void PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR
 <tr class="memitem:ad49e7b19a29035160a13abaf80173fa6"><td class="memItemLeft" align="right" valign="top"><a id="ad49e7b19a29035160a13abaf80173fa6"></a>
 void PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoVision_CSetTestImagePaths</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_vision.html">I3DR::Phase::StereoVision</a> *sv, const char *left_test_image_path, const char *right_test_image_path)</td></tr>
 <tr class="separator:ad49e7b19a29035160a13abaf80173fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec81bab053b021dc169309f7c74e8da9"><td class="memItemLeft" align="right" valign="top"><a id="aec81bab053b021dc169309f7c74e8da9"></a>
-bool PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoVision_CRead</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_vision.html">I3DR::Phase::StereoVision</a> *sv, int timeout, bool rectify, unsigned char *left_image, unsigned char *right_image, float *disparity, float *depth)</td></tr>
-<tr class="separator:aec81bab053b021dc169309f7c74e8da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c1757da1a6b4fdfd7e7a56c61b53a6e"><td class="memItemLeft" align="right" valign="top"><a id="a0c1757da1a6b4fdfd7e7a56c61b53a6e"></a>
+bool PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoVision_CRead</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_vision.html">I3DR::Phase::StereoVision</a> *sv, int timeout, bool rectify, unsigned char *left_image, unsigned char *right_image, float *disparity)</td></tr>
+<tr class="separator:a0c1757da1a6b4fdfd7e7a56c61b53a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48dff2c47171ac764289cf2ccaca327d"><td class="memItemLeft" align="right" valign="top"><a id="a48dff2c47171ac764289cf2ccaca327d"></a>
 void PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoVision_CStartReadThread</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_vision.html">I3DR::Phase::StereoVision</a> *sv, int timeout, bool rectify)</td></tr>
 <tr class="separator:a48dff2c47171ac764289cf2ccaca327d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f4bab57ec50ab5aadef912f0bfa9411"><td class="memItemLeft" align="right" valign="top"><a id="a2f4bab57ec50ab5aadef912f0bfa9411"></a>
 bool PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoVision_CIsReadThreadRunning</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_vision.html">I3DR::Phase::StereoVision</a> *sv)</td></tr>
 <tr class="separator:a2f4bab57ec50ab5aadef912f0bfa9411"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa78a8734cf9531abf5a1a3b592df335e"><td class="memItemLeft" align="right" valign="top"><a id="aa78a8734cf9531abf5a1a3b592df335e"></a>
-bool PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoVision_CGetReadThreadResult</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_vision.html">I3DR::Phase::StereoVision</a> *sv, unsigned char *left_image, unsigned char *right_image, float *disparity, float *depth)</td></tr>
-<tr class="separator:aa78a8734cf9531abf5a1a3b592df335e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a235d967ec87c35a8d77db2f54d068796"><td class="memItemLeft" align="right" valign="top"><a id="a235d967ec87c35a8d77db2f54d068796"></a>
-void PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoVision_CSetFlipCImages</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_vision.html">I3DR::Phase::StereoVision</a> *sv, bool enable)</td></tr>
-<tr class="separator:a235d967ec87c35a8d77db2f54d068796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f12b3df06dafc4c94b5c84c6b5aeba"><td class="memItemLeft" align="right" valign="top"><a id="a00f12b3df06dafc4c94b5c84c6b5aeba"></a>
+bool PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoVision_CGetReadThreadResult</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_vision.html">I3DR::Phase::StereoVision</a> *sv, unsigned char *left_image, unsigned char *right_image, float *disparity)</td></tr>
+<tr class="separator:a00f12b3df06dafc4c94b5c84c6b5aeba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16e1e5242806213d666b2fce56ec541c"><td class="memItemLeft" align="right" valign="top"><a id="a16e1e5242806213d666b2fce56ec541c"></a>
 void PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_StereoVision_CDisconnect</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_vision.html">I3DR::Phase::StereoVision</a> *sv)</td></tr>
 <tr class="separator:a16e1e5242806213d666b2fce56ec541c"><td class="memSeparator" colspan="2">&#160;</td></tr>

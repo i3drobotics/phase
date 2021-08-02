@@ -104,24 +104,24 @@ $(document).ready(function(){initNavTree('stereoprocess_8h.html',''); initResiza
 <code>#include &lt;<a class="el" href="stereovision_8h_source.html">phase/core/stereovision.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="stereomatcher_8h_source.html">phase/core/stereomatcher/stereomatcher.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="stereoi3drsgm_8h_source.html">phase/core/stereomatcher/stereoi3drsgm.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="stereosupport_8h_source.html">phase/core/stereosupport.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="utils_8h_source.html">phase/core/utils.h</a>&gt;</code><br />
 </div>
 <p><a href="stereoprocess_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6ab81c971abe1d12d01b74bb3746b1f7"><td class="memItemLeft" align="right" valign="top"><a id="a6ab81c971abe1d12d01b74bb3746b1f7"></a>
-bool PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR::Phase::processStereoFiles</b> (StereoMatcherType stereo_matcher_type, const char *left_yaml, const char *right_yaml, const char *left_image_path, const char *right_image_path, const char *output_folder, bool rectify=true)</td></tr>
-<tr class="separator:a6ab81c971abe1d12d01b74bb3746b1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0f20c2324f560cf68df58dbf7c6f40d"><td class="memItemLeft" align="right" valign="top"><a id="ac0f20c2324f560cf68df58dbf7c6f40d"></a>
-MatrixFloat PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR::Phase::processStereo</b> (StereoMatcherType stereo_matcher_type, MatrixUInt8 left_image, MatrixUInt8 right_image, StereoCameraCalibration calibration, bool rectify=true)</td></tr>
-<tr class="separator:ac0f20c2324f560cf68df58dbf7c6f40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65b533d4581d3628f0cef1d98344c9d0"><td class="memItemLeft" align="right" valign="top"><a id="a65b533d4581d3628f0cef1d98344c9d0"></a>
-bool PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_ProcessStereoFiles</b> (I3DR::Phase::StereoMatcherType stereo_matcher_type, const char *left_yaml, const char *right_yaml, const char *left_image_path, const char *right_image_path, const char *output_folder, bool rectify)</td></tr>
-<tr class="separator:a65b533d4581d3628f0cef1d98344c9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83adb2ad4484dd322cd68dbaff040b19"><td class="memItemLeft" align="right" valign="top"><a id="a83adb2ad4484dd322cd68dbaff040b19"></a>
-I3DR::Phase::MatrixFloat PHASE_SDK_EXPORT *&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_ProcessStereo</b> (I3DR::Phase::StereoMatcherType stereo_matcher_type, I3DR::Phase::MatrixUInt8 &amp;left_image, I3DR::Phase::MatrixUInt8 &amp;right_image, <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a> &amp;calibration, bool rectify)</td></tr>
-<tr class="separator:a83adb2ad4484dd322cd68dbaff040b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb817cd7d2031f966e4ebca4a6b93865"><td class="memItemLeft" align="right" valign="top"><a id="adb817cd7d2031f966e4ebca4a6b93865"></a>
+bool PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR::Phase::processStereoFiles</b> (StereoParams stereo_params, const char *left_yaml, const char *right_yaml, const char *left_image_path, const char *right_image_path, const char *output_folder, bool rectify=true)</td></tr>
+<tr class="separator:adb817cd7d2031f966e4ebca4a6b93865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf75bfab5fc096a7ac7b3d723d74d839"><td class="memItemLeft" align="right" valign="top"><a id="adf75bfab5fc096a7ac7b3d723d74d839"></a>
+MatrixFloat PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR::Phase::processStereo</b> (StereoParams stereo_params, MatrixUInt8 left_image, MatrixUInt8 right_image, StereoCameraCalibration calibration, bool rectify=true)</td></tr>
+<tr class="separator:adf75bfab5fc096a7ac7b3d723d74d839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc9ef4dbcd9cdf95acb39c63fc8f712"><td class="memItemLeft" align="right" valign="top"><a id="aacc9ef4dbcd9cdf95acb39c63fc8f712"></a>
+bool PHASE_SDK_EXPORT&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_ProcessStereoFiles</b> (<a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_params.html">I3DR::Phase::StereoParams</a> stereo_params, const char *left_yaml, const char *right_yaml, const char *left_image_path, const char *right_image_path, const char *output_folder, bool rectify)</td></tr>
+<tr class="separator:aacc9ef4dbcd9cdf95acb39c63fc8f712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20997bafb0ee8110d64be3f88920cc51"><td class="memItemLeft" align="right" valign="top"><a id="a20997bafb0ee8110d64be3f88920cc51"></a>
+I3DR::Phase::MatrixFloat PHASE_SDK_EXPORT *&#160;</td><td class="memItemRight" valign="bottom"><b>I3DR_ProcessStereo</b> (<a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_params.html">I3DR::Phase::StereoParams</a> stereo_params, I3DR::Phase::MatrixUInt8 &amp;left_image, I3DR::Phase::MatrixUInt8 &amp;right_image, <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">I3DR::Phase::StereoCameraCalibration</a> &amp;calibration, bool rectify)</td></tr>
+<tr class="separator:a20997bafb0ee8110d64be3f88920cc51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Functions for running PhaseSDK with local files. </p>

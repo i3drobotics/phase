@@ -97,98 +97,102 @@ $(document).ready(function(){initNavTree('cameracalibration_8h_source.html','');
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;opencv2/core.hpp&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;opencv2/imgproc.hpp&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;opencv2/imgcodecs.hpp&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;opencv2/highgui.hpp&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;opencv2/calib3d.hpp&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="phase__export_8h.html">phase/phase_export.h</a>&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>I3DR {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">namespace </span>Phase {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">enum</span> PHASE_SDK_EXPORT CalibrationFileType { </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            ROS_YAML,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            OPENCV_YAML,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            INVALID</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        };</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">   44</a></span>&#160;        <span class="keyword">class </span>PHASE_SDK_EXPORT <a class="code" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a> {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>(</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, cv::Mat camera_matrix, cv::Mat distortion_coefficients,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                cv::Mat rectification_matrix, cv::Mat projection_matrix);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>(std::string calibration_filepath);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordtype">void</span> rectify(cv::Mat image, cv::Mat&amp; rect_image);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordtype">bool</span> isValid();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordtype">void</span> setDownsampleFactor(<span class="keywordtype">float</span> value);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordtype">float</span> getDownsampleFactor();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordtype">int</span> getImageHeight();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordtype">int</span> getImageWidth();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordtype">double</span> getCameraFX();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">double</span> getCameraFY();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordtype">double</span> getCameraCX();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordtype">double</span> getCameraCY();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordtype">double</span> getProjectionFX();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">double</span> getProjectionFY();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordtype">double</span> getProjectionCX();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordtype">double</span> getProjectionCY();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordtype">double</span> getProjectionTX();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="comment">//TODO bool saveToFile(std::string calibration_file, CalibrationFileType cal_file_type);</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            ~<a class="code" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordtype">float</span> downsample_rate = 1.0f;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordtype">bool</span> valid = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;opencv2/core.hpp&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;opencv2/imgproc.hpp&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;opencv2/imgcodecs.hpp&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;opencv2/highgui.hpp&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;opencv2/calib3d.hpp&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="phase__export_8h.html">phase/phase_export.h</a>&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>I3DR {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">namespace </span>Phase {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">enum</span> PHASE_SDK_EXPORT CalibrationFileType { </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            ROS_YAML,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            OPENCV_YAML,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            INVALID</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        };</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">   45</a></span>&#160;        <span class="keyword">class </span>PHASE_SDK_EXPORT <a class="code" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>(</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, cv::Mat camera_matrix, cv::Mat distortion_coefficients,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                cv::Mat rectification_matrix, cv::Mat projection_matrix);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* calibration_filepath);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keyword">static</span> <a class="code" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a> calibrationFromIdeal(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">double</span> pixel_pitch, <span class="keywordtype">double</span> focal_length, <span class="keywordtype">double</span> translation_x, <span class="keywordtype">double</span> translation_y);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordtype">void</span> rectify(cv::Mat image, cv::Mat&amp; rect_image);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordtype">bool</span> isValid();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordtype">void</span> setDownsampleFactor(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordtype">float</span> getDownsampleFactor();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">int</span> getImageHeight();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordtype">int</span> getImageWidth();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordtype">double</span> getCameraFX();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordtype">double</span> getCameraFY();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">double</span> getCameraCX();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordtype">double</span> getCameraCY();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordtype">double</span> getProjectionFX();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordtype">double</span> getProjectionFY();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordtype">double</span> getProjectionCX();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordtype">double</span> getProjectionCY();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordtype">double</span> getProjectionTX();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            cv::Mat getCameraMatrix();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            cv::Mat getDistortionCoefficients();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            cv::Mat getRectificationMatrix();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            cv::Mat getProjectionMatrix();</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordtype">int</span> width = 0;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordtype">int</span> height = 0;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            cv::Mat camera_matrix;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            cv::Mat distortion_coefficients;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            cv::Mat rectification_matrix;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            cv::Mat projection_matrix;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            cv::Mat rect_map_x;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            cv::Mat rect_map_y;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordtype">int</span> width_downsampled = 0;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordtype">int</span> height_downsampled = 0;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            cv::Mat camera_matrix_downsampled;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            cv::Mat distortion_coefficients_downsampled;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            cv::Mat rectification_matrix_downsampled;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            cv::Mat projection_matrix_downsampled;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            cv::Mat rect_map_x_downsampled;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            cv::Mat rect_map_y_downsampled;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordtype">void</span> init(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, cv::Mat camera_matrix, cv::Mat distortion_coefficients,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                cv::Mat rectification_matrix, cv::Mat projection_matrix);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">bool</span> loadROSYaml(</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                std::string calibration_filepath, <span class="keywordtype">int</span>&amp; out_width, <span class="keywordtype">int</span>&amp; out_height,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                cv::Mat&amp; out_camera_matrix, cv::Mat&amp; out_distortion_coefficients,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                cv::Mat&amp; out_rectification_matrix, cv::Mat&amp; out_projection_matrix</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            );</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">bool</span> loadCVYaml(</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                std::string calibration_filepath, <span class="keywordtype">int</span>&amp; out_width, <span class="keywordtype">int</span>&amp; out_height,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                cv::Mat&amp; out_camera_matrix, cv::Mat&amp; out_distortion_coefficients,</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                cv::Mat&amp; out_rectification_matrix, cv::Mat&amp; out_projection_matrix</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            );</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="comment">//TODO bool saveROSYaml(std::string calibration_filepath);</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="comment">//TODO bool saveCVYaml(std::string calibration_filepath);</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        };</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
-<div class="ttc" id="aclass_i3_d_r_1_1_phase_1_1_camera_calibration_html"><div class="ttname"><a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">I3DR::Phase::CameraCalibration</a></div><div class="ttdoc">Camera Calibration class.</div><div class="ttdef"><b>Definition:</b> <a href="cameracalibration_8h_source.html#l00044">cameracalibration.h:44</a></div></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            ~<a class="code" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keywordtype">float</span> downsample_rate = 1.0f;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordtype">bool</span> valid = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordtype">int</span> width = 0;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordtype">int</span> height = 0;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            cv::Mat camera_matrix;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            cv::Mat distortion_coefficients;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            cv::Mat rectification_matrix;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            cv::Mat projection_matrix;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            cv::Mat rect_map_x;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            cv::Mat rect_map_y;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordtype">int</span> width_downsampled = 0;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordtype">int</span> height_downsampled = 0;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            cv::Mat camera_matrix_downsampled;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            cv::Mat distortion_coefficients_downsampled;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            cv::Mat rectification_matrix_downsampled;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            cv::Mat projection_matrix_downsampled;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            cv::Mat rect_map_x_downsampled;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            cv::Mat rect_map_y_downsampled;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordtype">void</span> init(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, cv::Mat camera_matrix, cv::Mat distortion_coefficients,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                cv::Mat rectification_matrix, cv::Mat projection_matrix);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">bool</span> loadROSYaml(</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">char</span>* calibration_filepath, <span class="keywordtype">int</span>&amp; out_width, <span class="keywordtype">int</span>&amp; out_height,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                cv::Mat&amp; out_camera_matrix, cv::Mat&amp; out_distortion_coefficients,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                cv::Mat&amp; out_rectification_matrix, cv::Mat&amp; out_projection_matrix</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            );</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">bool</span> loadCVYaml(</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">char</span>* calibration_filepath, <span class="keywordtype">int</span>&amp; out_width, <span class="keywordtype">int</span>&amp; out_height,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                cv::Mat&amp; out_camera_matrix, cv::Mat&amp; out_distortion_coefficients,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                cv::Mat&amp; out_rectification_matrix, cv::Mat&amp; out_projection_matrix</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            );</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        };</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<div class="ttc" id="aclass_i3_d_r_1_1_phase_1_1_camera_calibration_html"><div class="ttname"><a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">I3DR::Phase::CameraCalibration</a></div><div class="ttdoc">Camera Calibration class.</div><div class="ttdef"><b>Definition:</b> <a href="cameracalibration_8h_source.html#l00045">cameracalibration.h:45</a></div></div>
 <div class="ttc" id="aphase__export_8h_html"><div class="ttname"><a href="phase__export_8h.html">phase_export.h</a></div><div class="ttdoc">Phase SDK dlls export header.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

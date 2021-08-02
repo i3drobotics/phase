@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['main_2ecs_8',['main.cs',['../main_8cs.html',1,'']]],
-  ['matrixfloat_9',['MatrixFloat',['../class_i3_d_r_1_1_phase_1_1_matrix_float.html',1,'I3DR::Phase']]],
-  ['matrixuint8_10',['MatrixUInt8',['../class_i3_d_r_1_1_phase_1_1_matrix_u_int8.html',1,'I3DR::Phase']]]
+  ['i3dr_12',['I3DR',['../namespace_i3_d_r.html',1,'']]],
+  ['imageviewer_13',['ImageViewer',['../class_i3_d_r_1_1_phase_1_1_image_viewer.html',1,'I3DR::Phase']]],
+  ['phase_14',['Phase',['../namespace_i3_d_r_1_1_phase.html',1,'I3DR']]]
 ];

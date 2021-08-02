@@ -7,7 +7,7 @@ var class_i3_d_r_1_1_depth_renderer =
     [ "OnValidate", "class_i3_d_r_1_1_depth_renderer.html#ace102f9e773a471f6c3d5590a091781d", null ],
     [ "RebuildCloud", "class_i3_d_r_1_1_depth_renderer.html#aeb219aee972bcfa348bb23ba48a02265", null ],
     [ "Update", "class_i3_d_r_1_1_depth_renderer.html#a468daf38f86b5bad850b60359f0619f6", null ],
-    [ "UpdateBuffers", "class_i3_d_r_1_1_depth_renderer.html#aa4058f7f6b8f50ed9510f0aa4772bbcf", null ],
+    [ "UpdateBuffers", "class_i3_d_r_1_1_depth_renderer.html#ad7039ab92e2d506dbe42183b50389d95", null ],
     [ "UpdateCameraParameters", "class_i3_d_r_1_1_depth_renderer.html#aa8f8efbbc134e659ea854ed1094d18b0", null ],
     [ "UpdateHFOV", "class_i3_d_r_1_1_depth_renderer.html#a9b9ea0b06bf5089b965b413a928ec13e", null ],
     [ "_aspectRatio", "class_i3_d_r_1_1_depth_renderer.html#aa4b7235ade5af04bbe059668db596368", null ],
