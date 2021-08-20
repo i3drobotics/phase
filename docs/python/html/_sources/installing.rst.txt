@@ -6,4 +6,4 @@ Install pip package
 ---------------------
 .. code-block:: console
 
-   python -m pip install i3dr-phase-sdk
+   python -m pip install phase
