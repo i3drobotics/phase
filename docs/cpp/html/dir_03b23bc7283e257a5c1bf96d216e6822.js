@@ -8,10 +8,10 @@ var dir_03b23bc7283e257a5c1bf96d216e6822 =
     [ "rgbdvideostream.h", "rgbdvideostream_8h.html", "rgbdvideostream_8h" ],
     [ "rgbdvideowriter.h", "rgbdvideowriter_8h_source.html", null ],
     [ "stereomapper.h", "stereomapper_8h.html", [
-      [ "StereoMapper", "class_i3_d_r_1_1_phase_1_1_stereo_mapper.html", "class_i3_d_r_1_1_phase_1_1_stereo_mapper" ]
+      [ "I3DR::Phase::StereoMapper", "class_i3_d_r_1_1_phase_1_1_stereo_mapper.html", null ]
     ] ],
-    [ "stereoprocess.h", "stereoprocess_8h.html", "stereoprocess_8h" ],
+    [ "stereoprocess.h", "stereoprocess_8h.html", null ],
     [ "stereovision.h", "stereovision_8h.html", "stereovision_8h" ],
     [ "tinyply.h", "tinyply_8h_source.html", null ],
-    [ "utils.h", "utils_8h.html", "utils_8h" ]
+    [ "utils.h", "utils_8h.html", null ]
 ];

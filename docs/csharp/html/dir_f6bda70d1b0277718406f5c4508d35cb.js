@@ -5,21 +5,21 @@ var dir_f6bda70d1b0277718406f5c4508d35cb =
     [ "stereomatcher", "dir_8c0079aeafb6c871fb25bfc200980a27.html", "dir_8c0079aeafb6c871fb25bfc200980a27" ],
     [ "types", "dir_448ab1730fca4672b3a95b4a8b3f98e9.html", "dir_448ab1730fca4672b3a95b4a8b3f98e9" ],
     [ "phaseversion.cs", "phaseversion_8cs.html", [
-      [ "PhaseSDKVersion", "class_i3_d_r_1_1_phase_1_1_phase_s_d_k_version.html", "class_i3_d_r_1_1_phase_1_1_phase_s_d_k_version" ]
+      [ "I3DR.Phase.PhaseSDKVersion", "class_i3_d_r_1_1_phase_1_1_phase_s_d_k_version.html", null ]
     ] ],
     [ "rgbdvideostream.cs", "rgbdvideostream_8cs.html", [
-      [ "RGBDVideoStream", "class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream.html", "class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream" ]
+      [ "I3DR.Phase.RGBDVideoStream", "class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream.html", null ]
     ] ],
     [ "rgbdvideowriter.cs", "rgbdvideowriter_8cs.html", [
-      [ "RGBDVideoWriter", "class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_writer.html", "class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_writer" ]
+      [ "I3DR.Phase.RGBDVideoWriter", "class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_writer.html", null ]
     ] ],
     [ "stereoprocess.cs", "stereoprocess_8cs.html", [
-      [ "StereoProcess", "class_i3_d_r_1_1_phase_1_1_stereo_process.html", "class_i3_d_r_1_1_phase_1_1_stereo_process" ]
+      [ "I3DR.Phase.StereoProcess", "class_i3_d_r_1_1_phase_1_1_stereo_process.html", null ]
     ] ],
     [ "stereovision.cs", "stereovision_8cs.html", [
-      [ "StereoVision", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html", "class_i3_d_r_1_1_phase_1_1_stereo_vision" ]
+      [ "I3DR.Phase.StereoVision", "class_i3_d_r_1_1_phase_1_1_stereo_vision.html", null ]
     ] ],
     [ "utils.cs", "utils_8cs.html", [
-      [ "Utils", "class_i3_d_r_1_1_phase_1_1_utils.html", "class_i3_d_r_1_1_phase_1_1_utils" ]
+      [ "I3DR.Phase.Utils", "class_i3_d_r_1_1_phase_1_1_utils.html", null ]
     ] ]
 ];
