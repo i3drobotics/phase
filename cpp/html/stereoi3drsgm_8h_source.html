@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="i3dr_logo_128x128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">I3DR Phase SDK<span id="projectnumber">&#160;0.0.7</span>
+   <div id="projectname">I3DR Phase SDK<span id="projectnumber">&#160;0.0.8</span>
    </div>
   </td>
  </tr>
@@ -158,40 +158,45 @@ $(document).ready(function(){initNavTree('stereoi3drsgm_8h_source.html',''); ini
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">            #endif</span></div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <span class="keywordtype">void</span> init(<a class="code hl_struct" href="struct_i3_d_r_1_1_phase_1_1_stereo_params.html">StereoParams</a> params);</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a896ff7b2f655437a774a147f8d9bdc8a">   90</a></span>            <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a896ff7b2f655437a774a147f8d9bdc8a">getHostInfo</a>(std::string &amp; hostname, std::string &amp; hostid);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <span class="keywordtype">void</span> updateParams();</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordtype">void</span> autoUpdateParams(<span class="keywordtype">bool</span> enable);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordtype">void</span> zeroBlackFromReference(cv::Mat&amp; image, cv::Mat reference);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordtype">void</span> letterboxX(cv::Mat&amp; image, <span class="keywordtype">int</span> left_offset, <span class="keywordtype">int</span> right_offset);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keywordtype">void</span> cleanDisparity(cv::Mat&amp; disparity);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            std::mutex* param_mutex;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            <span class="keywordtype">bool</span> auto_update_params = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        };</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>}</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">#ifdef WITH_I3DRSGM</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">    #ifdef _MSC_VER</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">        #pragma warning(pop)</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">    #endif</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">// Functions that need to be available in dll export for API&#39;s must be defined with C types</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">// Will wrap around static member functions directly and pass class pointers for non static members</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <a class="code hl_class" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a> PHASE_SDK_EXPORT * I3DR_StereoI3DRSGM_create();</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordtype">void</span> PHASE_SDK_EXPORT I3DR_StereoI3DRSGM_setWindowSize(<a class="code hl_class" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a>* matcher, <span class="keywordtype">int</span> value);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordtype">void</span> PHASE_SDK_EXPORT I3DR_StereoI3DRSGM_setMinDisparity(<a class="code hl_class" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a>* matcher, <span class="keywordtype">int</span> value);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordtype">void</span> PHASE_SDK_EXPORT I3DR_StereoI3DRSGM_setNumDisparities(<a class="code hl_class" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a>* matcher, <span class="keywordtype">int</span> value);</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">void</span> PHASE_SDK_EXPORT I3DR_StereoI3DRSGM_setSpeckleMaxSize(<a class="code hl_class" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a>* matcher, <span class="keywordtype">int</span> value);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordtype">void</span> PHASE_SDK_EXPORT I3DR_StereoI3DRSGM_setSpeckleMaxDiff(<a class="code hl_class" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a>* matcher, <span class="keywordtype">float</span> value);</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordtype">void</span> PHASE_SDK_EXPORT I3DR_StereoI3DRSGM_enableSubpixel(<a class="code hl_class" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a>* matcher, <span class="keywordtype">bool</span> enable);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordtype">void</span> PHASE_SDK_EXPORT I3DR_StereoI3DRSGM_enableInterpolation(<a class="code hl_class" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a>* matcher, <span class="keywordtype">bool</span> enable);</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordtype">bool</span> PHASE_SDK_EXPORT I3DR_StereoI3DRSGM_isLicenseValid();</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a896ff7b2f655437a774a147f8d9bdc8a">   92</a></span>            <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a896ff7b2f655437a774a147f8d9bdc8a">getHostInfo</a>(std::string &amp; hostname, std::string &amp; hostid);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <span class="keywordtype">void</span> updateParams();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <span class="keywordtype">void</span> autoUpdateParams(<span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keywordtype">void</span> zeroBlackFromReference(cv::Mat&amp; image, cv::Mat reference);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keywordtype">void</span> letterboxX(cv::Mat&amp; image, <span class="keywordtype">int</span> left_offset, <span class="keywordtype">int</span> right_offset);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keywordtype">void</span> cleanDisparity(cv::Mat&amp; disparity);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>            std::mutex* param_mutex;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <span class="keywordtype">bool</span> auto_update_params = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            <span class="keywordtype">int</span> last_width;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <span class="keywordtype">int</span> last_height;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        };</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>}</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#ifdef WITH_I3DRSGM</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">    #ifdef _MSC_VER</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">        #pragma warning(pop)</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">// Functions that need to be available in dll export for API&#39;s must be defined with C types</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">// Will wrap around static member functions directly and pass class pointers for non static members</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <a class="code hl_class" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a> PHASE_SDK_EXPORT * I3DR_StereoI3DRSGM_create();</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordtype">void</span> PHASE_SDK_EXPORT I3DR_StereoI3DRSGM_setWindowSize(<a class="code hl_class" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a>* matcher, <span class="keywordtype">int</span> value);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordtype">void</span> PHASE_SDK_EXPORT I3DR_StereoI3DRSGM_setMinDisparity(<a class="code hl_class" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a>* matcher, <span class="keywordtype">int</span> value);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordtype">void</span> PHASE_SDK_EXPORT I3DR_StereoI3DRSGM_setNumDisparities(<a class="code hl_class" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a>* matcher, <span class="keywordtype">int</span> value);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordtype">void</span> PHASE_SDK_EXPORT I3DR_StereoI3DRSGM_setSpeckleMaxSize(<a class="code hl_class" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a>* matcher, <span class="keywordtype">int</span> value);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">void</span> PHASE_SDK_EXPORT I3DR_StereoI3DRSGM_setSpeckleMaxDiff(<a class="code hl_class" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a>* matcher, <span class="keywordtype">float</span> value);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordtype">void</span> PHASE_SDK_EXPORT I3DR_StereoI3DRSGM_enableSubpixel(<a class="code hl_class" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a>* matcher, <span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordtype">void</span> PHASE_SDK_EXPORT I3DR_StereoI3DRSGM_enableInterpolation(<a class="code hl_class" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a>* matcher, <span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordtype">bool</span> PHASE_SDK_EXPORT I3DR_StereoI3DRSGM_isLicenseValid();</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
 <div class="ttc" id="aabstractstereomatcher_8h_html"><div class="ttname"><a href="abstractstereomatcher_8h.html">abstractstereomatcher.h</a></div><div class="ttdoc">Abstract Stereo Matcher class.</div></div>
 <div class="ttc" id="aclass_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher_html"><div class="ttname"><a href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html">I3DR::Phase::AbstractStereoMatcher</a></div><div class="ttdef"><b>Definition:</b> <a href="abstractstereomatcher_8h_source.html#l00042">abstractstereomatcher.h:42</a></div></div>
 <div class="ttc" id="aclass_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m_html"><div class="ttname"><a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">I3DR::Phase::StereoI3DRSGM</a></div><div class="ttdef"><b>Definition:</b> <a href="stereoi3drsgm_8h_source.html#l00041">stereoi3drsgm.h:41</a></div></div>
