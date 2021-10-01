@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index &mdash; I3DR Stereo Vision Library 0.0.8 documentation</title>
+  <title>Index &mdash; I3DR Stereo Vision Library 0.0.9 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -85,6 +85,7 @@
  | <a href="#R"><strong>R</strong></a>
  | <a href="#S"><strong>S</strong></a>
  | <a href="#T"><strong>T</strong></a>
+ | <a href="#U"><strong>U</strong></a>
  | <a href="#V"><strong>V</strong></a>
  | <a href="#W"><strong>W</strong></a>
  | <a href="#X"><strong>X</strong></a>
@@ -141,8 +142,6 @@
         <li><a href="autocode.html#phase.core.RGBDVideoWriter.close">(phase.core.RGBDVideoWriter method)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="autocode.html#phase.core.stereomatcher.StereoBM.compute">compute() (phase.core.stereomatcher.StereoBM method)</a>
 
       <ul>
@@ -153,12 +152,18 @@
         <li><a href="autocode.html#phase.core.stereomatcher.StereoSGBM.compute">(phase.core.stereomatcher.StereoSGBM method)</a>
 </li>
       </ul></li>
-      <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.connect">connect() (phase.core.stereocamera.PhobosStereoCamera method)</a>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autocode.html#phase.core.stereocamera.DeimosStereoCamera.connect">connect() (phase.core.stereocamera.DeimosStereoCamera method)</a>
 
       <ul>
+        <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.connect">(phase.core.stereocamera.PhobosStereoCamera method)</a>
+</li>
         <li><a href="autocode.html#phase.core.stereocamera.PylonStereoCamera.connect">(phase.core.stereocamera.PylonStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.TitaniaStereoCamera.connect">(phase.core.stereocamera.TitaniaStereoCamera method)</a>
+</li>
+        <li><a href="autocode.html#phase.core.stereocamera.UVCStereoCamera.connect">(phase.core.stereocamera.UVCStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.StereoVision.connect">(phase.core.StereoVision method)</a>
 </li>
@@ -175,13 +180,19 @@
 <h2 id="D">D</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autocode.html#phase.core.stereocamera.DeimosStereoCamera">DeimosStereoCamera (class in phase.core.stereocamera)</a>
+</li>
       <li><a href="autocode.html#phase.core.types.RGBDVideoFrame.depth">depth (phase.core.types.RGBDVideoFrame property)</a>
 </li>
       <li><a href="autocode.html#phase.core.depth2xyz">depth2xyz() (in module phase.core)</a>
 </li>
       <li><a href="autocode.html#phase.core.types.CameraDeviceInfo.device_type">device_type (phase.core.types.CameraDeviceInfo property)</a>
 </li>
+      <li><a href="autocode.html#phase.core.types.CameraDeviceType.DEVICE_TYPE_DEIMOS">DEVICE_TYPE_DEIMOS (phase.core.types.CameraDeviceType attribute)</a>
+</li>
       <li><a href="autocode.html#phase.core.types.CameraDeviceType.DEVICE_TYPE_GENERIC_PYLON">DEVICE_TYPE_GENERIC_PYLON (phase.core.types.CameraDeviceType attribute)</a>
+</li>
+      <li><a href="autocode.html#phase.core.types.CameraDeviceType.DEVICE_TYPE_GENERIC_UVC">DEVICE_TYPE_GENERIC_UVC (phase.core.types.CameraDeviceType attribute)</a>
 </li>
       <li><a href="autocode.html#phase.core.types.CameraDeviceType.DEVICE_TYPE_INVALID">DEVICE_TYPE_INVALID (phase.core.types.CameraDeviceType attribute)</a>
 </li>
@@ -191,12 +202,16 @@
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.disconnect">disconnect() (phase.core.stereocamera.PhobosStereoCamera method)</a>
+      <li><a href="autocode.html#phase.core.stereocamera.DeimosStereoCamera.disconnect">disconnect() (phase.core.stereocamera.DeimosStereoCamera method)</a>
 
       <ul>
+        <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.disconnect">(phase.core.stereocamera.PhobosStereoCamera method)</a>
+</li>
         <li><a href="autocode.html#phase.core.stereocamera.PylonStereoCamera.disconnect">(phase.core.stereocamera.PylonStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.TitaniaStereoCamera.disconnect">(phase.core.stereocamera.TitaniaStereoCamera method)</a>
+</li>
+        <li><a href="autocode.html#phase.core.stereocamera.UVCStereoCamera.disconnect">(phase.core.stereocamera.UVCStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.StereoVision.disconnect">(phase.core.StereoVision method)</a>
 </li>
@@ -287,22 +302,30 @@
         <li><a href="autocode.html#phase.core.StereoVision.getDownsampleFactor">(phase.core.StereoVision method)</a>
 </li>
       </ul></li>
-      <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.getFrameRate">getFrameRate() (phase.core.stereocamera.PhobosStereoCamera method)</a>
+      <li><a href="autocode.html#phase.core.stereocamera.DeimosStereoCamera.getFrameRate">getFrameRate() (phase.core.stereocamera.DeimosStereoCamera method)</a>
 
       <ul>
+        <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.getFrameRate">(phase.core.stereocamera.PhobosStereoCamera method)</a>
+</li>
         <li><a href="autocode.html#phase.core.stereocamera.PylonStereoCamera.getFrameRate">(phase.core.stereocamera.PylonStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.TitaniaStereoCamera.getFrameRate">(phase.core.stereocamera.TitaniaStereoCamera method)</a>
+</li>
+        <li><a href="autocode.html#phase.core.stereocamera.UVCStereoCamera.getFrameRate">(phase.core.stereocamera.UVCStereoCamera method)</a>
 </li>
       </ul></li>
       <li><a href="autocode.html#phase.core.RGBDVideoStream.getHeight">getHeight() (phase.core.RGBDVideoStream method)</a>
 
       <ul>
+        <li><a href="autocode.html#phase.core.stereocamera.DeimosStereoCamera.getHeight">(phase.core.stereocamera.DeimosStereoCamera method)</a>
+</li>
         <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.getHeight">(phase.core.stereocamera.PhobosStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.PylonStereoCamera.getHeight">(phase.core.stereocamera.PylonStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.TitaniaStereoCamera.getHeight">(phase.core.stereocamera.TitaniaStereoCamera method)</a>
+</li>
+        <li><a href="autocode.html#phase.core.stereocamera.UVCStereoCamera.getHeight">(phase.core.stereocamera.UVCStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.StereoVision.getHeight">(phase.core.StereoVision method)</a>
 </li>
@@ -356,11 +379,15 @@
       <li><a href="autocode.html#phase.core.RGBDVideoStream.getReadThreadResult">getReadThreadResult() (phase.core.RGBDVideoStream method)</a>
 
       <ul>
+        <li><a href="autocode.html#phase.core.stereocamera.DeimosStereoCamera.getReadThreadResult">(phase.core.stereocamera.DeimosStereoCamera method)</a>
+</li>
         <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.getReadThreadResult">(phase.core.stereocamera.PhobosStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.PylonStereoCamera.getReadThreadResult">(phase.core.stereocamera.PylonStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.TitaniaStereoCamera.getReadThreadResult">(phase.core.stereocamera.TitaniaStereoCamera method)</a>
+</li>
+        <li><a href="autocode.html#phase.core.stereocamera.UVCStereoCamera.getReadThreadResult">(phase.core.stereocamera.UVCStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.StereoVision.getReadThreadResult">(phase.core.StereoVision method)</a>
 </li>
@@ -396,11 +423,15 @@
       <li><a href="autocode.html#phase.core.RGBDVideoStream.getWidth">getWidth() (phase.core.RGBDVideoStream method)</a>
 
       <ul>
+        <li><a href="autocode.html#phase.core.stereocamera.DeimosStereoCamera.getWidth">(phase.core.stereocamera.DeimosStereoCamera method)</a>
+</li>
         <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.getWidth">(phase.core.stereocamera.PhobosStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.PylonStereoCamera.getWidth">(phase.core.stereocamera.PylonStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.TitaniaStereoCamera.getWidth">(phase.core.stereocamera.TitaniaStereoCamera method)</a>
+</li>
+        <li><a href="autocode.html#phase.core.stereocamera.UVCStereoCamera.getWidth">(phase.core.stereocamera.UVCStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.StereoVision.getWidth">(phase.core.StereoVision method)</a>
 </li>
@@ -435,12 +466,16 @@
         <li><a href="autocode.html#phase.core.stereomatcher.StereoSGBM.isComputeThreadRunning">(phase.core.stereomatcher.StereoSGBM method)</a>
 </li>
       </ul></li>
-      <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.isConnected">isConnected() (phase.core.stereocamera.PhobosStereoCamera method)</a>
+      <li><a href="autocode.html#phase.core.stereocamera.DeimosStereoCamera.isConnected">isConnected() (phase.core.stereocamera.DeimosStereoCamera method)</a>
 
       <ul>
+        <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.isConnected">(phase.core.stereocamera.PhobosStereoCamera method)</a>
+</li>
         <li><a href="autocode.html#phase.core.stereocamera.PylonStereoCamera.isConnected">(phase.core.stereocamera.PylonStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.TitaniaStereoCamera.isConnected">(phase.core.stereocamera.TitaniaStereoCamera method)</a>
+</li>
+        <li><a href="autocode.html#phase.core.stereocamera.UVCStereoCamera.isConnected">(phase.core.stereocamera.UVCStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.StereoVision.isConnected">(phase.core.StereoVision method)</a>
 </li>
@@ -470,11 +505,15 @@
       <li><a href="autocode.html#phase.core.RGBDVideoStream.isReadThreadRunning">isReadThreadRunning() (phase.core.RGBDVideoStream method)</a>
 
       <ul>
+        <li><a href="autocode.html#phase.core.stereocamera.DeimosStereoCamera.isReadThreadRunning">(phase.core.stereocamera.DeimosStereoCamera method)</a>
+</li>
         <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.isReadThreadRunning">(phase.core.stereocamera.PhobosStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.PylonStereoCamera.isReadThreadRunning">(phase.core.stereocamera.PylonStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.TitaniaStereoCamera.isReadThreadRunning">(phase.core.stereocamera.TitaniaStereoCamera method)</a>
+</li>
+        <li><a href="autocode.html#phase.core.stereocamera.UVCStereoCamera.isReadThreadRunning">(phase.core.stereocamera.UVCStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.StereoVision.isReadThreadRunning">(phase.core.StereoVision method)</a>
 </li>
@@ -634,11 +673,15 @@
       <li><a href="autocode.html#phase.core.RGBDVideoStream.read">read() (phase.core.RGBDVideoStream method)</a>
 
       <ul>
+        <li><a href="autocode.html#phase.core.stereocamera.DeimosStereoCamera.read">(phase.core.stereocamera.DeimosStereoCamera method)</a>
+</li>
         <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.read">(phase.core.stereocamera.PhobosStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.PylonStereoCamera.read">(phase.core.stereocamera.PylonStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.TitaniaStereoCamera.read">(phase.core.stereocamera.TitaniaStereoCamera method)</a>
+</li>
+        <li><a href="autocode.html#phase.core.stereocamera.UVCStereoCamera.read">(phase.core.stereocamera.UVCStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.StereoVision.read">(phase.core.StereoVision method)</a>
 </li>
@@ -649,10 +692,10 @@
 </li>
       <li><a href="autocode.html#phase.core.calib.StereoCameraCalibration.rectify">rectify() (phase.core.calib.StereoCameraCalibration method)</a>
 </li>
-      <li><a href="autocode.html#phase.core.RGBDVideoStream.restart">restart() (phase.core.RGBDVideoStream method)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autocode.html#phase.core.RGBDVideoStream.restart">restart() (phase.core.RGBDVideoStream method)</a>
+</li>
       <li><a href="autocode.html#phase.core.types.RGBDVideoFrame">RGBDVideoFrame (class in phase.core.types)</a>
 </li>
       <li><a href="autocode.html#phase.core.RGBDVideoStream">RGBDVideoStream (class in phase.core)</a>
@@ -712,21 +755,29 @@
 </li>
         <li><a href="autocode.html#phase.core.RGBDVideoStream.setDownsampleFactor">(phase.core.RGBDVideoStream method)</a>
 </li>
+        <li><a href="autocode.html#phase.core.stereocamera.DeimosStereoCamera.setDownsampleFactor">(phase.core.stereocamera.DeimosStereoCamera method)</a>
+</li>
         <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.setDownsampleFactor">(phase.core.stereocamera.PhobosStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.PylonStereoCamera.setDownsampleFactor">(phase.core.stereocamera.PylonStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.TitaniaStereoCamera.setDownsampleFactor">(phase.core.stereocamera.TitaniaStereoCamera method)</a>
 </li>
+        <li><a href="autocode.html#phase.core.stereocamera.UVCStereoCamera.setDownsampleFactor">(phase.core.stereocamera.UVCStereoCamera method)</a>
+</li>
         <li><a href="autocode.html#phase.core.StereoVision.setDownsampleFactor">(phase.core.StereoVision method)</a>
 </li>
       </ul></li>
-      <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.setExposure">setExposure() (phase.core.stereocamera.PhobosStereoCamera method)</a>
+      <li><a href="autocode.html#phase.core.stereocamera.DeimosStereoCamera.setExposure">setExposure() (phase.core.stereocamera.DeimosStereoCamera method)</a>
 
       <ul>
+        <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.setExposure">(phase.core.stereocamera.PhobosStereoCamera method)</a>
+</li>
         <li><a href="autocode.html#phase.core.stereocamera.PylonStereoCamera.setExposure">(phase.core.stereocamera.PylonStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.TitaniaStereoCamera.setExposure">(phase.core.stereocamera.TitaniaStereoCamera method)</a>
+</li>
+        <li><a href="autocode.html#phase.core.stereocamera.UVCStereoCamera.setExposure">(phase.core.stereocamera.UVCStereoCamera method)</a>
 </li>
       </ul></li>
       <li><a href="autocode.html#phase.core.types.CameraDeviceInfo.setLeftCameraSerial">setLeftCameraSerial() (phase.core.types.CameraDeviceInfo method)</a>
@@ -759,12 +810,16 @@
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.setTestImagePaths">setTestImagePaths() (phase.core.stereocamera.PhobosStereoCamera method)</a>
+      <li><a href="autocode.html#phase.core.stereocamera.DeimosStereoCamera.setTestImagePaths">setTestImagePaths() (phase.core.stereocamera.DeimosStereoCamera method)</a>
 
       <ul>
+        <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.setTestImagePaths">(phase.core.stereocamera.PhobosStereoCamera method)</a>
+</li>
         <li><a href="autocode.html#phase.core.stereocamera.PylonStereoCamera.setTestImagePaths">(phase.core.stereocamera.PylonStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.TitaniaStereoCamera.setTestImagePaths">(phase.core.stereocamera.TitaniaStereoCamera method)</a>
+</li>
+        <li><a href="autocode.html#phase.core.stereocamera.UVCStereoCamera.setTestImagePaths">(phase.core.stereocamera.UVCStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.StereoVision.setTestImagePaths">(phase.core.StereoVision method)</a>
 </li>
@@ -793,12 +848,16 @@
         <li><a href="autocode.html#phase.core.stereomatcher.StereoSGBM.startComputeThread">(phase.core.stereomatcher.StereoSGBM method)</a>
 </li>
       </ul></li>
-      <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.startReadThread">startReadThread() (phase.core.stereocamera.PhobosStereoCamera method)</a>
+      <li><a href="autocode.html#phase.core.stereocamera.DeimosStereoCamera.startReadThread">startReadThread() (phase.core.stereocamera.DeimosStereoCamera method)</a>
 
       <ul>
+        <li><a href="autocode.html#phase.core.stereocamera.PhobosStereoCamera.startReadThread">(phase.core.stereocamera.PhobosStereoCamera method)</a>
+</li>
         <li><a href="autocode.html#phase.core.stereocamera.PylonStereoCamera.startReadThread">(phase.core.stereocamera.PylonStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.stereocamera.TitaniaStereoCamera.startReadThread">(phase.core.stereocamera.TitaniaStereoCamera method)</a>
+</li>
+        <li><a href="autocode.html#phase.core.stereocamera.UVCStereoCamera.startReadThread">(phase.core.stereocamera.UVCStereoCamera method)</a>
 </li>
         <li><a href="autocode.html#phase.core.StereoVision.startReadThread">(phase.core.StereoVision method)</a>
 </li>
@@ -840,6 +899,14 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="autocode.html#phase.core.stereocamera.TitaniaStereoCamera">TitaniaStereoCamera (class in phase.core.stereocamera)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="U">U</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="autocode.html#phase.core.stereocamera.UVCStereoCamera">UVCStereoCamera (class in phase.core.stereocamera)</a>
 </li>
   </ul></td>
 </tr></table>
