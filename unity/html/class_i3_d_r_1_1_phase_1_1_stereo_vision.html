@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="i3dr_logo_128x128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">I3DR Phase SDK<span id="projectnumber">&#160;0.0.12</span>
+   <div id="projectname">I3DR Phase SDK<span id="projectnumber">&#160;0.0.13</span>
    </div>
   </td>
  </tr>
@@ -108,6 +108,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a393dc28f9e65f7766f11824b1f5789ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bd669b65fbf1338d41177bac159b23e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_vision.html#a2bd669b65fbf1338d41177bac159b23e">isConnected</a> ()</td></tr>
 <tr class="separator:a2bd669b65fbf1338d41177bac159b23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a958d016c1db048cf2377178f9f175800"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_vision.html#a958d016c1db048cf2377178f9f175800">startCapture</a> ()</td></tr>
+<tr class="separator:a958d016c1db048cf2377178f9f175800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f6f3e85ef85eb4f214d7782a57a12b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_vision.html#a0f6f3e85ef85eb4f214d7782a57a12b9">stopCapture</a> ()</td></tr>
+<tr class="separator:a0f6f3e85ef85eb4f214d7782a57a12b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6aa2029acc6550057e80c8d2e7c4bdde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_vision.html#a6aa2029acc6550057e80c8d2e7c4bdde">isCapturing</a> ()</td></tr>
+<tr class="separator:a6aa2029acc6550057e80c8d2e7c4bdde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c0a93e4a74891d6a145b8b6c87f5607"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_vision.html#a8c0a93e4a74891d6a145b8b6c87f5607">isValidCalibration</a> ()</td></tr>
 <tr class="separator:a8c0a93e4a74891d6a145b8b6c87f5607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a79f928ea410736d9cbd226724c283e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_vision.html#a8a79f928ea410736d9cbd226724c283e">getWidth</a> ()</td></tr>
@@ -155,6 +161,15 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_c
 <tr class="memitem:a023699e4cee4899119755fa587e1fa9c"><td class="memItemLeft" align="right" valign="top"><a id="a023699e4cee4899119755fa587e1fa9c" name="a023699e4cee4899119755fa587e1fa9c"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_isConnected</b> (IntPtr sv)</td></tr>
 <tr class="separator:a023699e4cee4899119755fa587e1fa9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d946887540ebcc99fed5947114a946"><td class="memItemLeft" align="right" valign="top"><a id="a20d946887540ebcc99fed5947114a946" name="a20d946887540ebcc99fed5947114a946"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_startCapture</b> (IntPtr sv)</td></tr>
+<tr class="separator:a20d946887540ebcc99fed5947114a946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee1d36bf1fee05f42ae30224071b2684"><td class="memItemLeft" align="right" valign="top"><a id="aee1d36bf1fee05f42ae30224071b2684" name="aee1d36bf1fee05f42ae30224071b2684"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_stopCapture</b> (IntPtr sv)</td></tr>
+<tr class="separator:aee1d36bf1fee05f42ae30224071b2684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df50e3971703c9d9f5c4ca0d7cf2da3"><td class="memItemLeft" align="right" valign="top"><a id="a6df50e3971703c9d9f5c4ca0d7cf2da3" name="a6df50e3971703c9d9f5c4ca0d7cf2da3"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_isCapturing</b> (IntPtr sv)</td></tr>
+<tr class="separator:a6df50e3971703c9d9f5c4ca0d7cf2da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3812439dfd9722b6425639689e861da4"><td class="memItemLeft" align="right" valign="top"><a id="a3812439dfd9722b6425639689e861da4" name="a3812439dfd9722b6425639689e861da4"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>StereoVision_isValidCalibration</b> (IntPtr sv)</td></tr>
 <tr class="separator:a3812439dfd9722b6425639689e861da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,7 +277,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00091">91</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00100">100</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -289,7 +304,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00239">239</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00260">260</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -317,7 +332,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00129">129</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00138">138</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -344,7 +359,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00214">214</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00235">235</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -371,7 +386,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00219">219</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00240">240</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -399,7 +414,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00125">125</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00134">134</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -427,7 +442,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00117">117</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00126">126</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -454,7 +469,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00154">154</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00175">175</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -481,7 +496,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00146">146</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00167">167</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -508,7 +523,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00150">150</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00171">171</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -536,7 +551,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00121">121</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00130">130</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -563,7 +578,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00194">194</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00215">215</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -590,7 +605,34 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00142">142</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00163">163</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+
+</div>
+</div>
+<a id="a6aa2029acc6550057e80c8d2e7c4bdde" name="a6aa2029acc6550057e80c8d2e7c4bdde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aa2029acc6550057e80c8d2e7c4bdde">&#9670;&nbsp;</a></span>isCapturing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool I3DR.Phase.StereoVision.isCapturing </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00155">155</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -617,7 +659,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00134">134</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00143">143</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -644,7 +686,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00190">190</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00211">211</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -671,7 +713,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00138">138</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00159">159</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -709,7 +751,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00166">166</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00187">187</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -737,7 +779,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00158">158</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00179">179</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -775,7 +817,34 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00162">162</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00183">183</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+
+</div>
+</div>
+<a id="a958d016c1db048cf2377178f9f175800" name="a958d016c1db048cf2377178f9f175800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a958d016c1db048cf2377178f9f175800">&#9670;&nbsp;</a></span>startCapture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool I3DR.Phase.StereoVision.startCapture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00147">147</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -813,7 +882,34 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00186">186</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00207">207</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+
+</div>
+</div>
+<a id="a0f6f3e85ef85eb4f214d7782a57a12b9" name="a0f6f3e85ef85eb4f214d7782a57a12b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f6f3e85ef85eb4f214d7782a57a12b9">&#9670;&nbsp;</a></span>stopCapture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR.Phase.StereoVision.stopCapture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00151">151</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -838,7 +934,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00086">86</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00095">95</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -862,7 +958,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00084">84</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00093">93</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -886,7 +982,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00087">87</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00096">96</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -910,7 +1006,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00088">88</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00097">97</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -934,7 +1030,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00089">89</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00098">98</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -958,7 +1054,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00083">83</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00092">92</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>
@@ -982,7 +1078,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00085">85</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereovision_8cs_source.html#l00094">94</a> of file <a class="el" href="stereovision_8cs_source.html">stereovision.cs</a>.</p>
 
 </div>
 </div>

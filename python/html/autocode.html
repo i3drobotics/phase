@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Module &mdash; I3DR Stereo Vision Library 0.0.12 documentation</title>
+  <title>Module &mdash; I3DR Stereo Vision Library 0.0.13 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -272,6 +272,11 @@ single class for easy use.</p>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="phase.core.StereoVision.isCapturing">
+<span class="sig-name descname"><span class="pre">isCapturing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.StereoVision" title="phase.core.StereoVision"><span class="pre">phase.core.StereoVision</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.StereoVision.isCapturing" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="phase.core.StereoVision.isConnected">
 <span class="sig-name descname"><span class="pre">isConnected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.StereoVision" title="phase.core.StereoVision"><span class="pre">phase.core.StereoVision</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.StereoVision.isConnected" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
@@ -302,8 +307,18 @@ single class for easy use.</p>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="phase.core.StereoVision.startCapture">
+<span class="sig-name descname"><span class="pre">startCapture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.StereoVision" title="phase.core.StereoVision"><span class="pre">phase.core.StereoVision</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.StereoVision.startCapture" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="phase.core.StereoVision.startReadThread">
 <span class="sig-name descname"><span class="pre">startReadThread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.StereoVision" title="phase.core.StereoVision"><span class="pre">phase.core.StereoVision</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rectify</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#phase.core.StereoVision.startReadThread" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="phase.core.StereoVision.stopCapture">
+<span class="sig-name descname"><span class="pre">stopCapture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.StereoVision" title="phase.core.StereoVision"><span class="pre">phase.core.StereoVision</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#phase.core.StereoVision.stopCapture" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -999,6 +1014,11 @@ single class for easy use.</p>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="phase.core.stereocamera.DeimosStereoCamera.isCapturing">
+<span class="sig-name descname"><span class="pre">isCapturing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.DeimosStereoCamera" title="phase.core.stereocamera.DeimosStereoCamera"><span class="pre">phase.core.stereocamera.DeimosStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.stereocamera.DeimosStereoCamera.isCapturing" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="phase.core.stereocamera.DeimosStereoCamera.isConnected">
 <span class="sig-name descname"><span class="pre">isConnected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.DeimosStereoCamera" title="phase.core.stereocamera.DeimosStereoCamera"><span class="pre">phase.core.stereocamera.DeimosStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.stereocamera.DeimosStereoCamera.isConnected" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
@@ -1034,8 +1054,18 @@ single class for easy use.</p>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="phase.core.stereocamera.DeimosStereoCamera.startCapture">
+<span class="sig-name descname"><span class="pre">startCapture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.DeimosStereoCamera" title="phase.core.stereocamera.DeimosStereoCamera"><span class="pre">phase.core.stereocamera.DeimosStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.stereocamera.DeimosStereoCamera.startCapture" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="phase.core.stereocamera.DeimosStereoCamera.startReadThread">
 <span class="sig-name descname"><span class="pre">startReadThread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.DeimosStereoCamera" title="phase.core.stereocamera.DeimosStereoCamera"><span class="pre">phase.core.stereocamera.DeimosStereoCamera</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">1000</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#phase.core.stereocamera.DeimosStereoCamera.startReadThread" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="phase.core.stereocamera.DeimosStereoCamera.stopCapture">
+<span class="sig-name descname"><span class="pre">stopCapture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.DeimosStereoCamera" title="phase.core.stereocamera.DeimosStereoCamera"><span class="pre">phase.core.stereocamera.DeimosStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#phase.core.stereocamera.DeimosStereoCamera.stopCapture" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -1080,6 +1110,11 @@ single class for easy use.</p>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="phase.core.stereocamera.PhobosStereoCamera.isCapturing">
+<span class="sig-name descname"><span class="pre">isCapturing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.PhobosStereoCamera" title="phase.core.stereocamera.PhobosStereoCamera"><span class="pre">phase.core.stereocamera.PhobosStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.stereocamera.PhobosStereoCamera.isCapturing" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="phase.core.stereocamera.PhobosStereoCamera.isConnected">
 <span class="sig-name descname"><span class="pre">isConnected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.PhobosStereoCamera" title="phase.core.stereocamera.PhobosStereoCamera"><span class="pre">phase.core.stereocamera.PhobosStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.stereocamera.PhobosStereoCamera.isConnected" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
@@ -1115,8 +1150,18 @@ single class for easy use.</p>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="phase.core.stereocamera.PhobosStereoCamera.startCapture">
+<span class="sig-name descname"><span class="pre">startCapture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.PhobosStereoCamera" title="phase.core.stereocamera.PhobosStereoCamera"><span class="pre">phase.core.stereocamera.PhobosStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.stereocamera.PhobosStereoCamera.startCapture" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="phase.core.stereocamera.PhobosStereoCamera.startReadThread">
 <span class="sig-name descname"><span class="pre">startReadThread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.PhobosStereoCamera" title="phase.core.stereocamera.PhobosStereoCamera"><span class="pre">phase.core.stereocamera.PhobosStereoCamera</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">1000</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#phase.core.stereocamera.PhobosStereoCamera.startReadThread" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="phase.core.stereocamera.PhobosStereoCamera.stopCapture">
+<span class="sig-name descname"><span class="pre">stopCapture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.PhobosStereoCamera" title="phase.core.stereocamera.PhobosStereoCamera"><span class="pre">phase.core.stereocamera.PhobosStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#phase.core.stereocamera.PhobosStereoCamera.stopCapture" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -1158,6 +1203,11 @@ single class for easy use.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="phase.core.stereocamera.PylonStereoCamera.getWidth">
 <span class="sig-name descname"><span class="pre">getWidth</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.PylonStereoCamera" title="phase.core.stereocamera.PylonStereoCamera"><span class="pre">phase.core.stereocamera.PylonStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#phase.core.stereocamera.PylonStereoCamera.getWidth" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="phase.core.stereocamera.PylonStereoCamera.isCapturing">
+<span class="sig-name descname"><span class="pre">isCapturing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.PylonStereoCamera" title="phase.core.stereocamera.PylonStereoCamera"><span class="pre">phase.core.stereocamera.PylonStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.stereocamera.PylonStereoCamera.isCapturing" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -1216,8 +1266,18 @@ single class for easy use.</p>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="phase.core.stereocamera.PylonStereoCamera.startCapture">
+<span class="sig-name descname"><span class="pre">startCapture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.PylonStereoCamera" title="phase.core.stereocamera.PylonStereoCamera"><span class="pre">phase.core.stereocamera.PylonStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.stereocamera.PylonStereoCamera.startCapture" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="phase.core.stereocamera.PylonStereoCamera.startReadThread">
 <span class="sig-name descname"><span class="pre">startReadThread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.PylonStereoCamera" title="phase.core.stereocamera.PylonStereoCamera"><span class="pre">phase.core.stereocamera.PylonStereoCamera</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">1000</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#phase.core.stereocamera.PylonStereoCamera.startReadThread" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="phase.core.stereocamera.PylonStereoCamera.stopCapture">
+<span class="sig-name descname"><span class="pre">stopCapture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.PylonStereoCamera" title="phase.core.stereocamera.PylonStereoCamera"><span class="pre">phase.core.stereocamera.PylonStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#phase.core.stereocamera.PylonStereoCamera.stopCapture" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -1262,6 +1322,11 @@ single class for easy use.</p>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="phase.core.stereocamera.TitaniaStereoCamera.isCapturing">
+<span class="sig-name descname"><span class="pre">isCapturing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.TitaniaStereoCamera" title="phase.core.stereocamera.TitaniaStereoCamera"><span class="pre">phase.core.stereocamera.TitaniaStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.stereocamera.TitaniaStereoCamera.isCapturing" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="phase.core.stereocamera.TitaniaStereoCamera.isConnected">
 <span class="sig-name descname"><span class="pre">isConnected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.TitaniaStereoCamera" title="phase.core.stereocamera.TitaniaStereoCamera"><span class="pre">phase.core.stereocamera.TitaniaStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.stereocamera.TitaniaStereoCamera.isConnected" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
@@ -1297,8 +1362,18 @@ single class for easy use.</p>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="phase.core.stereocamera.TitaniaStereoCamera.startCapture">
+<span class="sig-name descname"><span class="pre">startCapture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.TitaniaStereoCamera" title="phase.core.stereocamera.TitaniaStereoCamera"><span class="pre">phase.core.stereocamera.TitaniaStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.stereocamera.TitaniaStereoCamera.startCapture" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="phase.core.stereocamera.TitaniaStereoCamera.startReadThread">
 <span class="sig-name descname"><span class="pre">startReadThread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.TitaniaStereoCamera" title="phase.core.stereocamera.TitaniaStereoCamera"><span class="pre">phase.core.stereocamera.TitaniaStereoCamera</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">1000</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#phase.core.stereocamera.TitaniaStereoCamera.startReadThread" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="phase.core.stereocamera.TitaniaStereoCamera.stopCapture">
+<span class="sig-name descname"><span class="pre">stopCapture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.TitaniaStereoCamera" title="phase.core.stereocamera.TitaniaStereoCamera"><span class="pre">phase.core.stereocamera.TitaniaStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#phase.core.stereocamera.TitaniaStereoCamera.stopCapture" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -1343,6 +1418,11 @@ single class for easy use.</p>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="phase.core.stereocamera.UVCStereoCamera.isCapturing">
+<span class="sig-name descname"><span class="pre">isCapturing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.UVCStereoCamera" title="phase.core.stereocamera.UVCStereoCamera"><span class="pre">phase.core.stereocamera.UVCStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.stereocamera.UVCStereoCamera.isCapturing" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="phase.core.stereocamera.UVCStereoCamera.isConnected">
 <span class="sig-name descname"><span class="pre">isConnected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.UVCStereoCamera" title="phase.core.stereocamera.UVCStereoCamera"><span class="pre">phase.core.stereocamera.UVCStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.stereocamera.UVCStereoCamera.isConnected" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
@@ -1378,8 +1458,18 @@ single class for easy use.</p>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="phase.core.stereocamera.UVCStereoCamera.startCapture">
+<span class="sig-name descname"><span class="pre">startCapture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.UVCStereoCamera" title="phase.core.stereocamera.UVCStereoCamera"><span class="pre">phase.core.stereocamera.UVCStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#phase.core.stereocamera.UVCStereoCamera.startCapture" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="phase.core.stereocamera.UVCStereoCamera.startReadThread">
 <span class="sig-name descname"><span class="pre">startReadThread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.UVCStereoCamera" title="phase.core.stereocamera.UVCStereoCamera"><span class="pre">phase.core.stereocamera.UVCStereoCamera</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">1000</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#phase.core.stereocamera.UVCStereoCamera.startReadThread" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="phase.core.stereocamera.UVCStereoCamera.stopCapture">
+<span class="sig-name descname"><span class="pre">stopCapture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#phase.core.stereocamera.UVCStereoCamera" title="phase.core.stereocamera.UVCStereoCamera"><span class="pre">phase.core.stereocamera.UVCStereoCamera</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#phase.core.stereocamera.UVCStereoCamera.stopCapture" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
