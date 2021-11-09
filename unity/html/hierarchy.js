@@ -28,6 +28,9 @@ var hierarchy =
       [ "I3DR.PlayerCameraController", "class_i3_d_r_1_1_player_camera_controller.html", null ]
     ] ],
     [ "I3DR.Phase.PhaseSDKVersion", "class_i3_d_r_1_1_phase_1_1_phase_s_d_k_version.html", null ],
+    [ "I3DR.Phase.Point2d", "struct_i3_d_r_1_1_phase_1_1_point2d.html", null ],
+    [ "I3DR.Phase.Point2f", "struct_i3_d_r_1_1_phase_1_1_point2f.html", null ],
+    [ "I3DR.Phase.Point2i", "struct_i3_d_r_1_1_phase_1_1_point2i.html", null ],
     [ "I3DR.Phase.RGBDVideoFrame", "struct_i3_d_r_1_1_phase_1_1_r_g_b_d_video_frame.html", null ],
     [ "I3DR.Phase.RGBDVideoStream", "class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream.html", null ],
     [ "I3DR.Phase.RGBDVideoWriter", "class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_writer.html", null ],
