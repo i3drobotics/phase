@@ -34,7 +34,7 @@ Checkout the ROS package and example cmake project for demonstration of integrat
 - [ROS Package](https://github.com/i3drobotics/i3dr_phase-ros)
 
 Wrappers for many common languages have been created. Checkout the repository for each project using the links below:
-- [pyPhase](https://github.com/i3drobotics/pyPhase)
+- [pyPhase](https://github.com/i3drobotics/pyphase)
 - [Phase Sharp](https://github.com/i3drobotics/phase-sharp)
 - [Phase Unity](https://github.com/i3drobotics/phase-unity)
 - [PhaseJS](https://github.com/i3drobotics/phasejs)
