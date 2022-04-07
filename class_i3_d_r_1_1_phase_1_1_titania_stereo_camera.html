@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="i3dr_logo_128x128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Phase<span id="projectnumber">&#160;0.0.21</span>
+   <div id="projectname">Phase<span id="projectnumber">&#160;0.0.22</span>
    </div>
   </td>
  </tr>
@@ -178,15 +178,24 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>setRightAOI</
 <tr class="memitem:a421e12f765853033823dbbfa37a9f5e4 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a421e12f765853033823dbbfa37a9f5e4" name="a421e12f765853033823dbbfa37a9f5e4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setTestImagePaths</b> (const char *left_test_image_path, const char *right_test_image_path)</td></tr>
 <tr class="separator:a421e12f765853033823dbbfa37a9f5e4 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec04e6945fe934fef1aef2a23eb2585b inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="aec04e6945fe934fef1aef2a23eb2585b" name="aec04e6945fe934fef1aef2a23eb2585b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>startReadThread</b> (int timeout=1000)</td></tr>
-<tr class="separator:aec04e6945fe934fef1aef2a23eb2585b inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24efde9314f9b6a1708b0f8583dfccaf inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a24efde9314f9b6a1708b0f8583dfccaf" name="a24efde9314f9b6a1708b0f8583dfccaf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>startReadThread</b> (int timeout=1000)</td></tr>
+<tr class="separator:a24efde9314f9b6a1708b0f8583dfccaf inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24d696d5f1746987bc14a73a4f50dd96 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a24d696d5f1746987bc14a73a4f50dd96" name="a24d696d5f1746987bc14a73a4f50dd96"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isReadThreadRunning</b> ()</td></tr>
 <tr class="separator:a24d696d5f1746987bc14a73a4f50dd96 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9be63657c5592c2e5b53ff67f7e201ae inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a9be63657c5592c2e5b53ff67f7e201ae" name="a9be63657c5592c2e5b53ff67f7e201ae"></a>
 <a class="el" href="struct_i3_d_r_1_1_phase_1_1_camera_read_result.html">CameraReadResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getReadThreadResult</b> ()</td></tr>
 <tr class="separator:a9be63657c5592c2e5b53ff67f7e201ae inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec6fdee12f738c3dc324026810593525 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="aec6fdee12f738c3dc324026810593525" name="aec6fdee12f738c3dc324026810593525"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>startContinousReadThread</b> (int timeout=1000)</td></tr>
+<tr class="separator:aec6fdee12f738c3dc324026810593525 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe91b86fdb5a58821ba86272576b140 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a6fe91b86fdb5a58821ba86272576b140" name="a6fe91b86fdb5a58821ba86272576b140"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stopContinousReadThread</b> ()</td></tr>
+<tr class="separator:a6fe91b86fdb5a58821ba86272576b140 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c28076ed398e0af8d94b3d0602a66f9 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a8c28076ed398e0af8d94b3d0602a66f9" name="a8c28076ed398e0af8d94b3d0602a66f9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isContinousReadThreadRunning</b> ()</td></tr>
+<tr class="separator:a8c28076ed398e0af8d94b3d0602a66f9 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1da64ec8b2598212aca0d52f6f8d1d02 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memItemLeft" align="right" valign="top"><a id="a1da64ec8b2598212aca0d52f6f8d1d02" name="a1da64ec8b2598212aca0d52f6f8d1d02"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>getWidth</b> ()</td></tr>
 <tr class="separator:a1da64ec8b2598212aca0d52f6f8d1d02 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -281,7 +290,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>I3DR</b></li><li class="navelem"><b>Phase</b></li><li class="navelem"><a class="el" href="class_i3_d_r_1_1_phase_1_1_titania_stereo_camera.html">TitaniaStereoCamera</a></li>
-    <li class="footer">Generated on Thu Apr 7 2022 20:09:12 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Thu Apr 7 2022 21:15:17 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>
