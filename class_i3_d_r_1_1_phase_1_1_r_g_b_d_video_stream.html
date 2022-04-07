@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="i3dr_logo_128x128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Phase<span id="projectnumber">&#160;0.0.20</span>
+   <div id="projectname">Phase<span id="projectnumber">&#160;0.0.21</span>
    </div>
   </td>
  </tr>
@@ -180,16 +180,16 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>loadThreadProc
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a9d1dba771a27891c532492a299c8c0a4"><td class="memItemLeft" align="right" valign="top">std::future&lt; void &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream.html#a9d1dba771a27891c532492a299c8c0a4">m_read_future</a></td></tr>
-<tr class="separator:a9d1dba771a27891c532492a299c8c0a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1806b118f9a0fa7a10c1ec1a4e59aa9b"><td class="memItemLeft" align="right" valign="top">std::future&lt; void &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream.html#a1806b118f9a0fa7a10c1ec1a4e59aa9b">read_future</a></td></tr>
+<tr class="separator:a1806b118f9a0fa7a10c1ec1a4e59aa9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0925db9cab991529653e2e04ba6402c"><td class="memItemLeft" align="right" valign="top">std::mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream.html#ab0925db9cab991529653e2e04ba6402c">readThread_mutex</a></td></tr>
 <tr class="separator:ab0925db9cab991529653e2e04ba6402c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4c83315c876251c9d90cccef5d1d96e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream.html#ac4c83315c876251c9d90cccef5d1d96e">readThread_isRunning</a> = false</td></tr>
 <tr class="separator:ac4c83315c876251c9d90cccef5d1d96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a67b6fb889b0a7ccfee7a1f21f66d42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_i3_d_r_1_1_phase_1_1_r_g_b_d_video_frame.html">RGBDVideoFrame</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream.html#a1a67b6fb889b0a7ccfee7a1f21f66d42">readThread_result</a></td></tr>
 <tr class="separator:a1a67b6fb889b0a7ccfee7a1f21f66d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e154045ac8489b7d010ec72af84547f"><td class="memItemLeft" align="right" valign="top">std::future&lt; void &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream.html#a4e154045ac8489b7d010ec72af84547f">m_load_future</a></td></tr>
-<tr class="separator:a4e154045ac8489b7d010ec72af84547f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb09612e5ef97f2bebcd7332f0e98b6"><td class="memItemLeft" align="right" valign="top">std::future&lt; void &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream.html#a1cb09612e5ef97f2bebcd7332f0e98b6">load_future</a></td></tr>
+<tr class="separator:a1cb09612e5ef97f2bebcd7332f0e98b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9339ff58b9067352d74de92ffbc54341"><td class="memItemLeft" align="right" valign="top">std::mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream.html#a9339ff58b9067352d74de92ffbc54341">loadThread_mutex</a></td></tr>
 <tr class="separator:a9339ff58b9067352d74de92ffbc54341"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5772d24a14d96b43ab6ce31c3d7984d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream.html#a5772d24a14d96b43ab6ce31c3d7984d6">loadThread_isRunning</a> = false</td></tr>
@@ -395,6 +395,30 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a1cb09612e5ef97f2bebcd7332f0e98b6" name="a1cb09612e5ef97f2bebcd7332f0e98b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb09612e5ef97f2bebcd7332f0e98b6">&#9670;&nbsp;</a></span>load_future</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::future&lt;void&gt;* I3DR::Phase::RGBDVideoStream::load_future</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="rgbdvideostream_8h_source.html#l00075">75</a> of file <a class="el" href="rgbdvideostream_8h_source.html">rgbdvideostream.h</a>.</p>
+
+</div>
+</div>
 <a id="ad5146c0cf2e5763d56a8fc8340fa8656" name="ad5146c0cf2e5763d56a8fc8340fa8656"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5146c0cf2e5763d56a8fc8340fa8656">&#9670;&nbsp;</a></span>loaded</h2>
 
@@ -491,8 +515,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a4e154045ac8489b7d010ec72af84547f" name="a4e154045ac8489b7d010ec72af84547f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e154045ac8489b7d010ec72af84547f">&#9670;&nbsp;</a></span>m_load_future</h2>
+<a id="a1806b118f9a0fa7a10c1ec1a4e59aa9b" name="a1806b118f9a0fa7a10c1ec1a4e59aa9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1806b118f9a0fa7a10c1ec1a4e59aa9b">&#9670;&nbsp;</a></span>read_future</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -501,31 +525,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::future&lt;void&gt;* I3DR::Phase::RGBDVideoStream::m_load_future</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="rgbdvideostream_8h_source.html#l00075">75</a> of file <a class="el" href="rgbdvideostream_8h_source.html">rgbdvideostream.h</a>.</p>
-
-</div>
-</div>
-<a id="a9d1dba771a27891c532492a299c8c0a4" name="a9d1dba771a27891c532492a299c8c0a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d1dba771a27891c532492a299c8c0a4">&#9670;&nbsp;</a></span>m_read_future</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::future&lt;void&gt;* I3DR::Phase::RGBDVideoStream::m_read_future</td>
+          <td class="memname">std::future&lt;void&gt;* I3DR::Phase::RGBDVideoStream::read_future</td>
         </tr>
       </table>
   </td>
@@ -716,7 +716,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>I3DR</b></li><li class="navelem"><b>Phase</b></li><li class="navelem"><a class="el" href="class_i3_d_r_1_1_phase_1_1_r_g_b_d_video_stream.html">RGBDVideoStream</a></li>
-    <li class="footer">Generated on Wed Mar 23 2022 18:20:52 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Thu Apr 7 2022 17:22:53 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>
