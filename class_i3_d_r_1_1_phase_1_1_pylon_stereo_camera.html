@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="i3dr_logo_128x128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Phase<span id="projectnumber">&#160;0.0.24</span>
+   <div id="projectname">Phase<span id="projectnumber">&#160;0.0.25</span>
    </div>
   </td>
  </tr>
@@ -285,6 +285,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setRightReverseX</b> 
 <tr class="memitem:ad64c009785b912242a52988755287b26"><td class="memItemLeft" align="right" valign="top"><a id="ad64c009785b912242a52988755287b26" name="ad64c009785b912242a52988755287b26"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setRightReverseY</b> (bool reverse)</td></tr>
 <tr class="separator:ad64c009785b912242a52988755287b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3504dbbc81901a9928f2367793fe4a36"><td class="memItemLeft" align="right" valign="top"><a id="a3504dbbc81901a9928f2367793fe4a36" name="a3504dbbc81901a9928f2367793fe4a36"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>grabImage2mat</b> (const Pylon::CGrabResultPtr &amp;ptrGrabResult, cv::Mat &amp;imageOut)</td></tr>
+<tr class="separator:a3504dbbc81901a9928f2367793fe4a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce33fdfc1bbc59d277bc198d7ecadfd"><td class="memItemLeft" align="right" valign="top"><a id="a0ce33fdfc1bbc59d277bc198d7ecadfd" name="a0ce33fdfc1bbc59d277bc198d7ecadfd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>readImagePair</b> (cv::Mat &amp;left, cv::Mat &amp;right, int timeout)</td></tr>
+<tr class="separator:a0ce33fdfc1bbc59d277bc198d7ecadfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5876225e1c084a48719f3428dbc6ce0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#ae5876225e1c084a48719f3428dbc6ce0">readRaw</a> (int timeout, cv::Mat &amp;dst_left_image, cv::Mat &amp;dst_right_image)</td></tr>
 <tr class="separator:ae5876225e1c084a48719f3428dbc6ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a124aac81ccad2264548aef34c08d67"><td class="memItemLeft" align="right" valign="top"><a id="a3a124aac81ccad2264548aef34c08d67" name="a3a124aac81ccad2264548aef34c08d67"></a>
@@ -303,8 +309,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a0fcbb605c37109a0379ea0d6c0204846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a759dbd33504f03e116db7f0ff1e036da"><td class="memItemLeft" align="right" valign="top">Pylon::CInstantCameraArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#a759dbd33504f03e116db7f0ff1e036da">cameras</a> = nullptr</td></tr>
 <tr class="separator:a759dbd33504f03e116db7f0ff1e036da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a866a7a5a9e98fad6fd9385ae948cbbfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i3_d_r_1_1_phase_1_1_c_pylon_stereo_camera_image_event_handler.html">CPylonStereoCameraImageEventHandler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#a866a7a5a9e98fad6fd9385ae948cbbfb">imageEventHandler</a> = nullptr</td></tr>
-<tr class="separator:a866a7a5a9e98fad6fd9385ae948cbbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a838eeaf160ffb40b23f0d30b39f8f009"><td class="memItemLeft" align="right" valign="top">Pylon::CImageFormatConverter *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#a838eeaf160ffb40b23f0d30b39f8f009">formatConverter</a></td></tr>
+<tr class="separator:a838eeaf160ffb40b23f0d30b39f8f009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ae78f4c760d37305698f9a2d64b8bc"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#a38ae78f4c760d37305698f9a2d64b8bc">prev_frame_timestamp</a></td></tr>
+<tr class="separator:a38ae78f4c760d37305698f9a2d64b8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcfe9605826058e64f296e70321eaab1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#adcfe9605826058e64f296e70321eaab1">frame_rate</a> = 0</td></tr>
+<tr class="separator:adcfe9605826058e64f296e70321eaab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac87b78b361240f4fe3a4546150c8941"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#aac87b78b361240f4fe3a4546150c8941">connected</a> = false</td></tr>
 <tr class="separator:aac87b78b361240f4fe3a4546150c8941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a2c043fb9e3bf7c6074d53ca76891ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#a7a2c043fb9e3bf7c6074d53ca76891ff">camera_width</a> = 0</td></tr>
@@ -337,7 +347,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00060">60</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00031">31</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="acc72eaa396d73b9898cf4650986a2352" name="acc72eaa396d73b9898cf4650986a2352"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acc72eaa396d73b9898cf4650986a2352">&#9670;&nbsp;</a></span>connect()</h2>
@@ -831,7 +841,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00116">116</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00092">92</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -855,7 +865,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00115">115</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00091">91</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -879,7 +889,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00111">111</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00084">84</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -903,12 +913,12 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00114">114</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00090">90</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 
 </div>
 </div>
-<a id="a866a7a5a9e98fad6fd9385ae948cbbfb" name="a866a7a5a9e98fad6fd9385ae948cbbfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a866a7a5a9e98fad6fd9385ae948cbbfb">&#9670;&nbsp;</a></span>imageEventHandler</h2>
+<a id="a838eeaf160ffb40b23f0d30b39f8f009" name="a838eeaf160ffb40b23f0d30b39f8f009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a838eeaf160ffb40b23f0d30b39f8f009">&#9670;&nbsp;</a></span>formatConverter</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -917,7 +927,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_i3_d_r_1_1_phase_1_1_c_pylon_stereo_camera_image_event_handler.html">CPylonStereoCameraImageEventHandler</a>* I3DR::Phase::PylonStereoCamera::imageEventHandler = nullptr</td>
+          <td class="memname">Pylon::CImageFormatConverter* I3DR::Phase::PylonStereoCamera::formatConverter</td>
         </tr>
       </table>
   </td>
@@ -927,7 +937,31 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00112">112</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00085">85</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+
+</div>
+</div>
+<a id="adcfe9605826058e64f296e70321eaab1" name="adcfe9605826058e64f296e70321eaab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcfe9605826058e64f296e70321eaab1">&#9670;&nbsp;</a></span>frame_rate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double I3DR::Phase::PylonStereoCamera::frame_rate = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00088">88</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -951,7 +985,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00118">118</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00094">94</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -967,7 +1001,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00084">84</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00055">55</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -983,7 +1017,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00085">85</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00056">56</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -1007,7 +1041,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00091">91</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00062">62</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -1031,7 +1065,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00092">92</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00063">63</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -1055,7 +1089,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00093">93</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00064">64</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -1079,7 +1113,31 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00090">90</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00061">61</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+
+</div>
+</div>
+<a id="a38ae78f4c760d37305698f9a2d64b8bc" name="a38ae78f4c760d37305698f9a2d64b8bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38ae78f4c760d37305698f9a2d64b8bc">&#9670;&nbsp;</a></span>prev_frame_timestamp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t I3DR::Phase::PylonStereoCamera::prev_frame_timestamp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00087">87</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -1103,7 +1161,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00119">119</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00095">95</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -1119,7 +1177,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00086">86</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00057">57</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -1135,7 +1193,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00087">87</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00058">58</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -1159,7 +1217,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00110">110</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="pylonstereocamera_8h_source.html#l00083">83</a> of file <a class="el" href="pylonstereocamera_8h_source.html">pylonstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -1172,7 +1230,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightTestI
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>I3DR</b></li><li class="navelem"><b>Phase</b></li><li class="navelem"><a class="el" href="class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html">PylonStereoCamera</a></li>
-    <li class="footer">Generated on Mon Apr 11 2022 14:50:30 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Wed May 4 2022 16:12:09 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>

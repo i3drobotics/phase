@@ -18,9 +18,6 @@ var hierarchy =
     [ "I3DR::Phase::CameraCalibration", "class_i3_d_r_1_1_phase_1_1_camera_calibration.html", null ],
     [ "I3DR::Phase::CameraDeviceInfo", "class_i3_d_r_1_1_phase_1_1_camera_device_info.html", null ],
     [ "I3DR::Phase::CameraReadResult", "struct_i3_d_r_1_1_phase_1_1_camera_read_result.html", null ],
-    [ "Pylon::CImageEventHandler", null, [
-      [ "I3DR::Phase::CPylonStereoCameraImageEventHandler", "class_i3_d_r_1_1_phase_1_1_c_pylon_stereo_camera_image_event_handler.html", null ]
-    ] ],
     [ "I3DR::Phase::Matrix< T >", "class_i3_d_r_1_1_phase_1_1_matrix.html", null ],
     [ "I3DR::Phase::Point2d", "struct_i3_d_r_1_1_phase_1_1_point2d.html", null ],
     [ "I3DR::Phase::Point2f", "struct_i3_d_r_1_1_phase_1_1_point2f.html", null ],
