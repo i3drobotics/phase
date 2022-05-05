@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="i3dr_logo_128x128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Phase<span id="projectnumber">&#160;0.0.25</span>
+   <div id="projectname">Phase<span id="projectnumber">&#160;0.0.26</span>
    </div>
   </td>
  </tr>
@@ -245,9 +245,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a2c2d193d5d23bfa00df8439528ef8f46"><td class="memItemLeft" align="right" valign="top"><a id="a2c2d193d5d23bfa00df8439528ef8f46" name="a2c2d193d5d23bfa00df8439528ef8f46"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkContinousReadThreadContinue</b> ()</td></tr>
 <tr class="separator:a2c2d193d5d23bfa00df8439528ef8f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b3d2818f47ce1a243a2dd89455c10a2"><td class="memItemLeft" align="right" valign="top"><a id="a2b3d2818f47ce1a243a2dd89455c10a2" name="a2b3d2818f47ce1a243a2dd89455c10a2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>increaseCaptureCount</b> ()</td></tr>
+<tr class="separator:a2b3d2818f47ce1a243a2dd89455c10a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a4c78bbec60b29bf30b0b52780c41b822"><td class="memItemLeft" align="right" valign="top"><a id="a4c78bbec60b29bf30b0b52780c41b822" name="a4c78bbec60b29bf30b0b52780c41b822"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>runReadThreadCallback</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html">AbstractStereoCamera</a> *cam, <a class="el" href="struct_i3_d_r_1_1_phase_1_1_camera_read_result.html">CameraReadResult</a> result)</td></tr>
+<tr class="separator:a4c78bbec60b29bf30b0b52780c41b822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1febc12e43318b8cd0c4502935e6dc79"><td class="memItemLeft" align="right" valign="top"><a id="a1febc12e43318b8cd0c4502935e6dc79" name="a1febc12e43318b8cd0c4502935e6dc79"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>readThreadProcess</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html">AbstractStereoCamera</a> *cam, int timeout=1000)</td></tr>
 <tr class="separator:a1febc12e43318b8cd0c4502935e6dc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,8 +267,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a8629bec6855b169314be771db6b36698"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa839cc3bd371558f851f302e0303f2af"><td class="memItemLeft" align="right" valign="top">std::future&lt; void &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#aa839cc3bd371558f851f302e0303f2af">readThread_callback_future</a></td></tr>
 <tr class="separator:aa839cc3bd371558f851f302e0303f2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09ea5611a23b5525e6d18c35648c496d"><td class="memItemLeft" align="right" valign="top">std::mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a09ea5611a23b5525e6d18c35648c496d">readThread_mutex</a></td></tr>
-<tr class="separator:a09ea5611a23b5525e6d18c35648c496d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec8fa2d2d9490c26129f9e1657a35cee"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="struct_i3_d_r_1_1_phase_1_1_camera_read_result.html">CameraReadResult</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#aec8fa2d2d9490c26129f9e1657a35cee">readThread_callback</a> = nullptr</td></tr>
 <tr class="separator:aec8fa2d2d9490c26129f9e1657a35cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addde2b111aed84d8776a98a5c75cba74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#addde2b111aed84d8776a98a5c75cba74">readThread_running</a> = false</td></tr>
@@ -271,6 +275,16 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ad63d2e3ea17fbb05c80e19752c8cee7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51c17adfcf15df123006a7df53cfea76"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a51c17adfcf15df123006a7df53cfea76">continous_readThread_continue</a> = false</td></tr>
 <tr class="separator:a51c17adfcf15df123006a7df53cfea76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eda572fce8ced340f769ebb5830641a"><td class="memItemLeft" align="right" valign="top">std::mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a5eda572fce8ced340f769ebb5830641a">readThread_result_mutex</a></td></tr>
+<tr class="separator:a5eda572fce8ced340f769ebb5830641a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d693d01dca1a053739e6a342fd1ade"><td class="memItemLeft" align="right" valign="top">std::mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#aa0d693d01dca1a053739e6a342fd1ade">capture_count_mutex</a></td></tr>
+<tr class="separator:aa0d693d01dca1a053739e6a342fd1ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4023df4b53b84faa9609e7bbff12568b"><td class="memItemLeft" align="right" valign="top">std::mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a4023df4b53b84faa9609e7bbff12568b">readThread_running_mutex</a></td></tr>
+<tr class="separator:a4023df4b53b84faa9609e7bbff12568b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce669b766238139bea08d4c7657b583"><td class="memItemLeft" align="right" valign="top">std::mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a0ce669b766238139bea08d4c7657b583">continous_readThread_continue_mutex</a></td></tr>
+<tr class="separator:a0ce669b766238139bea08d4c7657b583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0393aafa4c1c094d9c0504de5c89208a"><td class="memItemLeft" align="right" valign="top">std::mutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a0393aafa4c1c094d9c0504de5c89208a">continous_readThread_running_mutex</a></td></tr>
+<tr class="separator:a0393aafa4c1c094d9c0504de5c89208a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46a75d3ce919e236e60ede856432ba84"><td class="memItemLeft" align="right" valign="top">std::string *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a46a75d3ce919e236e60ede856432ba84">left_test_image_path</a></td></tr>
 <tr class="separator:a46a75d3ce919e236e60ede856432ba84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05ecfb12eaacc662215c98933594b6c5"><td class="memItemLeft" align="right" valign="top">std::string *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a05ecfb12eaacc662215c98933594b6c5">right_test_image_path</a></td></tr>
@@ -318,7 +332,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00122">122</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00130">130</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+
+</div>
+</div>
+<a id="aa0d693d01dca1a053739e6a342fd1ade" name="aa0d693d01dca1a053739e6a342fd1ade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0d693d01dca1a053739e6a342fd1ade">&#9670;&nbsp;</a></span>capture_count_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex* I3DR::Phase::AbstractStereoCamera::capture_count_mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00116">116</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -342,7 +380,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00120">120</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00128">128</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -366,7 +404,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00111">111</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00113">113</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+
+</div>
+</div>
+<a id="a0ce669b766238139bea08d4c7657b583" name="a0ce669b766238139bea08d4c7657b583"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ce669b766238139bea08d4c7657b583">&#9670;&nbsp;</a></span>continous_readThread_continue_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex* I3DR::Phase::AbstractStereoCamera::continous_readThread_continue_mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00118">118</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -390,7 +452,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00110">110</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00112">112</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+
+</div>
+</div>
+<a id="a0393aafa4c1c094d9c0504de5c89208a" name="a0393aafa4c1c094d9c0504de5c89208a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0393aafa4c1c094d9c0504de5c89208a">&#9670;&nbsp;</a></span>continous_readThread_running_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex* I3DR::Phase::AbstractStereoCamera::continous_readThread_running_mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00119">119</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -414,7 +500,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00121">121</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00129">129</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -462,7 +548,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00125">125</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00133">133</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -486,7 +572,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00124">124</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00132">132</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -510,7 +596,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00116">116</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00124">124</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -534,7 +620,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00118">118</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00126">126</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -558,7 +644,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00117">117</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00125">125</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -582,7 +668,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00119">119</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00127">127</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -606,7 +692,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00113">113</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00121">121</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -630,7 +716,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00105">105</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00108">108</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -654,7 +740,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00108">108</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00110">110</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -678,31 +764,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00106">106</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
-
-</div>
-</div>
-<a id="a09ea5611a23b5525e6d18c35648c496d" name="a09ea5611a23b5525e6d18c35648c496d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09ea5611a23b5525e6d18c35648c496d">&#9670;&nbsp;</a></span>readThread_mutex</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::mutex* I3DR::Phase::AbstractStereoCamera::readThread_mutex</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00107">107</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00109">109</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -730,6 +792,30 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a5eda572fce8ced340f769ebb5830641a" name="a5eda572fce8ced340f769ebb5830641a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eda572fce8ced340f769ebb5830641a">&#9670;&nbsp;</a></span>readThread_result_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex* I3DR::Phase::AbstractStereoCamera::readThread_result_mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00115">115</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+
+</div>
+</div>
 <a id="addde2b111aed84d8776a98a5c75cba74" name="addde2b111aed84d8776a98a5c75cba74"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#addde2b111aed84d8776a98a5c75cba74">&#9670;&nbsp;</a></span>readThread_running</h2>
 
@@ -750,7 +836,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00109">109</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00111">111</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+
+</div>
+</div>
+<a id="a4023df4b53b84faa9609e7bbff12568b" name="a4023df4b53b84faa9609e7bbff12568b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4023df4b53b84faa9609e7bbff12568b">&#9670;&nbsp;</a></span>readThread_running_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex* I3DR::Phase::AbstractStereoCamera::readThread_running_mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00117">117</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -774,7 +884,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00114">114</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="abstractstereocamera_8h_source.html#l00122">122</a> of file <a class="el" href="abstractstereocamera_8h_source.html">abstractstereocamera.h</a>.</p>
 
 </div>
 </div>
@@ -787,7 +897,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>I3DR</b></li><li class="navelem"><b>Phase</b></li><li class="navelem"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html">AbstractStereoCamera</a></li>
-    <li class="footer">Generated on Wed May 4 2022 16:12:09 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
+    <li class="footer">Generated on Thu May 5 2022 12:28:54 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3 </li>
   </ul>
 </div>
 </body>
