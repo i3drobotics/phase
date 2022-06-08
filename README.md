@@ -31,7 +31,7 @@ For code documentation and examples on how to use Phase see [here](https://i3dro
 ## Integration
 Checkout the ROS package and example cmake project for demonstration of integrating the Phase library.
 - [CMake project](https://github.com/i3drobotics/phase-cmake)
-- [ROS Package](https://github.com/i3drobotics/i3dr_phase-ros)
+- [ROS Package](https://github.com/i3drobotics/phase-ros)
 
 Wrappers for many common languages have been created. Checkout the repository for each project using the links below:
 - [pyPhase](https://github.com/i3drobotics/pyphase)
