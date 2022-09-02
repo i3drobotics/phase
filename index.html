@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="i3dr_logo_128x128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Phase<span id="projectnumber">&#160;0.1.1</span>
+   <div id="projectname">Phase<span id="projectnumber">&#160;0.2.0</span>
    </div>
   </td>
  </tr>
@@ -90,15 +90,52 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><p ><a class="anchor" id="md_docs_README_external"></a>Phase is a C++ Library for stereo vision and 3D manipulation using I3DR's stereo camera systems.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
+Latest release</h1>
+<p >Find the latest releases <a href="https://github.com/i3drobotics/phase/releases/latest">here</a></p>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Compatibility</h1>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Supported platforms</h2>
+<ul>
+<li>Windows (tested on Windows 10)</li>
+<li>Linux (tested on Ubuntu 20.04)</li>
+<li>MacOS (tested on MacOS BigSur) [Coming soon]</li>
+<li>Jetson (test on Jetson Nano) [Coming soon]</li>
+</ul>
+<p ><b>NOTE: I3DR's proprietary stereo matcher I3DRSGM is not available on MacOS or Jetson platforms.</b></p>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Install</h1>
-<p >TODO: Add install instructions </p>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Linux</h2>
+<p >Download debian package from latest release. <br  />
+ Install debian package using apt package manager: </p><div class="fragment"><div class="line">sudo apt install -f ./phase_vx.x.x-amd64.deb</div>
+</div><!-- fragment --><p> This should install to <code>/opt/i3dr/phase</code> </p>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Windows</h2>
+<p >Download Windows installer from the latest release. <br  />
+ Install using the installer GUI, this should install to <code>C:\Program Files\i3DR\Phase</code></p>
+<h1><a class="anchor" id="autotoc_md7"></a>
+Documentation</h1>
+<p >For code documentation and examples on how to use Phase see <a href="https://i3drobotics.github.io/phase/index.html">here</a></p>
+<h1><a class="anchor" id="autotoc_md8"></a>
+Integration</h1>
+<p >Checkout the ROS package and example cmake project for demonstration of integrating the Phase library.</p><ul>
+<li><a href="https://github.com/i3drobotics/phase-cmake">CMake project</a></li>
+<li><a href="https://github.com/i3drobotics/phase-ros">ROS Package</a></li>
+</ul>
+<p >Wrappers for many common languages have been created. Checkout the repository for each project using the links below:</p><ul>
+<li><a href="https://github.com/i3drobotics/pyphase">pyPhase</a></li>
+<li><a href="https://github.com/i3drobotics/phase-sharp">Phase Sharp</a></li>
+<li><a href="https://github.com/i3drobotics/phase-unity">Phase Unity</a></li>
+<li><a href="https://github.com/i3drobotics/phasejs">PhaseJS</a> </li>
+</ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jun 21 2022 11:19:53 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Sep 2 2022 09:45:16 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

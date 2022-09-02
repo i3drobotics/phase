@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['read_5ffuture_0',['read_future',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a8629bec6855b169314be771db6b36698',1,'I3DR::Phase::AbstractStereoCamera']]],
+  ['readthread_5fcallback_1',['readThread_callback',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#aec8fa2d2d9490c26129f9e1657a35cee',1,'I3DR::Phase::AbstractStereoCamera']]],
+  ['readthread_5fcallback_5ffuture_2',['readThread_callback_future',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#aa839cc3bd371558f851f302e0303f2af',1,'I3DR::Phase::AbstractStereoCamera']]],
+  ['readthread_5fresult_3',['readThread_result',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a775a76e44258bd7cc7225eb79dd94af0',1,'I3DR::Phase::AbstractStereoCamera']]],
+  ['readthread_5fresult_5fmutex_4',['readThread_result_mutex',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a5eda572fce8ced340f769ebb5830641a',1,'I3DR::Phase::AbstractStereoCamera']]],
+  ['readthread_5frunning_5',['readThread_running',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#addde2b111aed84d8776a98a5c75cba74',1,'I3DR::Phase::AbstractStereoCamera']]],
+  ['readthread_5frunning_5fmutex_6',['readThread_running_mutex',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a4023df4b53b84faa9609e7bbff12568b',1,'I3DR::Phase::AbstractStereoCamera']]],
+  ['rect_5fmap_5fx_7',['rect_map_x',['../class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a0eeaf9d4bf9a3b961ac59029daafd4ee',1,'I3DR::Phase::CameraCalibration']]],
+  ['rect_5fmap_5fx_5fdownsampled_8',['rect_map_x_downsampled',['../class_i3_d_r_1_1_phase_1_1_camera_calibration.html#acdc49fdff71bc2a9a251289e535979c0',1,'I3DR::Phase::CameraCalibration']]],
+  ['rect_5fmap_5fy_9',['rect_map_y',['../class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a6d1a3c99127ee1244ec1271585a0c8b8',1,'I3DR::Phase::CameraCalibration']]],
+  ['rect_5fmap_5fy_5fdownsampled_10',['rect_map_y_downsampled',['../class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a5f09b1ec907798c266cb634ba8364b66',1,'I3DR::Phase::CameraCalibration']]],
+  ['rectification_5fmatrix_11',['rectification_matrix',['../class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aeb3456cd731b7df7076a3755e5f75ddb',1,'I3DR::Phase::CameraCalibration']]],
+  ['rectification_5fmatrix_5fdownsampled_12',['rectification_matrix_downsampled',['../class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a94cc9d1d35884a7f5f91dc67230ff9bb',1,'I3DR::Phase::CameraCalibration']]],
+  ['right_13',['right',['../struct_i3_d_r_1_1_phase_1_1_camera_read_result.html#a8a84d46f26fb40d354a28774918acfa4',1,'I3DR::Phase::CameraReadResult']]],
+  ['right_5faoi_14',['right_aoi',['../class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#a3defa533e8f8e943773124c191e17a8f',1,'I3DR::Phase::PylonStereoCamera']]],
+  ['right_5fcalibration_15',['right_calibration',['../class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#ae8b3b524e749bca924911bdbf5e7ce6b',1,'I3DR::Phase::StereoCameraCalibration']]],
+  ['right_5fcamera_5fserial_16',['right_camera_serial',['../class_i3_d_r_1_1_phase_1_1_camera_device_info.html#ae2e6131b8121346a8ef6697cc17a3f40',1,'I3DR::Phase::CameraDeviceInfo']]],
+  ['right_5fdevice_5fid_17',['right_device_id',['../class_i3_d_r_1_1_phase_1_1_u_v_c_stereo_camera.html#aa9ac61c9a061d774f588da5a51c2d6b3',1,'I3DR::Phase::UVCStereoCamera']]],
+  ['right_5fimage_5fbuffer_18',['right_image_buffer',['../class_i3_d_r_1_1_phase_1_1_u_v_c_stereo_camera.html#a95c5452157dabed6b60a396f82efe310',1,'I3DR::Phase::UVCStereoCamera']]],
+  ['right_5freverse_5fx_19',['right_reverse_x',['../class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#ad19b0ff1b51bf44d9792326f8709c7bc',1,'I3DR::Phase::PylonStereoCamera']]],
+  ['right_5freverse_5fy_20',['right_reverse_y',['../class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#a86a9d2f7f9af68e5ea63fac1dba57869',1,'I3DR::Phase::PylonStereoCamera']]],
+  ['right_5ftest_5fimage_5fpath_21',['right_test_image_path',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a05ecfb12eaacc662215c98933594b6c5',1,'I3DR::Phase::AbstractStereoCamera']]],
+  ['ros_5fyaml_22',['ROS_YAML',['../calib_2cameracalibration_8h.html#af286ee3501a2f2886d60fd7f352d90dc',1,'cameracalibration.h']]]
+];

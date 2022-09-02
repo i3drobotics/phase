@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="i3dr_logo_128x128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Phase<span id="projectnumber">&#160;0.1.1</span>
+   <div id="projectname">Phase<span id="projectnumber">&#160;0.2.0</span>
    </div>
   </td>
  </tr>
@@ -94,62 +94,324 @@ $(document).ready(function(){initNavTree('class_i3_d_r_1_1_phase_1_1_camera_devi
 </div><!--header-->
 <div class="contents">
 
-<p>Structure to hold stereo camera information.  
+<p>Camera Device Info class.  
  <a href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="stereocamera_2cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aec66af52fa09d9c0d3afcfed8b1dd035"><td class="memItemLeft" align="right" valign="top"><a id="aec66af52fa09d9c0d3afcfed8b1dd035" name="aec66af52fa09d9c0d3afcfed8b1dd035"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CameraDeviceInfo</b> (const <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html">CameraDeviceInfo</a> &amp;other)</td></tr>
+<tr class="memitem:aec66af52fa09d9c0d3afcfed8b1dd035"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#aec66af52fa09d9c0d3afcfed8b1dd035">CameraDeviceInfo</a> (const <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html">CameraDeviceInfo</a> &amp;other)</td></tr>
+<tr class="memdesc:aec66af52fa09d9c0d3afcfed8b1dd035"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html" title="Camera Device Info class.">CameraDeviceInfo</a> copy contructor.  <a href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#aec66af52fa09d9c0d3afcfed8b1dd035">More...</a><br /></td></tr>
 <tr class="separator:aec66af52fa09d9c0d3afcfed8b1dd035"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1774c0afbf83a7fb1f2f3a1749b252a3"><td class="memItemLeft" align="right" valign="top"><a id="a1774c0afbf83a7fb1f2f3a1749b252a3" name="a1774c0afbf83a7fb1f2f3a1749b252a3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CameraDeviceInfo</b> (const char *left_camera_serial, const char *right_camera_serial, const char *unique_serial, CameraDeviceType device_type, CameraInterfaceType interface_type)</td></tr>
+<tr class="memitem:a1774c0afbf83a7fb1f2f3a1749b252a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a1774c0afbf83a7fb1f2f3a1749b252a3">CameraDeviceInfo</a> (const char *<a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a03256ef4f495e6f52bd8fbee6fac4959">left_camera_serial</a>, const char *<a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#ae2e6131b8121346a8ef6697cc17a3f40">right_camera_serial</a>, const char *<a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#abde05b97c68a4d8bef045f44d570e5ed">unique_serial</a>, CameraDeviceType <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a2d9d5c00bfc8c2833a75567e604463a1">device_type</a>, CameraInterfaceType <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a3091f546af2c05e01af7decc1e29bcfa">interface_type</a>)</td></tr>
+<tr class="memdesc:a1774c0afbf83a7fb1f2f3a1749b252a3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html" title="Camera Device Info class.">CameraDeviceInfo</a> contructor <br  />
+Create device information about the camera.  <a href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a1774c0afbf83a7fb1f2f3a1749b252a3">More...</a><br /></td></tr>
 <tr class="separator:a1774c0afbf83a7fb1f2f3a1749b252a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25c217e3cfc50ff78e015f50a1ff32f4"><td class="memItemLeft" align="right" valign="top"><a id="a25c217e3cfc50ff78e015f50a1ff32f4" name="a25c217e3cfc50ff78e015f50a1ff32f4"></a>
-<a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html">CameraDeviceInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html">CameraDeviceInfo</a> &amp;other)</td></tr>
+<tr class="memitem:a25c217e3cfc50ff78e015f50a1ff32f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html">CameraDeviceInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a25c217e3cfc50ff78e015f50a1ff32f4">operator=</a> (const <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html">CameraDeviceInfo</a> &amp;other)</td></tr>
+<tr class="memdesc:a25c217e3cfc50ff78e015f50a1ff32f4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html" title="Camera Device Info class.">CameraDeviceInfo</a> copy assignment.  <a href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a25c217e3cfc50ff78e015f50a1ff32f4">More...</a><br /></td></tr>
 <tr class="separator:a25c217e3cfc50ff78e015f50a1ff32f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a193a693fb372c578b71331ac0f2263de"><td class="memItemLeft" align="right" valign="top"><a id="a193a693fb372c578b71331ac0f2263de" name="a193a693fb372c578b71331ac0f2263de"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getLeftCameraSerial</b> ()</td></tr>
+<tr class="memitem:a949271e5a79a21cea30046d9338f7006"><td class="memItemLeft" align="right" valign="top"><a id="a949271e5a79a21cea30046d9338f7006" name="a949271e5a79a21cea30046d9338f7006"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~CameraDeviceInfo</b> ()</td></tr>
+<tr class="memdesc:a949271e5a79a21cea30046d9338f7006"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html" title="Camera Device Info class.">CameraDeviceInfo</a> deconstructor. <br /></td></tr>
+<tr class="separator:a949271e5a79a21cea30046d9338f7006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193a693fb372c578b71331ac0f2263de"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a193a693fb372c578b71331ac0f2263de">getLeftCameraSerial</a> ()</td></tr>
+<tr class="memdesc:a193a693fb372c578b71331ac0f2263de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get left camera serial information.  <a href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a193a693fb372c578b71331ac0f2263de">More...</a><br /></td></tr>
 <tr class="separator:a193a693fb372c578b71331ac0f2263de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac76762f77a10be9b0600eb02e290ca20"><td class="memItemLeft" align="right" valign="top"><a id="ac76762f77a10be9b0600eb02e290ca20" name="ac76762f77a10be9b0600eb02e290ca20"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getRightCameraSerial</b> ()</td></tr>
+<tr class="memitem:ac76762f77a10be9b0600eb02e290ca20"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#ac76762f77a10be9b0600eb02e290ca20">getRightCameraSerial</a> ()</td></tr>
+<tr class="memdesc:ac76762f77a10be9b0600eb02e290ca20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get right camera serial information.  <a href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#ac76762f77a10be9b0600eb02e290ca20">More...</a><br /></td></tr>
 <tr class="separator:ac76762f77a10be9b0600eb02e290ca20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a6c8b77866fdf766933d8a664879b6a"><td class="memItemLeft" align="right" valign="top"><a id="a2a6c8b77866fdf766933d8a664879b6a" name="a2a6c8b77866fdf766933d8a664879b6a"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>getUniqueSerial</b> ()</td></tr>
+<tr class="memitem:a2a6c8b77866fdf766933d8a664879b6a"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a2a6c8b77866fdf766933d8a664879b6a">getUniqueSerial</a> ()</td></tr>
+<tr class="memdesc:a2a6c8b77866fdf766933d8a664879b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get stereo camera unqiue serial information.  <a href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a2a6c8b77866fdf766933d8a664879b6a">More...</a><br /></td></tr>
 <tr class="separator:a2a6c8b77866fdf766933d8a664879b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94786b7eba9adeadfba9629efdfc410b"><td class="memItemLeft" align="right" valign="top"><a id="a94786b7eba9adeadfba9629efdfc410b" name="a94786b7eba9adeadfba9629efdfc410b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setLeftCameraSerial</b> (const char *left_camera_serial)</td></tr>
+<tr class="memitem:a94786b7eba9adeadfba9629efdfc410b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a94786b7eba9adeadfba9629efdfc410b">setLeftCameraSerial</a> (const char *<a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a03256ef4f495e6f52bd8fbee6fac4959">left_camera_serial</a>)</td></tr>
+<tr class="memdesc:a94786b7eba9adeadfba9629efdfc410b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set left camera serial.  <a href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a94786b7eba9adeadfba9629efdfc410b">More...</a><br /></td></tr>
 <tr class="separator:a94786b7eba9adeadfba9629efdfc410b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dadc56e31cd5462dfb6b4a7a146257e"><td class="memItemLeft" align="right" valign="top"><a id="a5dadc56e31cd5462dfb6b4a7a146257e" name="a5dadc56e31cd5462dfb6b4a7a146257e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setRightCameraSerial</b> (const char *right_camera_serial)</td></tr>
+<tr class="memitem:a5dadc56e31cd5462dfb6b4a7a146257e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a5dadc56e31cd5462dfb6b4a7a146257e">setRightCameraSerial</a> (const char *<a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#ae2e6131b8121346a8ef6697cc17a3f40">right_camera_serial</a>)</td></tr>
+<tr class="memdesc:a5dadc56e31cd5462dfb6b4a7a146257e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set right camera serial.  <a href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a5dadc56e31cd5462dfb6b4a7a146257e">More...</a><br /></td></tr>
 <tr class="separator:a5dadc56e31cd5462dfb6b4a7a146257e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a109fddbf7fe41c156c4a0426aba8ad76"><td class="memItemLeft" align="right" valign="top"><a id="a109fddbf7fe41c156c4a0426aba8ad76" name="a109fddbf7fe41c156c4a0426aba8ad76"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setUniqueSerial</b> (const char *unique_serial)</td></tr>
+<tr class="memitem:a109fddbf7fe41c156c4a0426aba8ad76"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a109fddbf7fe41c156c4a0426aba8ad76">setUniqueSerial</a> (const char *<a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#abde05b97c68a4d8bef045f44d570e5ed">unique_serial</a>)</td></tr>
+<tr class="memdesc:a109fddbf7fe41c156c4a0426aba8ad76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set stereo camera unique serial.  <a href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a109fddbf7fe41c156c4a0426aba8ad76">More...</a><br /></td></tr>
 <tr class="separator:a109fddbf7fe41c156c4a0426aba8ad76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a2d9d5c00bfc8c2833a75567e604463a1"><td class="memItemLeft" align="right" valign="top">CameraDeviceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a2d9d5c00bfc8c2833a75567e604463a1">device_type</a></td></tr>
+<tr class="memdesc:a2d9d5c00bfc8c2833a75567e604463a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">device type of camera  <a href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a2d9d5c00bfc8c2833a75567e604463a1">More...</a><br /></td></tr>
 <tr class="separator:a2d9d5c00bfc8c2833a75567e604463a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3091f546af2c05e01af7decc1e29bcfa"><td class="memItemLeft" align="right" valign="top">CameraInterfaceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a3091f546af2c05e01af7decc1e29bcfa">interface_type</a></td></tr>
+<tr class="memdesc:a3091f546af2c05e01af7decc1e29bcfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface type of camera  <a href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a3091f546af2c05e01af7decc1e29bcfa">More...</a><br /></td></tr>
 <tr class="separator:a3091f546af2c05e01af7decc1e29bcfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a03256ef4f495e6f52bd8fbee6fac4959"><td class="memItemLeft" align="right" valign="top">std::string *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a03256ef4f495e6f52bd8fbee6fac4959">left_camera_serial</a></td></tr>
+<tr class="memdesc:a03256ef4f495e6f52bd8fbee6fac4959"><td class="mdescLeft">&#160;</td><td class="mdescRight">right camera serial  <a href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a03256ef4f495e6f52bd8fbee6fac4959">More...</a><br /></td></tr>
 <tr class="separator:a03256ef4f495e6f52bd8fbee6fac4959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2e6131b8121346a8ef6697cc17a3f40"><td class="memItemLeft" align="right" valign="top">std::string *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#ae2e6131b8121346a8ef6697cc17a3f40">right_camera_serial</a></td></tr>
+<tr class="memdesc:ae2e6131b8121346a8ef6697cc17a3f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">left camera serial  <a href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#ae2e6131b8121346a8ef6697cc17a3f40">More...</a><br /></td></tr>
 <tr class="separator:ae2e6131b8121346a8ef6697cc17a3f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abde05b97c68a4d8bef045f44d570e5ed"><td class="memItemLeft" align="right" valign="top">std::string *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#abde05b97c68a4d8bef045f44d570e5ed">unique_serial</a></td></tr>
+<tr class="memdesc:abde05b97c68a4d8bef045f44d570e5ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">defined unique serial for stereo camera pair  <a href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html#abde05b97c68a4d8bef045f44d570e5ed">More...</a><br /></td></tr>
 <tr class="separator:abde05b97c68a4d8bef045f44d570e5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Structure to hold stereo camera information. </p>
+<div class="textblock"><p >Camera Device Info class. </p>
+<p >Structure to hold information on a camera. Includes serial, interface, and device type. </p>
 
-<p class="definition">Definition at line <a class="el" href="cameradeviceinfo_8h_source.html#l00025">25</a> of file <a class="el" href="cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="stereocamera_2cameradeviceinfo_8h_source.html#l00051">51</a> of file <a class="el" href="stereocamera_2cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aec66af52fa09d9c0d3afcfed8b1dd035" name="aec66af52fa09d9c0d3afcfed8b1dd035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec66af52fa09d9c0d3afcfed8b1dd035">&#9670;&nbsp;</a></span>CameraDeviceInfo() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I3DR::Phase::CameraDeviceInfo::CameraDeviceInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html">CameraDeviceInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html" title="Camera Device Info class.">CameraDeviceInfo</a> copy contructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html" title="Camera Device Info class.">CameraDeviceInfo</a> to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1774c0afbf83a7fb1f2f3a1749b252a3" name="a1774c0afbf83a7fb1f2f3a1749b252a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1774c0afbf83a7fb1f2f3a1749b252a3">&#9670;&nbsp;</a></span>CameraDeviceInfo() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I3DR::Phase::CameraDeviceInfo::CameraDeviceInfo </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>left_camera_serial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>right_camera_serial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>unique_serial</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CameraDeviceType&#160;</td>
+          <td class="paramname"><em>device_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CameraInterfaceType&#160;</td>
+          <td class="paramname"><em>interface_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html" title="Camera Device Info class.">CameraDeviceInfo</a> contructor <br  />
+Create device information about the camera. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left_camera_serial</td><td>left camera serial </td></tr>
+    <tr><td class="paramname">right_camera_serial</td><td>right camera serial </td></tr>
+    <tr><td class="paramname">unique_serial</td><td>stereo camera unique identifier </td></tr>
+    <tr><td class="paramname">device_type</td><td>camera device type </td></tr>
+    <tr><td class="paramname">interface_type</td><td>camera interface type </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a193a693fb372c578b71331ac0f2263de" name="a193a693fb372c578b71331ac0f2263de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a193a693fb372c578b71331ac0f2263de">&#9670;&nbsp;</a></span>getLeftCameraSerial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * I3DR::Phase::CameraDeviceInfo::getLeftCameraSerial </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get left camera serial information. </p>
+<dl class="section return"><dt>Returns</dt><dd>left camera serial </dd></dl>
+
+</div>
+</div>
+<a id="ac76762f77a10be9b0600eb02e290ca20" name="ac76762f77a10be9b0600eb02e290ca20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac76762f77a10be9b0600eb02e290ca20">&#9670;&nbsp;</a></span>getRightCameraSerial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * I3DR::Phase::CameraDeviceInfo::getRightCameraSerial </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get right camera serial information. </p>
+<dl class="section return"><dt>Returns</dt><dd>right camera serial </dd></dl>
+
+</div>
+</div>
+<a id="a2a6c8b77866fdf766933d8a664879b6a" name="a2a6c8b77866fdf766933d8a664879b6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a6c8b77866fdf766933d8a664879b6a">&#9670;&nbsp;</a></span>getUniqueSerial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * I3DR::Phase::CameraDeviceInfo::getUniqueSerial </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get stereo camera unqiue serial information. </p>
+<dl class="section return"><dt>Returns</dt><dd>unique serial </dd></dl>
+
+</div>
+</div>
+<a id="a25c217e3cfc50ff78e015f50a1ff32f4" name="a25c217e3cfc50ff78e015f50a1ff32f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25c217e3cfc50ff78e015f50a1ff32f4">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html">CameraDeviceInfo</a> &amp; I3DR::Phase::CameraDeviceInfo::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html">CameraDeviceInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html" title="Camera Device Info class.">CameraDeviceInfo</a> copy assignment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html" title="Camera Device Info class.">CameraDeviceInfo</a> to copy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a94786b7eba9adeadfba9629efdfc410b" name="a94786b7eba9adeadfba9629efdfc410b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94786b7eba9adeadfba9629efdfc410b">&#9670;&nbsp;</a></span>setLeftCameraSerial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::CameraDeviceInfo::setLeftCameraSerial </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>left_camera_serial</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set left camera serial. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left_camera_serial</td><td>left serial </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5dadc56e31cd5462dfb6b4a7a146257e" name="a5dadc56e31cd5462dfb6b4a7a146257e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dadc56e31cd5462dfb6b4a7a146257e">&#9670;&nbsp;</a></span>setRightCameraSerial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::CameraDeviceInfo::setRightCameraSerial </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>right_camera_serial</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set right camera serial. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">right_camera_serial</td><td>right serial </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a109fddbf7fe41c156c4a0426aba8ad76" name="a109fddbf7fe41c156c4a0426aba8ad76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a109fddbf7fe41c156c4a0426aba8ad76">&#9670;&nbsp;</a></span>setUniqueSerial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::CameraDeviceInfo::setUniqueSerial </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>unique_serial</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set stereo camera unique serial. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">unique_serial</td><td>unique serial </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a2d9d5c00bfc8c2833a75567e604463a1" name="a2d9d5c00bfc8c2833a75567e604463a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d9d5c00bfc8c2833a75567e604463a1">&#9670;&nbsp;</a></span>device_type</h2>
 
@@ -162,7 +424,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameradeviceinfo_8h_source.html#l00045">45</a> of file <a class="el" href="cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a>.</p>
+<p>device type of camera </p>
+
+<p class="definition">Definition at line <a class="el" href="stereocamera_2cameradeviceinfo_8h_source.html#l00128">128</a> of file <a class="el" href="stereocamera_2cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a>.</p>
 
 </div>
 </div>
@@ -178,7 +442,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameradeviceinfo_8h_source.html#l00046">46</a> of file <a class="el" href="cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a>.</p>
+<p>interface type of camera </p>
+
+<p class="definition">Definition at line <a class="el" href="stereocamera_2cameradeviceinfo_8h_source.html#l00129">129</a> of file <a class="el" href="stereocamera_2cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a>.</p>
 
 </div>
 </div>
@@ -202,7 +468,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameradeviceinfo_8h_source.html#l00049">49</a> of file <a class="el" href="cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a>.</p>
+<p>right camera serial </p>
+
+<p class="definition">Definition at line <a class="el" href="stereocamera_2cameradeviceinfo_8h_source.html#l00132">132</a> of file <a class="el" href="stereocamera_2cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a>.</p>
 
 </div>
 </div>
@@ -226,7 +494,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameradeviceinfo_8h_source.html#l00050">50</a> of file <a class="el" href="cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a>.</p>
+<p>left camera serial </p>
+
+<p class="definition">Definition at line <a class="el" href="stereocamera_2cameradeviceinfo_8h_source.html#l00133">133</a> of file <a class="el" href="stereocamera_2cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a>.</p>
 
 </div>
 </div>
@@ -250,12 +520,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameradeviceinfo_8h_source.html#l00051">51</a> of file <a class="el" href="cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a>.</p>
+<p>defined unique serial for stereo camera pair </p>
+
+<p class="definition">Definition at line <a class="el" href="stereocamera_2cameradeviceinfo_8h_source.html#l00134">134</a> of file <a class="el" href="stereocamera_2cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/phase/types/<a class="el" href="cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a></li>
+<li>include/phase/stereocamera/<a class="el" href="stereocamera_2cameradeviceinfo_8h_source.html">cameradeviceinfo.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -263,7 +535,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>I3DR</b></li><li class="navelem"><b>Phase</b></li><li class="navelem"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_device_info.html">CameraDeviceInfo</a></li>
-    <li class="footer">Generated on Tue Jun 21 2022 11:19:53 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Sep 2 2022 09:45:15 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

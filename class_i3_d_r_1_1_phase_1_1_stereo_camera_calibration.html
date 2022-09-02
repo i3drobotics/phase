@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="i3dr_logo_128x128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Phase<span id="projectnumber">&#160;0.1.1</span>
+   <div id="projectname">Phase<span id="projectnumber">&#160;0.2.0</span>
    </div>
   </td>
  </tr>
@@ -95,88 +95,756 @@ $(document).ready(function(){initNavTree('class_i3_d_r_1_1_phase_1_1_stereo_came
   <div class="headertitle"><div class="title">I3DR::Phase::StereoCameraCalibration Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Stereo Camera Calibration class.  
+ <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="calib_2stereocalibration_8h_source.html">stereocalibration.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6b0bea20d61051fbc536bd1b341416fa"><td class="memItemLeft" align="right" valign="top"><a id="a6b0bea20d61051fbc536bd1b341416fa" name="a6b0bea20d61051fbc536bd1b341416fa"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StereoCameraCalibration</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a> left_calibration, <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a> right_calibration)</td></tr>
+<tr class="memitem:a5f7f7af8e98fbbb63d36a4344eae186f"><td class="memItemLeft" align="right" valign="top"><a id="a5f7f7af8e98fbbb63d36a4344eae186f" name="a5f7f7af8e98fbbb63d36a4344eae186f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>StereoCameraCalibration</b> ()</td></tr>
+<tr class="memdesc:a5f7f7af8e98fbbb63d36a4344eae186f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stereo Camera calibration constructor <br  />
+Initalise stereo camera calibration and set default values. <br /></td></tr>
+<tr class="separator:a5f7f7af8e98fbbb63d36a4344eae186f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b0bea20d61051fbc536bd1b341416fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a6b0bea20d61051fbc536bd1b341416fa">StereoCameraCalibration</a> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a> <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#ad8fa9d103d0893b65c9aa5eb5d68e587">left_calibration</a>, <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a> <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#ae8b3b524e749bca924911bdbf5e7ce6b">right_calibration</a>)</td></tr>
+<tr class="memdesc:a6b0bea20d61051fbc536bd1b341416fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stereo Camera calibration constructor <br  />
+Initalise stereo camera calibration using left and right calibration.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a6b0bea20d61051fbc536bd1b341416fa">More...</a><br /></td></tr>
 <tr class="separator:a6b0bea20d61051fbc536bd1b341416fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a900e84e0cf0e5b57be01e7d606835de0"><td class="memItemLeft" align="right" valign="top"><a id="a900e84e0cf0e5b57be01e7d606835de0" name="a900e84e0cf0e5b57be01e7d606835de0"></a>
-<a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_image_pair.html">StereoImagePair</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rectify</b> (cv::Mat left_image, cv::Mat right_image)</td></tr>
+<tr class="memitem:a900e84e0cf0e5b57be01e7d606835de0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_image_pair.html">StereoImagePair</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a900e84e0cf0e5b57be01e7d606835de0">rectify</a> (cv::Mat left_image, cv::Mat right_image)</td></tr>
+<tr class="memdesc:a900e84e0cf0e5b57be01e7d606835de0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rectify stereo images based on calibration.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a900e84e0cf0e5b57be01e7d606835de0">More...</a><br /></td></tr>
 <tr class="separator:a900e84e0cf0e5b57be01e7d606835de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ef6571894db4ceb4245b004ac9d95b"><td class="memItemLeft" align="right" valign="top"><a id="a32ef6571894db4ceb4245b004ac9d95b" name="a32ef6571894db4ceb4245b004ac9d95b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rectify</b> (cv::Mat left_image, cv::Mat right_image, cv::Mat &amp;left_rect_image, cv::Mat &amp;right_rect_image)</td></tr>
+<tr class="memitem:a32ef6571894db4ceb4245b004ac9d95b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a32ef6571894db4ceb4245b004ac9d95b">rectify</a> (cv::Mat left_image, cv::Mat right_image, cv::Mat &amp;left_rect_image, cv::Mat &amp;right_rect_image)</td></tr>
+<tr class="memdesc:a32ef6571894db4ceb4245b004ac9d95b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rectify stereo images based on calibration.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a32ef6571894db4ceb4245b004ac9d95b">More...</a><br /></td></tr>
 <tr class="separator:a32ef6571894db4ceb4245b004ac9d95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e0dfd55175e662a174ffdf88073be15"><td class="memItemLeft" align="right" valign="top"><a id="a0e0dfd55175e662a174ffdf88073be15" name="a0e0dfd55175e662a174ffdf88073be15"></a>
-<a class="el" href="struct_i3_d_r_1_1_phase_1_1_point2i.html">Point2i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>remapPoint</b> (<a class="el" href="struct_i3_d_r_1_1_phase_1_1_point2i.html">Point2i</a> point, LeftOrRight camera_selection)</td></tr>
-<tr class="separator:a0e0dfd55175e662a174ffdf88073be15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a817997cfdc03116eba981d39552a5cc9"><td class="memItemLeft" align="right" valign="top"><a id="a817997cfdc03116eba981d39552a5cc9" name="a817997cfdc03116eba981d39552a5cc9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isValid</b> ()</td></tr>
+<tr class="memitem:a817997cfdc03116eba981d39552a5cc9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a817997cfdc03116eba981d39552a5cc9">isValid</a> ()</td></tr>
+<tr class="memdesc:a817997cfdc03116eba981d39552a5cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if loaded calibration is valid.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a817997cfdc03116eba981d39552a5cc9">More...</a><br /></td></tr>
 <tr class="separator:a817997cfdc03116eba981d39552a5cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c1827b5c93e5e0fe92ee1d986b74559"><td class="memItemLeft" align="right" valign="top"><a id="a6c1827b5c93e5e0fe92ee1d986b74559" name="a6c1827b5c93e5e0fe92ee1d986b74559"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isValidSize</b> (int width, int height)</td></tr>
+<tr class="memitem:a6c1827b5c93e5e0fe92ee1d986b74559"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a6c1827b5c93e5e0fe92ee1d986b74559">isValidSize</a> (int width, int height)</td></tr>
+<tr class="memdesc:a6c1827b5c93e5e0fe92ee1d986b74559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if loaded calibration image width and height match specified values.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a6c1827b5c93e5e0fe92ee1d986b74559">More...</a><br /></td></tr>
 <tr class="separator:a6c1827b5c93e5e0fe92ee1d986b74559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeab50cd4100ee16f622cd5c33fd9ca22"><td class="memItemLeft" align="right" valign="top"><a id="aeab50cd4100ee16f622cd5c33fd9ca22" name="aeab50cd4100ee16f622cd5c33fd9ca22"></a>
-cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>getQ</b> ()</td></tr>
+<tr class="memitem:aeab50cd4100ee16f622cd5c33fd9ca22"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#aeab50cd4100ee16f622cd5c33fd9ca22">getQ</a> ()</td></tr>
+<tr class="memdesc:aeab50cd4100ee16f622cd5c33fd9ca22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get calibration Q matrix (4 x 4)  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#aeab50cd4100ee16f622cd5c33fd9ca22">More...</a><br /></td></tr>
 <tr class="separator:aeab50cd4100ee16f622cd5c33fd9ca22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3d32f739c5758907464b9d912c64ecb"><td class="memItemLeft" align="right" valign="top"><a id="ad3d32f739c5758907464b9d912c64ecb" name="ad3d32f739c5758907464b9d912c64ecb"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>getHFOV</b> ()</td></tr>
+<tr class="memitem:ad3d32f739c5758907464b9d912c64ecb"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#ad3d32f739c5758907464b9d912c64ecb">getHFOV</a> ()</td></tr>
+<tr class="memdesc:ad3d32f739c5758907464b9d912c64ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get camera horizontal field of view.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#ad3d32f739c5758907464b9d912c64ecb">More...</a><br /></td></tr>
 <tr class="separator:ad3d32f739c5758907464b9d912c64ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d1bd5ab0af4598b1dfb1e689537458a"><td class="memItemLeft" align="right" valign="top"><a id="a3d1bd5ab0af4598b1dfb1e689537458a" name="a3d1bd5ab0af4598b1dfb1e689537458a"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getBaseline</b> ()</td></tr>
+<tr class="memitem:a3d1bd5ab0af4598b1dfb1e689537458a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a3d1bd5ab0af4598b1dfb1e689537458a">getBaseline</a> ()</td></tr>
+<tr class="memdesc:a3d1bd5ab0af4598b1dfb1e689537458a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get stereo camera baseline.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a3d1bd5ab0af4598b1dfb1e689537458a">More...</a><br /></td></tr>
 <tr class="separator:a3d1bd5ab0af4598b1dfb1e689537458a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a929ae9721a320bd96e757c5f1912b2bf"><td class="memItemLeft" align="right" valign="top"><a id="a929ae9721a320bd96e757c5f1912b2bf" name="a929ae9721a320bd96e757c5f1912b2bf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setDownsampleFactor</b> (float value)</td></tr>
+<tr class="memitem:a929ae9721a320bd96e757c5f1912b2bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a929ae9721a320bd96e757c5f1912b2bf">setDownsampleFactor</a> (float value)</td></tr>
+<tr class="memdesc:a929ae9721a320bd96e757c5f1912b2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set downsample factor for calibration.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a929ae9721a320bd96e757c5f1912b2bf">More...</a><br /></td></tr>
 <tr class="separator:a929ae9721a320bd96e757c5f1912b2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf93817a5aa56ce7a6b7832bd3be95ce"><td class="memItemLeft" align="right" valign="top"><a id="adf93817a5aa56ce7a6b7832bd3be95ce" name="adf93817a5aa56ce7a6b7832bd3be95ce"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>getDownsampleFactor</b> ()</td></tr>
+<tr class="memitem:adf93817a5aa56ce7a6b7832bd3be95ce"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#adf93817a5aa56ce7a6b7832bd3be95ce">getDownsampleFactor</a> ()</td></tr>
+<tr class="memdesc:adf93817a5aa56ce7a6b7832bd3be95ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get downsample factor.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#adf93817a5aa56ce7a6b7832bd3be95ce">More...</a><br /></td></tr>
 <tr class="separator:adf93817a5aa56ce7a6b7832bd3be95ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67aea519689c702b41c6f31c37818625"><td class="memItemLeft" align="right" valign="top"><a id="a67aea519689c702b41c6f31c37818625" name="a67aea519689c702b41c6f31c37818625"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>saveToYAML</b> (const char *left_calibration_filepath, const char *right_calibration_filepath, CalibrationFileType cal_file_type=CalibrationFileType::ROS_YAML)</td></tr>
+<tr class="memitem:a67aea519689c702b41c6f31c37818625"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a67aea519689c702b41c6f31c37818625">saveToYAML</a> (const char *left_calibration_filepath, const char *right_calibration_filepath, CalibrationFileType cal_file_type=<a class="el" href="calib_2cameracalibration_8h.html#af286ee3501a2f2886d60fd7f352d90dc">CalibrationFileType::ROS_YAML</a>)</td></tr>
+<tr class="memdesc:a67aea519689c702b41c6f31c37818625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save stereo camera calibration to YAML files.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a67aea519689c702b41c6f31c37818625">More...</a><br /></td></tr>
 <tr class="separator:a67aea519689c702b41c6f31c37818625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a59890d6dcdc152d9791e7714ca2ec2e4"><td class="memItemLeft" align="right" valign="top"><a id="a59890d6dcdc152d9791e7714ca2ec2e4" name="a59890d6dcdc152d9791e7714ca2ec2e4"></a>
-static <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">StereoCameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>calibrationFromIdeal</b> (int width, int height, double pixel_pitch, double focal_length, double baseline)</td></tr>
+<tr class="memitem:a59890d6dcdc152d9791e7714ca2ec2e4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">StereoCameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a59890d6dcdc152d9791e7714ca2ec2e4">calibrationFromIdeal</a> (int width, int height, double pixel_pitch, double focal_length, double <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a0195f21b090402bfc575f95ffdf3eae7">baseline</a>)</td></tr>
+<tr class="memdesc:a59890d6dcdc152d9791e7714ca2ec2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create ideal stereo calibration from camera information.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a59890d6dcdc152d9791e7714ca2ec2e4">More...</a><br /></td></tr>
 <tr class="separator:a59890d6dcdc152d9791e7714ca2ec2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0c549d868a4a37f4931c509bc21fea2"><td class="memItemLeft" align="right" valign="top"><a id="ae0c549d868a4a37f4931c509bc21fea2" name="ae0c549d868a4a37f4931c509bc21fea2"></a>
-static <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">StereoCameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>calibrationFromYAML</b> (const char *left_calibration_filepath, const char *right_calibration_filepath)</td></tr>
+<tr class="memitem:ae0c549d868a4a37f4931c509bc21fea2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">StereoCameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#ae0c549d868a4a37f4931c509bc21fea2">calibrationFromYAML</a> (const char *left_calibration_filepath, const char *right_calibration_filepath)</td></tr>
+<tr class="memdesc:ae0c549d868a4a37f4931c509bc21fea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load stereo camera calibration from YAML files.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#ae0c549d868a4a37f4931c509bc21fea2">More...</a><br /></td></tr>
 <tr class="separator:ae0c549d868a4a37f4931c509bc21fea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a557d670034b7ad23beef2aaddae5a5c3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">StereoCameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a557d670034b7ad23beef2aaddae5a5c3">calibrationFromImages</a> (const char *left_cal_folder, const char *right_cal_folder, const char *left_img_wildcard=&quot;*_l.png&quot;, const char *right_img_wildcard=&quot;*_r.png&quot;, I3DR::Phase::CalibrationBoardType board_type=<a class="el" href="calib_2cameracalibration_8h.html#a5938fe024854a1f40eec9467513b293c">I3DR::Phase::CalibrationBoardType::CHECKERBOARD</a>, int pattern_size_x=8, int pattern_size_y=6, double square_size=0.039)</td></tr>
+<tr class="memdesc:a557d670034b7ad23beef2aaddae5a5c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load stereo camera calibration from collection of images taken with calibration board.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a557d670034b7ad23beef2aaddae5a5c3">More...</a><br /></td></tr>
+<tr class="separator:a557d670034b7ad23beef2aaddae5a5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ad8fa9d103d0893b65c9aa5eb5d68e587"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#ad8fa9d103d0893b65c9aa5eb5d68e587">left_calibration</a></td></tr>
+<tr class="memdesc:ad8fa9d103d0893b65c9aa5eb5d68e587"><td class="mdescLeft">&#160;</td><td class="mdescRight">left camera calibration  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#ad8fa9d103d0893b65c9aa5eb5d68e587">More...</a><br /></td></tr>
 <tr class="separator:ad8fa9d103d0893b65c9aa5eb5d68e587"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8b3b524e749bca924911bdbf5e7ce6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#ae8b3b524e749bca924911bdbf5e7ce6b">right_calibration</a></td></tr>
+<tr class="memdesc:ae8b3b524e749bca924911bdbf5e7ce6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">right camera calibration  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#ae8b3b524e749bca924911bdbf5e7ce6b">More...</a><br /></td></tr>
 <tr class="separator:ae8b3b524e749bca924911bdbf5e7ce6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a9cf3712335106693c8c343c5de80434f"><td class="memItemLeft" align="right" valign="top"><a id="a9cf3712335106693c8c343c5de80434f" name="a9cf3712335106693c8c343c5de80434f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a> left_calibration, <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a> right_calibration)</td></tr>
+<tr class="memitem:a9cf3712335106693c8c343c5de80434f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a9cf3712335106693c8c343c5de80434f">init</a> (<a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a> <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#ad8fa9d103d0893b65c9aa5eb5d68e587">left_calibration</a>, <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a> <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#ae8b3b524e749bca924911bdbf5e7ce6b">right_calibration</a>)</td></tr>
+<tr class="memdesc:a9cf3712335106693c8c343c5de80434f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalise stereo calibration from single camera calibration.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a9cf3712335106693c8c343c5de80434f">More...</a><br /></td></tr>
 <tr class="separator:a9cf3712335106693c8c343c5de80434f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cbee999498e9c77146444329b7cdde4"><td class="memItemLeft" align="right" valign="top"><a id="a1cbee999498e9c77146444329b7cdde4" name="a1cbee999498e9c77146444329b7cdde4"></a>
-cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>generateQ</b> (double left_cx, double right_cx, double left_cy, double fx, double tx)</td></tr>
+<tr class="memitem:a1cbee999498e9c77146444329b7cdde4"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a1cbee999498e9c77146444329b7cdde4">generateQ</a> (double left_cx, double right_cx, double left_cy, double fx, double tx)</td></tr>
+<tr class="memdesc:a1cbee999498e9c77146444329b7cdde4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate Q matrix from camera parameters.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a1cbee999498e9c77146444329b7cdde4">More...</a><br /></td></tr>
 <tr class="separator:a1cbee999498e9c77146444329b7cdde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a65a405cf11546d2265583023dae27a6a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a65a405cf11546d2265583023dae27a6a">valid</a> = false</td></tr>
+<tr class="memdesc:a65a405cf11546d2265583023dae27a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if calibration is valid  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a65a405cf11546d2265583023dae27a6a">More...</a><br /></td></tr>
 <tr class="separator:a65a405cf11546d2265583023dae27a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a834dc7073c5601886ec832e703009667"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a834dc7073c5601886ec832e703009667">Q</a></td></tr>
 <tr class="separator:a834dc7073c5601886ec832e703009667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53685d408b2965b48815d008be1aff65"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a53685d408b2965b48815d008be1aff65">Q_downsampled</a></td></tr>
+<tr class="memdesc:a53685d408b2965b48815d008be1aff65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Q matrix after downsampling.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a53685d408b2965b48815d008be1aff65">More...</a><br /></td></tr>
 <tr class="separator:a53685d408b2965b48815d008be1aff65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0195f21b090402bfc575f95ffdf3eae7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a0195f21b090402bfc575f95ffdf3eae7">baseline</a></td></tr>
+<tr class="memdesc:a0195f21b090402bfc575f95ffdf3eae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">stereo camera baseline  <a href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#a0195f21b090402bfc575f95ffdf3eae7">More...</a><br /></td></tr>
 <tr class="separator:a0195f21b090402bfc575f95ffdf3eae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae658b250a3c27d8ffe9763e656596efc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#ae658b250a3c27d8ffe9763e656596efc">downsample_rate</a> = 1.0f</td></tr>
+<tr class="memitem:ae658b250a3c27d8ffe9763e656596efc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html#ae658b250a3c27d8ffe9763e656596efc">downsample_rate</a> = 1.0</td></tr>
 <tr class="separator:ae658b250a3c27d8ffe9763e656596efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="stereocalibration_8h_source.html#l00037">37</a> of file <a class="el" href="stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<div class="textblock"><p >Stereo Camera Calibration class. </p>
+<p >Store and manipulate stereo camera calibration data. </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2stereocalibration_8h_source.html#l00051">51</a> of file <a class="el" href="calib_2stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6b0bea20d61051fbc536bd1b341416fa" name="a6b0bea20d61051fbc536bd1b341416fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b0bea20d61051fbc536bd1b341416fa">&#9670;&nbsp;</a></span>StereoCameraCalibration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I3DR::Phase::StereoCameraCalibration::StereoCameraCalibration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>&#160;</td>
+          <td class="paramname"><em>left_calibration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>&#160;</td>
+          <td class="paramname"><em>right_calibration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stereo Camera calibration constructor <br  />
+Initalise stereo camera calibration using left and right calibration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left_calibration</td><td>left camera calibration </td></tr>
+    <tr><td class="paramname">right_calibration</td><td>right camera calibration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a59890d6dcdc152d9791e7714ca2ec2e4" name="a59890d6dcdc152d9791e7714ca2ec2e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59890d6dcdc152d9791e7714ca2ec2e4">&#9670;&nbsp;</a></span>calibrationFromIdeal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">StereoCameraCalibration</a> I3DR::Phase::StereoCameraCalibration::calibrationFromIdeal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pixel_pitch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>focal_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>baseline</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create ideal stereo calibration from camera information. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>image width of cameras </td></tr>
+    <tr><td class="paramname">height</td><td>image height of cameras </td></tr>
+    <tr><td class="paramname">pixel_pitch</td><td>pixel pitch of cameras </td></tr>
+    <tr><td class="paramname">focal_length</td><td>focal length of cameras </td></tr>
+    <tr><td class="paramname">baseline</td><td>baseline of stereo camera </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>stereo camera calibration </dd></dl>
+
+</div>
+</div>
+<a id="a557d670034b7ad23beef2aaddae5a5c3" name="a557d670034b7ad23beef2aaddae5a5c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a557d670034b7ad23beef2aaddae5a5c3">&#9670;&nbsp;</a></span>calibrationFromImages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">StereoCameraCalibration</a> I3DR::Phase::StereoCameraCalibration::calibrationFromImages </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>left_cal_folder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>right_cal_folder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>left_img_wildcard</em> = <code>&quot;*_l.png&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>right_img_wildcard</em> = <code>&quot;*_r.png&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">I3DR::Phase::CalibrationBoardType&#160;</td>
+          <td class="paramname"><em>board_type</em> = <code><a class="el" href="calib_2cameracalibration_8h.html#a5938fe024854a1f40eec9467513b293c">I3DR::Phase::CalibrationBoardType::CHECKERBOARD</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pattern_size_x</em> = <code>8</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pattern_size_y</em> = <code>6</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>square_size</em> = <code>0.039</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load stereo camera calibration from collection of images taken with calibration board. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left_cal_folder</td><td>path to folder with left calibration images </td></tr>
+    <tr><td class="paramname">right_cal_folder</td><td>path to folder with right calibration images </td></tr>
+    <tr><td class="paramname">left_img_wildcard</td><td>wildcard to use for identifying left images </td></tr>
+    <tr><td class="paramname">right_img_wildcard</td><td>wildcard to use for identifying right images </td></tr>
+    <tr><td class="paramname">board_type</td><td>calibration board type used in calibration images </td></tr>
+    <tr><td class="paramname">pattern_size_x</td><td>number of rows in calibration board pattern </td></tr>
+    <tr><td class="paramname">pattern_size_y</td><td>number of columns in calibration board pattern </td></tr>
+    <tr><td class="paramname">square_size</td><td>width of single square in calibration board pattern (in meters) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>stereo camera calibration </dd></dl>
+
+</div>
+</div>
+<a id="ae0c549d868a4a37f4931c509bc21fea2" name="ae0c549d868a4a37f4931c509bc21fea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0c549d868a4a37f4931c509bc21fea2">&#9670;&nbsp;</a></span>calibrationFromYAML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">StereoCameraCalibration</a> I3DR::Phase::StereoCameraCalibration::calibrationFromYAML </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>left_calibration_filepath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>right_calibration_filepath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load stereo camera calibration from YAML files. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left_calibration_filepath</td><td>left camera calibration filepath </td></tr>
+    <tr><td class="paramname">right_calibration_filepath</td><td>right camera calibration filepath </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>stereo camera calibration </dd></dl>
+
+</div>
+</div>
+<a id="a1cbee999498e9c77146444329b7cdde4" name="a1cbee999498e9c77146444329b7cdde4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cbee999498e9c77146444329b7cdde4">&#9670;&nbsp;</a></span>generateQ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat I3DR::Phase::StereoCameraCalibration::generateQ </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>left_cx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>right_cx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>left_cy</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>fx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>tx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate Q matrix from camera parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left_cx</td><td>left camera principal point x </td></tr>
+    <tr><td class="paramname">right_cx</td><td>right camera principal point x </td></tr>
+    <tr><td class="paramname">left_cy</td><td>left camera principal point y </td></tr>
+    <tr><td class="paramname">fx</td><td>left camera focal length x </td></tr>
+    <tr><td class="paramname">tx</td><td>baseline </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3d1bd5ab0af4598b1dfb1e689537458a" name="a3d1bd5ab0af4598b1dfb1e689537458a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d1bd5ab0af4598b1dfb1e689537458a">&#9670;&nbsp;</a></span>getBaseline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double I3DR::Phase::StereoCameraCalibration::getBaseline </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get stereo camera baseline. </p>
+<dl class="section return"><dt>Returns</dt><dd>baseline </dd></dl>
+
+</div>
+</div>
+<a id="adf93817a5aa56ce7a6b7832bd3be95ce" name="adf93817a5aa56ce7a6b7832bd3be95ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf93817a5aa56ce7a6b7832bd3be95ce">&#9670;&nbsp;</a></span>getDownsampleFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float I3DR::Phase::StereoCameraCalibration::getDownsampleFactor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get downsample factor. </p>
+<dl class="section return"><dt>Returns</dt><dd>downsample factor value </dd></dl>
+
+</div>
+</div>
+<a id="ad3d32f739c5758907464b9d912c64ecb" name="ad3d32f739c5758907464b9d912c64ecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3d32f739c5758907464b9d912c64ecb">&#9670;&nbsp;</a></span>getHFOV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float I3DR::Phase::StereoCameraCalibration::getHFOV </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get camera horizontal field of view. </p>
+<dl class="section return"><dt>Returns</dt><dd>horizontal field of view </dd></dl>
+
+</div>
+</div>
+<a id="aeab50cd4100ee16f622cd5c33fd9ca22" name="aeab50cd4100ee16f622cd5c33fd9ca22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeab50cd4100ee16f622cd5c33fd9ca22">&#9670;&nbsp;</a></span>getQ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat I3DR::Phase::StereoCameraCalibration::getQ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get calibration Q matrix (4 x 4) </p>
+<dl class="section return"><dt>Returns</dt><dd>Q matrix </dd></dl>
+
+</div>
+</div>
+<a id="a9cf3712335106693c8c343c5de80434f" name="a9cf3712335106693c8c343c5de80434f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cf3712335106693c8c343c5de80434f">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::StereoCameraCalibration::init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>&#160;</td>
+          <td class="paramname"><em>left_calibration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>&#160;</td>
+          <td class="paramname"><em>right_calibration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initalise stereo calibration from single camera calibration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left_calibration</td><td>left camera calibration </td></tr>
+    <tr><td class="paramname">right_calibration</td><td>right camera calibration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a817997cfdc03116eba981d39552a5cc9" name="a817997cfdc03116eba981d39552a5cc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a817997cfdc03116eba981d39552a5cc9">&#9670;&nbsp;</a></span>isValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool I3DR::Phase::StereoCameraCalibration::isValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if loaded calibration is valid. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if valid calibration </dd></dl>
+
+</div>
+</div>
+<a id="a6c1827b5c93e5e0fe92ee1d986b74559" name="a6c1827b5c93e5e0fe92ee1d986b74559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1827b5c93e5e0fe92ee1d986b74559">&#9670;&nbsp;</a></span>isValidSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool I3DR::Phase::StereoCameraCalibration::isValidSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if loaded calibration image width and height match specified values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>image width to check against </td></tr>
+    <tr><td class="paramname">height</td><td>image height to check against </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if calibration size matches specified values </dd></dl>
+
+</div>
+</div>
+<a id="a900e84e0cf0e5b57be01e7d606835de0" name="a900e84e0cf0e5b57be01e7d606835de0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900e84e0cf0e5b57be01e7d606835de0">&#9670;&nbsp;</a></span>rectify() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_image_pair.html">StereoImagePair</a> I3DR::Phase::StereoCameraCalibration::rectify </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>left_image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>right_image</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rectify stereo images based on calibration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left_image</td><td>left image to rectify </td></tr>
+    <tr><td class="paramname">right_image</td><td>right image to rectify </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>rectified stereo image pair </dd></dl>
+
+</div>
+</div>
+<a id="a32ef6571894db4ceb4245b004ac9d95b" name="a32ef6571894db4ceb4245b004ac9d95b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32ef6571894db4ceb4245b004ac9d95b">&#9670;&nbsp;</a></span>rectify() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::StereoCameraCalibration::rectify </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>left_image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>right_image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>left_rect_image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>right_rect_image</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rectify stereo images based on calibration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left_image</td><td>left image to rectify </td></tr>
+    <tr><td class="paramname">right_image</td><td>right image to rectify </td></tr>
+    <tr><td class="paramname">left_rect_image</td><td>image to store left rectified image </td></tr>
+    <tr><td class="paramname">right_rect_image</td><td>image to store right rectified image </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a67aea519689c702b41c6f31c37818625" name="a67aea519689c702b41c6f31c37818625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67aea519689c702b41c6f31c37818625">&#9670;&nbsp;</a></span>saveToYAML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool I3DR::Phase::StereoCameraCalibration::saveToYAML </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>left_calibration_filepath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>right_calibration_filepath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CalibrationFileType&#160;</td>
+          <td class="paramname"><em>cal_file_type</em> = <code><a class="el" href="calib_2cameracalibration_8h.html#af286ee3501a2f2886d60fd7f352d90dc">CalibrationFileType::ROS_YAML</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Save stereo camera calibration to YAML files. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left_calibration_filepath</td><td>left camera calibration filepath </td></tr>
+    <tr><td class="paramname">right_calibration_filepath</td><td>right camera calibration filepath </td></tr>
+    <tr><td class="paramname">cal_file_type</td><td>file type to save calibration as (ROS YAML or OpenCV YAML) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>success of saving calibration </dd></dl>
+
+</div>
+</div>
+<a id="a929ae9721a320bd96e757c5f1912b2bf" name="a929ae9721a320bd96e757c5f1912b2bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a929ae9721a320bd96e757c5f1912b2bf">&#9670;&nbsp;</a></span>setDownsampleFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::StereoCameraCalibration::setDownsampleFactor </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set downsample factor for calibration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>value of downsample factor </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="a0195f21b090402bfc575f95ffdf3eae7" name="a0195f21b090402bfc575f95ffdf3eae7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0195f21b090402bfc575f95ffdf3eae7">&#9670;&nbsp;</a></span>baseline</h2>
 
@@ -197,7 +865,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereocalibration_8h_source.html#l00073">73</a> of file <a class="el" href="stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
+<p>stereo camera baseline </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2stereocalibration_8h_source.html#l00218">218</a> of file <a class="el" href="calib_2stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
 
 </div>
 </div>
@@ -211,7 +881,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float I3DR::Phase::StereoCameraCalibration::downsample_rate = 1.0f</td>
+          <td class="memname">float I3DR::Phase::StereoCameraCalibration::downsample_rate = 1.0</td>
         </tr>
       </table>
   </td>
@@ -221,7 +891,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereocalibration_8h_source.html#l00074">74</a> of file <a class="el" href="stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="calib_2stereocalibration_8h_source.html#l00219">219</a> of file <a class="el" href="calib_2stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
 
 </div>
 </div>
@@ -237,7 +907,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereocalibration_8h_source.html#l00066">66</a> of file <a class="el" href="stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
+<p>left camera calibration </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2stereocalibration_8h_source.html#l00192">192</a> of file <a class="el" href="calib_2stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
 
 </div>
 </div>
@@ -261,7 +933,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereocalibration_8h_source.html#l00071">71</a> of file <a class="el" href="stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="calib_2stereocalibration_8h_source.html#l00216">216</a> of file <a class="el" href="calib_2stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
 
 </div>
 </div>
@@ -285,7 +957,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereocalibration_8h_source.html#l00072">72</a> of file <a class="el" href="stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
+<p>Q matrix after downsampling. </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2stereocalibration_8h_source.html#l00217">217</a> of file <a class="el" href="calib_2stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
 
 </div>
 </div>
@@ -301,7 +975,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereocalibration_8h_source.html#l00067">67</a> of file <a class="el" href="stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
+<p>right camera calibration </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2stereocalibration_8h_source.html#l00193">193</a> of file <a class="el" href="calib_2stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
 
 </div>
 </div>
@@ -325,12 +1001,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereocalibration_8h_source.html#l00070">70</a> of file <a class="el" href="stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
+<p>true if calibration is valid </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2stereocalibration_8h_source.html#l00215">215</a> of file <a class="el" href="calib_2stereocalibration_8h_source.html">stereocalibration.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/phase/calib/<a class="el" href="stereocalibration_8h_source.html">stereocalibration.h</a></li>
+<li>include/phase/calib/<a class="el" href="calib_2stereocalibration_8h_source.html">stereocalibration.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -338,7 +1016,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>I3DR</b></li><li class="navelem"><b>Phase</b></li><li class="navelem"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_camera_calibration.html">StereoCameraCalibration</a></li>
-    <li class="footer">Generated on Tue Jun 21 2022 11:19:53 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Sep 2 2022 09:45:15 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

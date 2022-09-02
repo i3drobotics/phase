@@ -1,9 +1,8 @@
 var dir_c9bc37357dad39b7c042435dfbeac0fe =
 [
-    [ "abstractstereomatcher.h", "abstractstereomatcher_8h.html", "abstractstereomatcher_8h" ],
-    [ "stereobm.h", "stereobm_8h.html", "stereobm_8h" ],
-    [ "stereohobm.h", "stereohobm_8h.html", "stereohobm_8h" ],
-    [ "stereoi3drsgm.h", "stereoi3drsgm_8h.html", "stereoi3drsgm_8h" ],
-    [ "stereomatcher.h", "stereomatcher_8h.html", null ],
-    [ "stereosgbm.h", "stereosgbm_8h.html", "stereosgbm_8h" ]
+    [ "abstractstereomatcher.h", "stereomatcher_2abstractstereomatcher_8h.html", "stereomatcher_2abstractstereomatcher_8h" ],
+    [ "stereobm.h", "stereomatcher_2stereobm_8h.html", "stereomatcher_2stereobm_8h" ],
+    [ "stereoi3drsgm.h", "stereomatcher_2stereoi3drsgm_8h.html", "stereomatcher_2stereoi3drsgm_8h" ],
+    [ "stereomatcher.h", "stereomatcher_2stereomatcher_8h.html", "stereomatcher_2stereomatcher_8h" ],
+    [ "stereosgbm.h", "stereomatcher_2stereosgbm_8h.html", "stereomatcher_2stereosgbm_8h" ]
 ];

@@ -25,25 +25,42 @@
 var NAVTREE =
 [
   [ "Phase", "index.html", [
-    [ "Install", "index.html#autotoc_md1", null ],
+    [ "Latest release", "index.html#autotoc_md1", null ],
+    [ "Compatibility", "index.html#autotoc_md2", [
+      [ "Supported platforms", "index.html#autotoc_md3", null ]
+    ] ],
+    [ "Install", "index.html#autotoc_md4", [
+      [ "Linux", "index.html#autotoc_md5", null ],
+      [ "Windows", "index.html#autotoc_md6", null ]
+    ] ],
+    [ "Documentation", "index.html#autotoc_md7", null ],
+    [ "Integration", "index.html#autotoc_md8", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"abstractstereocamera_8h.html"
+"_2calib_2cameracalibration_8h.html",
+"class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a65f6502e119ba4ca651e4320bda91449",
+"functions.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

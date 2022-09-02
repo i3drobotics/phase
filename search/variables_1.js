@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['cam_0',['cam',['../class_i3_d_r_1_1_phase_1_1_u_v_c_stereo_camera.html#a64f9cfffb5e1c044055a2a233e7a26ef',1,'I3DR::Phase::UVCStereoCamera']]],
+  ['cam_5fr_1',['cam_r',['../class_i3_d_r_1_1_phase_1_1_u_v_c_stereo_camera.html#a6462fffc2dd1d787ae573fc1592cafaf',1,'I3DR::Phase::UVCStereoCamera']]],
+  ['camera_5fheight_2',['camera_height',['../class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#ad275630b2c32b19d5324fbba60a8b470',1,'I3DR::Phase::PylonStereoCamera']]],
+  ['camera_5fmatrix_3',['camera_matrix',['../class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aceb0bb04b73b53a7099154cffb7d6eec',1,'I3DR::Phase::CameraCalibration']]],
+  ['camera_5fmatrix_5fdownsampled_4',['camera_matrix_downsampled',['../class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a7d3ac1a74e13c6371edadada10c9f645',1,'I3DR::Phase::CameraCalibration']]],
+  ['camera_5fwidth_5',['camera_width',['../class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#a7a2c043fb9e3bf7c6074d53ca76891ff',1,'I3DR::Phase::PylonStereoCamera']]],
+  ['cameras_6',['cameras',['../class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#a759dbd33504f03e116db7f0ff1e036da',1,'I3DR::Phase::PylonStereoCamera']]],
+  ['capture_5fcount_7',['capture_count',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a9bd7583102352c75cad2d9601d4921bd',1,'I3DR::Phase::AbstractStereoCamera']]],
+  ['capture_5fcount_5fmutex_8',['capture_count_mutex',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#aa0d693d01dca1a053739e6a342fd1ade',1,'I3DR::Phase::AbstractStereoCamera']]],
+  ['capture_5fdata_9',['capture_data',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#afd4fd3d982660bd442410fc014b0b066',1,'I3DR::Phase::AbstractStereoCamera']]],
+  ['channels_10',['channels',['../class_i3_d_r_1_1_phase_1_1_u_v_c_stereo_camera.html#a22c450252bdbb64fbd62e9d6626712ac',1,'I3DR::Phase::UVCStereoCamera']]],
+  ['checkerboard_11',['CHECKERBOARD',['../calib_2cameracalibration_8h.html#a5938fe024854a1f40eec9467513b293c',1,'cameracalibration.h']]],
+  ['compute_5ffuture_12',['compute_future',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#ac1795185cd47157dff0ad7b5acf61589',1,'I3DR::Phase::AbstractStereoMatcher']]],
+  ['computethread_5fcallback_13',['computeThread_callback',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a9840f23fabb18080441c6fe76340381a',1,'I3DR::Phase::AbstractStereoMatcher']]],
+  ['computethread_5fisrunning_14',['computeThread_isRunning',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a4c4f8819424556f06b16702017b30944',1,'I3DR::Phase::AbstractStereoMatcher']]],
+  ['computethread_5fresult_15',['computeThread_result',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a73d3d470a2712eb7ba66dba6353d5e5c',1,'I3DR::Phase::AbstractStereoMatcher']]],
+  ['connected_16',['connected',['../class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#aac87b78b361240f4fe3a4546150c8941',1,'I3DR::Phase::PylonStereoCamera']]],
+  ['continous_5freadthread_5fcontinue_17',['continous_readThread_continue',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a51c17adfcf15df123006a7df53cfea76',1,'I3DR::Phase::AbstractStereoCamera']]],
+  ['continous_5freadthread_5fcontinue_5fmutex_18',['continous_readThread_continue_mutex',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a0ce669b766238139bea08d4c7657b583',1,'I3DR::Phase::AbstractStereoCamera']]],
+  ['continous_5freadthread_5frunning_19',['continous_readThread_running',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#ad63d2e3ea17fbb05c80e19752c8cee7e',1,'I3DR::Phase::AbstractStereoCamera']]],
+  ['continous_5freadthread_5frunning_5fmutex_20',['continous_readThread_running_mutex',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a0393aafa4c1c094d9c0504de5c89208a',1,'I3DR::Phase::AbstractStereoCamera']]]
+];

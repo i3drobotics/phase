@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="i3dr_logo_128x128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Phase<span id="projectnumber">&#160;0.1.1</span>
+   <div id="projectname">Phase<span id="projectnumber">&#160;0.2.0</span>
    </div>
   </td>
  </tr>
@@ -95,95 +95,152 @@ $(document).ready(function(){initNavTree('class_i3_d_r_1_1_phase_1_1_stereo_i3_d
   <div class="headertitle"><div class="title">I3DR::Phase::StereoI3DRSGM Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Stereo I3DRSGM class.  
+ <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="stereomatcher_2stereoi3drsgm_8h_source.html">stereoi3drsgm.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for I3DR::Phase::StereoI3DRSGM:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.png" usemap="#I3DR::Phase::StereoI3DRSGM_map" alt=""/>
   <map id="I3DR::Phase::StereoI3DRSGM_map" name="I3DR::Phase::StereoI3DRSGM_map">
-<area href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html" alt="I3DR::Phase::AbstractStereoMatcher" shape="rect" coords="0,0,217,24"/>
+<area href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html" title="Abstract Stereo Matcher class." alt="I3DR::Phase::AbstractStereoMatcher" shape="rect" coords="0,0,217,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6991cce4b0c23a5cfbe94bc9a085f7cf"><td class="memItemLeft" align="right" valign="top"><a id="a6991cce4b0c23a5cfbe94bc9a085f7cf" name="a6991cce4b0c23a5cfbe94bc9a085f7cf"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StereoI3DRSGM</b> (<a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_params.html">StereoParams</a> params)</td></tr>
+<tr class="memitem:a1b11ef606324bbbb7520319fb2d82011"><td class="memItemLeft" align="right" valign="top"><a id="a1b11ef606324bbbb7520319fb2d82011" name="a1b11ef606324bbbb7520319fb2d82011"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>StereoI3DRSGM</b> ()</td></tr>
+<tr class="memdesc:a1b11ef606324bbbb7520319fb2d82011"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html" title="Stereo I3DRSGM class.">StereoI3DRSGM</a> constructor <br  />
+Initalise Stereo matcher and set default matching parameters. <br /></td></tr>
+<tr class="separator:a1b11ef606324bbbb7520319fb2d82011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6991cce4b0c23a5cfbe94bc9a085f7cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a6991cce4b0c23a5cfbe94bc9a085f7cf">StereoI3DRSGM</a> (<a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_params.html">StereoParams</a> params)</td></tr>
+<tr class="memdesc:a6991cce4b0c23a5cfbe94bc9a085f7cf"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html" title="Stereo I3DRSGM class.">StereoI3DRSGM</a> constructor <br  />
+Initalise Stereo matcher and use provided <a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_params.html" title="Stereo Params structure.">StereoParams</a> to set matching parameters.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a6991cce4b0c23a5cfbe94bc9a085f7cf">More...</a><br /></td></tr>
 <tr class="separator:a6991cce4b0c23a5cfbe94bc9a085f7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab7b2160a619738857031ce89f502d8f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_matcher_compute_result.html">StereoMatcherComputeResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#aab7b2160a619738857031ce89f502d8f">compute</a> (cv::Mat left_image, cv::Mat right_image)</td></tr>
+<tr class="memdesc:aab7b2160a619738857031ce89f502d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute stereo match <br  />
+Generates disparity from stereo image pair.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#aab7b2160a619738857031ce89f502d8f">More...</a><br /></td></tr>
 <tr class="separator:aab7b2160a619738857031ce89f502d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bd976f4add3208bef0ebb72fd64d992"><td class="memItemLeft" align="right" valign="top"><a id="a6bd976f4add3208bef0ebb72fd64d992" name="a6bd976f4add3208bef0ebb72fd64d992"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setWindowSize</b> (int value)</td></tr>
+<tr class="memitem:a6bd976f4add3208bef0ebb72fd64d992"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a6bd976f4add3208bef0ebb72fd64d992">setWindowSize</a> (int value)</td></tr>
+<tr class="memdesc:a6bd976f4add3208bef0ebb72fd64d992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set window size for matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a6bd976f4add3208bef0ebb72fd64d992">More...</a><br /></td></tr>
 <tr class="separator:a6bd976f4add3208bef0ebb72fd64d992"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add4c923701dd0e98efa7a8e25888dc97"><td class="memItemLeft" align="right" valign="top"><a id="add4c923701dd0e98efa7a8e25888dc97" name="add4c923701dd0e98efa7a8e25888dc97"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setMinDisparity</b> (int value)</td></tr>
+<tr class="memitem:a666d2739959cddfbbc6e476eab24ad30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a666d2739959cddfbbc6e476eab24ad30">getWindowSize</a> ()</td></tr>
+<tr class="memdesc:a666d2739959cddfbbc6e476eab24ad30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get window size from matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a666d2739959cddfbbc6e476eab24ad30">More...</a><br /></td></tr>
+<tr class="separator:a666d2739959cddfbbc6e476eab24ad30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add4c923701dd0e98efa7a8e25888dc97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#add4c923701dd0e98efa7a8e25888dc97">setMinDisparity</a> (int value)</td></tr>
+<tr class="memdesc:add4c923701dd0e98efa7a8e25888dc97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set minimum disparity for matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#add4c923701dd0e98efa7a8e25888dc97">More...</a><br /></td></tr>
 <tr class="separator:add4c923701dd0e98efa7a8e25888dc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e1d4c09b03550185acfb4cba7cd807d"><td class="memItemLeft" align="right" valign="top"><a id="a2e1d4c09b03550185acfb4cba7cd807d" name="a2e1d4c09b03550185acfb4cba7cd807d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setNumDisparities</b> (int value)</td></tr>
+<tr class="memitem:aedfaf4b3721ea0a331c62e8b406b84f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#aedfaf4b3721ea0a331c62e8b406b84f8">getMinDisparity</a> ()</td></tr>
+<tr class="memdesc:aedfaf4b3721ea0a331c62e8b406b84f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get minimum disparity from matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#aedfaf4b3721ea0a331c62e8b406b84f8">More...</a><br /></td></tr>
+<tr class="separator:aedfaf4b3721ea0a331c62e8b406b84f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e1d4c09b03550185acfb4cba7cd807d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a2e1d4c09b03550185acfb4cba7cd807d">setNumDisparities</a> (int value)</td></tr>
+<tr class="memdesc:a2e1d4c09b03550185acfb4cba7cd807d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set number of disparities for matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a2e1d4c09b03550185acfb4cba7cd807d">More...</a><br /></td></tr>
 <tr class="separator:a2e1d4c09b03550185acfb4cba7cd807d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a534ad8ef40c8ff8d18384ce355887b1a"><td class="memItemLeft" align="right" valign="top"><a id="a534ad8ef40c8ff8d18384ce355887b1a" name="a534ad8ef40c8ff8d18384ce355887b1a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setSpeckleMaxSize</b> (int value)</td></tr>
+<tr class="memitem:af2b54fa0350eb0f999778e3711469e4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#af2b54fa0350eb0f999778e3711469e4f">getNumDisparities</a> ()</td></tr>
+<tr class="memdesc:af2b54fa0350eb0f999778e3711469e4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of disparities from matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#af2b54fa0350eb0f999778e3711469e4f">More...</a><br /></td></tr>
+<tr class="separator:af2b54fa0350eb0f999778e3711469e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534ad8ef40c8ff8d18384ce355887b1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a534ad8ef40c8ff8d18384ce355887b1a">setSpeckleMaxSize</a> (int value)</td></tr>
+<tr class="memdesc:a534ad8ef40c8ff8d18384ce355887b1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set speckle max size for matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a534ad8ef40c8ff8d18384ce355887b1a">More...</a><br /></td></tr>
 <tr class="separator:a534ad8ef40c8ff8d18384ce355887b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cb6fa05e0ddc7d8a92ecf8e09b75020"><td class="memItemLeft" align="right" valign="top"><a id="a4cb6fa05e0ddc7d8a92ecf8e09b75020" name="a4cb6fa05e0ddc7d8a92ecf8e09b75020"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setSpeckleMaxDiff</b> (float value)</td></tr>
+<tr class="memitem:a7ecf5523972f0c33789b14cb18d86cd3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a7ecf5523972f0c33789b14cb18d86cd3">getSpeckleMaxSize</a> ()</td></tr>
+<tr class="memdesc:a7ecf5523972f0c33789b14cb18d86cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get speckle max size from matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a7ecf5523972f0c33789b14cb18d86cd3">More...</a><br /></td></tr>
+<tr class="separator:a7ecf5523972f0c33789b14cb18d86cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cb6fa05e0ddc7d8a92ecf8e09b75020"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a4cb6fa05e0ddc7d8a92ecf8e09b75020">setSpeckleMaxDiff</a> (float value)</td></tr>
+<tr class="memdesc:a4cb6fa05e0ddc7d8a92ecf8e09b75020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set speckle max difference for matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a4cb6fa05e0ddc7d8a92ecf8e09b75020">More...</a><br /></td></tr>
 <tr class="separator:a4cb6fa05e0ddc7d8a92ecf8e09b75020"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada5ea508f85ab70fc2b8a6cdb6bba40e"><td class="memItemLeft" align="right" valign="top"><a id="ada5ea508f85ab70fc2b8a6cdb6bba40e" name="ada5ea508f85ab70fc2b8a6cdb6bba40e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>enableSubpixel</b> (bool enable)</td></tr>
+<tr class="memitem:a751e6ea693f6bf9713e08547c896a30d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a751e6ea693f6bf9713e08547c896a30d">getSpeckleMaxDiff</a> ()</td></tr>
+<tr class="memdesc:a751e6ea693f6bf9713e08547c896a30d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get speckle max difference from matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a751e6ea693f6bf9713e08547c896a30d">More...</a><br /></td></tr>
+<tr class="separator:a751e6ea693f6bf9713e08547c896a30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5ea508f85ab70fc2b8a6cdb6bba40e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#ada5ea508f85ab70fc2b8a6cdb6bba40e">enableSubpixel</a> (bool enable)</td></tr>
+<tr class="memdesc:ada5ea508f85ab70fc2b8a6cdb6bba40e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable subpixel refinement for matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#ada5ea508f85ab70fc2b8a6cdb6bba40e">More...</a><br /></td></tr>
 <tr class="separator:ada5ea508f85ab70fc2b8a6cdb6bba40e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f4639c44ca8112ca5d2bf936c42ea1"><td class="memItemLeft" align="right" valign="top"><a id="a19f4639c44ca8112ca5d2bf936c42ea1" name="a19f4639c44ca8112ca5d2bf936c42ea1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>enableInterpolation</b> (bool enable)</td></tr>
+<tr class="memitem:aa1905980bac760b4c79077981695bf5f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#aa1905980bac760b4c79077981695bf5f">isSubpixelEnabled</a> ()</td></tr>
+<tr class="memdesc:aa1905980bac760b4c79077981695bf5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get enable/disable status of subpixel refinement from matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#aa1905980bac760b4c79077981695bf5f">More...</a><br /></td></tr>
+<tr class="separator:aa1905980bac760b4c79077981695bf5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19f4639c44ca8112ca5d2bf936c42ea1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a19f4639c44ca8112ca5d2bf936c42ea1">enableInterpolation</a> (bool enable)</td></tr>
+<tr class="memdesc:a19f4639c44ca8112ca5d2bf936c42ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable interpolation for matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a19f4639c44ca8112ca5d2bf936c42ea1">More...</a><br /></td></tr>
 <tr class="separator:a19f4639c44ca8112ca5d2bf936c42ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a411b103ceba17667fec9ac419b5d7e30"><td class="memItemLeft" align="right" valign="top"><a id="a411b103ceba17667fec9ac419b5d7e30" name="a411b103ceba17667fec9ac419b5d7e30"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>enableOcclusionDetection</b> (bool enable)</td></tr>
+<tr class="memitem:a8723c5ea163c9a994595af6c9f24b6ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a8723c5ea163c9a994595af6c9f24b6ac">isInterpolationEnabled</a> ()</td></tr>
+<tr class="memdesc:a8723c5ea163c9a994595af6c9f24b6ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get enable/disable status of interpolation from matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a8723c5ea163c9a994595af6c9f24b6ac">More...</a><br /></td></tr>
+<tr class="separator:a8723c5ea163c9a994595af6c9f24b6ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a411b103ceba17667fec9ac419b5d7e30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a411b103ceba17667fec9ac419b5d7e30">enableOcclusionDetection</a> (bool enable)</td></tr>
+<tr class="memdesc:a411b103ceba17667fec9ac419b5d7e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable occlusion detection for matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a411b103ceba17667fec9ac419b5d7e30">More...</a><br /></td></tr>
 <tr class="separator:a411b103ceba17667fec9ac419b5d7e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a609351a29804b32b6a5a8928fe97b157"><td class="memItemLeft" align="right" valign="top"><a id="a609351a29804b32b6a5a8928fe97b157" name="a609351a29804b32b6a5a8928fe97b157"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>enableOccInterpol</b> (bool enable)</td></tr>
-<tr class="separator:a609351a29804b32b6a5a8928fe97b157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab28183bbda6c19c5850c0e3a427109a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#ab28183bbda6c19c5850c0e3a427109a4">isOcclusionDetectionEnabled</a> ()</td></tr>
+<tr class="memdesc:ab28183bbda6c19c5850c0e3a427109a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get enable/disable status of occlusion detection from matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#ab28183bbda6c19c5850c0e3a427109a4">More...</a><br /></td></tr>
+<tr class="separator:ab28183bbda6c19c5850c0e3a427109a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292ac1905985ba3645bb46c568c4ff64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a292ac1905985ba3645bb46c568c4ff64">enableOcclusionInterpolation</a> (bool enable)</td></tr>
+<tr class="memdesc:a292ac1905985ba3645bb46c568c4ff64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable occlusion interpolation for matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a292ac1905985ba3645bb46c568c4ff64">More...</a><br /></td></tr>
+<tr class="separator:a292ac1905985ba3645bb46c568c4ff64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a718b09a66ee4fe0d88950604f92ed3d1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a718b09a66ee4fe0d88950604f92ed3d1">isOcclusionInterpolationEnabled</a> ()</td></tr>
+<tr class="memdesc:a718b09a66ee4fe0d88950604f92ed3d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get enable/disable status of occlusion interpolation from matcher.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a718b09a66ee4fe0d88950604f92ed3d1">More...</a><br /></td></tr>
+<tr class="separator:a718b09a66ee4fe0d88950604f92ed3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html">I3DR::Phase::AbstractStereoMatcher</a></td></tr>
-<tr class="memitem:ad78ee6faa1f20341814e87cf2f235833 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memItemLeft" align="right" valign="top"><a id="ad78ee6faa1f20341814e87cf2f235833" name="ad78ee6faa1f20341814e87cf2f235833"></a>
-virtual <a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_matcher_compute_result.html">StereoMatcherComputeResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>compute</b> (cv::Mat left_image, cv::Mat right_image)=0</td></tr>
+<tr class="memitem:a29b9240fe7fe702d60eca3d6804f4e36 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memItemLeft" align="right" valign="top"><a id="a29b9240fe7fe702d60eca3d6804f4e36" name="a29b9240fe7fe702d60eca3d6804f4e36"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractStereoMatcher</b> ()</td></tr>
+<tr class="memdesc:a29b9240fe7fe702d60eca3d6804f4e36 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html" title="Abstract Stereo Matcher class.">AbstractStereoMatcher</a> constructor <br  />
+Initalise Stereo matcher and set default matching parameters. <br /></td></tr>
+<tr class="separator:a29b9240fe7fe702d60eca3d6804f4e36 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78ee6faa1f20341814e87cf2f235833 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_matcher_compute_result.html">StereoMatcherComputeResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#ad78ee6faa1f20341814e87cf2f235833">compute</a> (cv::Mat left_image, cv::Mat right_image)=0</td></tr>
+<tr class="memdesc:ad78ee6faa1f20341814e87cf2f235833 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute stereo match <br  />
+Generates disparity from stereo image pair.  <a href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#ad78ee6faa1f20341814e87cf2f235833">More...</a><br /></td></tr>
 <tr class="separator:ad78ee6faa1f20341814e87cf2f235833 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a868717e22c586065d2a4a8b93769e680 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memItemLeft" align="right" valign="top"><a id="a868717e22c586065d2a4a8b93769e680" name="a868717e22c586065d2a4a8b93769e680"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>startComputeThread</b> (cv::Mat left_image, cv::Mat right_image)</td></tr>
+<tr class="memitem:a868717e22c586065d2a4a8b93769e680 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a868717e22c586065d2a4a8b93769e680">startComputeThread</a> (cv::Mat left_image, cv::Mat right_image)</td></tr>
+<tr class="memdesc:a868717e22c586065d2a4a8b93769e680 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start threaded compute of stereo match <br  />
+Generates disparity from stereo image pair.  <a href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a868717e22c586065d2a4a8b93769e680">More...</a><br /></td></tr>
 <tr class="separator:a868717e22c586065d2a4a8b93769e680 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf7559220cc9b08a1a73b1c10578801a inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memItemLeft" align="right" valign="top"><a id="abf7559220cc9b08a1a73b1c10578801a" name="abf7559220cc9b08a1a73b1c10578801a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isComputeThreadRunning</b> ()</td></tr>
+<tr class="memitem:abf7559220cc9b08a1a73b1c10578801a inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#abf7559220cc9b08a1a73b1c10578801a">isComputeThreadRunning</a> ()</td></tr>
+<tr class="memdesc:abf7559220cc9b08a1a73b1c10578801a inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if compute thread running <br  />
+Should be used with <a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a868717e22c586065d2a4a8b93769e680" title="Start threaded compute of stereo match  Generates disparity from stereo image pair.">startComputeThread()</a>  <a href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#abf7559220cc9b08a1a73b1c10578801a">More...</a><br /></td></tr>
 <tr class="separator:abf7559220cc9b08a1a73b1c10578801a inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a934610b01523ccec0a3a6a806c6e05af inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memItemLeft" align="right" valign="top"><a id="a934610b01523ccec0a3a6a806c6e05af" name="a934610b01523ccec0a3a6a806c6e05af"></a>
-<a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_matcher_compute_result.html">StereoMatcherComputeResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getComputeThreadResult</b> ()</td></tr>
+<tr class="memitem:a934610b01523ccec0a3a6a806c6e05af inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_matcher_compute_result.html">StereoMatcherComputeResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a934610b01523ccec0a3a6a806c6e05af">getComputeThreadResult</a> ()</td></tr>
+<tr class="memdesc:a934610b01523ccec0a3a6a806c6e05af inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get results from threaded compute process <br  />
+Should be used with <a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a868717e22c586065d2a4a8b93769e680" title="Start threaded compute of stereo match  Generates disparity from stereo image pair.">startComputeThread()</a>  <a href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a934610b01523ccec0a3a6a806c6e05af">More...</a><br /></td></tr>
 <tr class="separator:a934610b01523ccec0a3a6a806c6e05af inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65f6502e119ba4ca651e4320bda91449 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memItemLeft" align="right" valign="top"><a id="a65f6502e119ba4ca651e4320bda91449" name="a65f6502e119ba4ca651e4320bda91449"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setComputeThreadCallback</b> (const std::function&lt; void(void)&gt; &amp;f)</td></tr>
+<tr class="memitem:a65f6502e119ba4ca651e4320bda91449 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a65f6502e119ba4ca651e4320bda91449">setComputeThreadCallback</a> (const std::function&lt; void(void)&gt; &amp;f)</td></tr>
+<tr class="memdesc:a65f6502e119ba4ca651e4320bda91449 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set callback function to run when compute thread completes <br  />
+Should be used with <a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a868717e22c586065d2a4a8b93769e680" title="Start threaded compute of stereo match  Generates disparity from stereo image pair.">startComputeThread()</a> <br  />
+Useful as an external trigger that compute is complete <br  />
+and results can be retrieved.  <a href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a65f6502e119ba4ca651e4320bda91449">More...</a><br /></td></tr>
 <tr class="separator:a65f6502e119ba4ca651e4320bda91449 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f5d84fb3f47af0f706461802fe1fa9 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memItemLeft" align="right" valign="top"><a id="a00f5d84fb3f47af0f706461802fe1fa9" name="a00f5d84fb3f47af0f706461802fe1fa9"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~AbstractStereoMatcher</b> ()</td></tr>
+<tr class="memdesc:a00f5d84fb3f47af0f706461802fe1fa9 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract Stereo Camera destructor <br  />
+Should be implemented in derived classes. <br /></td></tr>
+<tr class="separator:a00f5d84fb3f47af0f706461802fe1fa9 inherit pub_methods_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a056b8bd3e9bb87eb9ac6fe3f10dcbd3b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a056b8bd3e9bb87eb9ac6fe3f10dcbd3b">isLicenseValid</a> ()</td></tr>
-<tr class="memdesc:a056b8bd3e9bb87eb9ac6fe3f10dcbd3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if license is valid.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a056b8bd3e9bb87eb9ac6fe3f10dcbd3b">More...</a><br /></td></tr>
+<tr class="memdesc:a056b8bd3e9bb87eb9ac6fe3f10dcbd3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if license is valid <br  />
+Looks for license file in the same folder as the application.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a056b8bd3e9bb87eb9ac6fe3f10dcbd3b">More...</a><br /></td></tr>
 <tr class="separator:a056b8bd3e9bb87eb9ac6fe3f10dcbd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab26f44f939be38414fac33fa84959ef1"><td class="memItemLeft" align="right" valign="top"><a id="ab26f44f939be38414fac33fa84959ef1" name="ab26f44f939be38414fac33fa84959ef1"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>loadLicense</b> (const char *license_filepath)</td></tr>
+<tr class="memitem:ab26f44f939be38414fac33fa84959ef1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#ab26f44f939be38414fac33fa84959ef1">loadLicense</a> (const char *license_filepath)</td></tr>
+<tr class="memdesc:ab26f44f939be38414fac33fa84959ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load I3DRSGM license from file.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#ab26f44f939be38414fac33fa84959ef1">More...</a><br /></td></tr>
 <tr class="separator:ab26f44f939be38414fac33fa84959ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a350727d8ff83793080bb4509237125af"><td class="memItemLeft" align="right" valign="top"><a id="a350727d8ff83793080bb4509237125af" name="a350727d8ff83793080bb4509237125af"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (<a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_params.html">StereoParams</a> params)</td></tr>
+<tr class="memitem:a350727d8ff83793080bb4509237125af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a350727d8ff83793080bb4509237125af">init</a> (<a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_params.html">StereoParams</a> params)</td></tr>
+<tr class="memdesc:a350727d8ff83793080bb4509237125af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalise with provided stereo matching parameters.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a350727d8ff83793080bb4509237125af">More...</a><br /></td></tr>
 <tr class="separator:a350727d8ff83793080bb4509237125af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bb9297ba365c5dca70515ac6e90d104"><td class="memItemLeft" align="right" valign="top"><a id="a1bb9297ba365c5dca70515ac6e90d104" name="a1bb9297ba365c5dca70515ac6e90d104"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>updateParams</b> ()</td></tr>
+<tr class="memdesc:a1bb9297ba365c5dca70515ac6e90d104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recreate matcher instance after update to matcher parameters. <br /></td></tr>
 <tr class="separator:a1bb9297ba365c5dca70515ac6e90d104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02a99732cfb38f4d0b45a7588bc300d9"><td class="memItemLeft" align="right" valign="top"><a id="a02a99732cfb38f4d0b45a7588bc300d9" name="a02a99732cfb38f4d0b45a7588bc300d9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>autoUpdateParams</b> (bool enable)</td></tr>
+<tr class="memitem:a02a99732cfb38f4d0b45a7588bc300d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a02a99732cfb38f4d0b45a7588bc300d9">autoUpdateParams</a> (bool enable)</td></tr>
+<tr class="memdesc:a02a99732cfb38f4d0b45a7588bc300d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable automatic refresh of matcher on parameter change.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a02a99732cfb38f4d0b45a7588bc300d9">More...</a><br /></td></tr>
 <tr class="separator:a02a99732cfb38f4d0b45a7588bc300d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa26d56b9c54e9b3a22e59f525a75002"><td class="memItemLeft" align="right" valign="top"><a id="afa26d56b9c54e9b3a22e59f525a75002" name="afa26d56b9c54e9b3a22e59f525a75002"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>zeroBlackFromReference</b> (cv::Mat &amp;image, cv::Mat reference)</td></tr>
+<tr class="memitem:afa26d56b9c54e9b3a22e59f525a75002"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#afa26d56b9c54e9b3a22e59f525a75002">zeroBlackFromReference</a> (cv::Mat &amp;image, cv::Mat reference)</td></tr>
+<tr class="memdesc:afa26d56b9c54e9b3a22e59f525a75002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set pixels in image to zero where elements in reference image are zero <br  />
+This is used to remove disparity data where there was no image data so matching would be impossible.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#afa26d56b9c54e9b3a22e59f525a75002">More...</a><br /></td></tr>
 <tr class="separator:afa26d56b9c54e9b3a22e59f525a75002"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a335f61866897ea7ce31c9194023056a7"><td class="memItemLeft" align="right" valign="top"><a id="a335f61866897ea7ce31c9194023056a7" name="a335f61866897ea7ce31c9194023056a7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>letterboxX</b> (cv::Mat &amp;image, int left_offset, int right_offset)</td></tr>
-<tr class="separator:a335f61866897ea7ce31c9194023056a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31fcc183e18c43ba57ee76915d21ea1b"><td class="memItemLeft" align="right" valign="top"><a id="a31fcc183e18c43ba57ee76915d21ea1b" name="a31fcc183e18c43ba57ee76915d21ea1b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cleanDisparity</b> (cv::Mat &amp;disparity)</td></tr>
+<tr class="memitem:a31fcc183e18c43ba57ee76915d21ea1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a31fcc183e18c43ba57ee76915d21ea1b">cleanDisparity</a> (cv::Mat &amp;disparity)</td></tr>
+<tr class="memdesc:a31fcc183e18c43ba57ee76915d21ea1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean invalid disparity data.  <a href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a31fcc183e18c43ba57ee76915d21ea1b">More...</a><br /></td></tr>
 <tr class="separator:a31fcc183e18c43ba57ee76915d21ea1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
@@ -207,12 +264,111 @@ Private Attributes</h2></td></tr>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html">I3DR::Phase::AbstractStereoMatcher</a></td></tr>
 <tr class="memitem:a73d3d470a2712eb7ba66dba6353d5e5c inherit pro_attribs_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_matcher_compute_result.html">StereoMatcherComputeResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a73d3d470a2712eb7ba66dba6353d5e5c">computeThread_result</a></td></tr>
+<tr class="memdesc:a73d3d470a2712eb7ba66dba6353d5e5c inherit pro_attribs_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores results from threaded compute process  <a href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#a73d3d470a2712eb7ba66dba6353d5e5c">More...</a><br /></td></tr>
 <tr class="separator:a73d3d470a2712eb7ba66dba6353d5e5c inherit pro_attribs_class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="stereoi3drsgm_8h_source.html#l00041">41</a> of file <a class="el" href="stereoi3drsgm_8h_source.html">stereoi3drsgm.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p >Stereo I3DRSGM class. </p>
+<p >I3DRS's stereo semi-global matcher for generting disparity from stereo images. </p>
+
+<p class="definition">Definition at line <a class="el" href="stereomatcher_2stereoi3drsgm_8h_source.html#l00045">45</a> of file <a class="el" href="stereomatcher_2stereoi3drsgm_8h_source.html">stereoi3drsgm.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6991cce4b0c23a5cfbe94bc9a085f7cf" name="a6991cce4b0c23a5cfbe94bc9a085f7cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6991cce4b0c23a5cfbe94bc9a085f7cf">&#9670;&nbsp;</a></span>StereoI3DRSGM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I3DR::Phase::StereoI3DRSGM::StereoI3DRSGM </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_params.html">StereoParams</a>&#160;</td>
+          <td class="paramname"><em>params</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html" title="Stereo I3DRSGM class.">StereoI3DRSGM</a> constructor <br  />
+Initalise Stereo matcher and use provided <a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_params.html" title="Stereo Params structure.">StereoParams</a> to set matching parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td><a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_params.html" title="Stereo Params structure.">StereoParams</a> to use for matching </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a02a99732cfb38f4d0b45a7588bc300d9" name="a02a99732cfb38f4d0b45a7588bc300d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02a99732cfb38f4d0b45a7588bc300d9">&#9670;&nbsp;</a></span>autoUpdateParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::StereoI3DRSGM::autoUpdateParams </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Enable/disable automatic refresh of matcher on parameter change. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>enable/disable automatic refresh </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a31fcc183e18c43ba57ee76915d21ea1b" name="a31fcc183e18c43ba57ee76915d21ea1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31fcc183e18c43ba57ee76915d21ea1b">&#9670;&nbsp;</a></span>cleanDisparity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::StereoI3DRSGM::cleanDisparity </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>disparity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clean invalid disparity data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disparity</td><td>disparity image (data will be overwritten) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aab7b2160a619738857031ce89f502d8f" name="aab7b2160a619738857031ce89f502d8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab7b2160a619738857031ce89f502d8f">&#9670;&nbsp;</a></span>compute()</h2>
 
@@ -247,7 +403,122 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html">I3DR::Phase::AbstractStereoMatcher</a>.</p>
+<p>Compute stereo match <br  />
+Generates disparity from stereo image pair. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left_image</td><td>left image </td></tr>
+    <tr><td class="paramname">right_image</td><td>right image </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>results from stereo matching compute </dd></dl>
+
+<p>Implements <a class="el" href="class_i3_d_r_1_1_phase_1_1_abstract_stereo_matcher.html#ad78ee6faa1f20341814e87cf2f235833">I3DR::Phase::AbstractStereoMatcher</a>.</p>
+
+</div>
+</div>
+<a id="a19f4639c44ca8112ca5d2bf936c42ea1" name="a19f4639c44ca8112ca5d2bf936c42ea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19f4639c44ca8112ca5d2bf936c42ea1">&#9670;&nbsp;</a></span>enableInterpolation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::StereoI3DRSGM::enableInterpolation </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable/disable interpolation for matcher. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>enable/disable interpolation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a411b103ceba17667fec9ac419b5d7e30" name="a411b103ceba17667fec9ac419b5d7e30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a411b103ceba17667fec9ac419b5d7e30">&#9670;&nbsp;</a></span>enableOcclusionDetection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::StereoI3DRSGM::enableOcclusionDetection </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable/disable occlusion detection for matcher. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>enable/disable occlusion detection </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a292ac1905985ba3645bb46c568c4ff64" name="a292ac1905985ba3645bb46c568c4ff64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a292ac1905985ba3645bb46c568c4ff64">&#9670;&nbsp;</a></span>enableOcclusionInterpolation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::StereoI3DRSGM::enableOcclusionInterpolation </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable/disable occlusion interpolation for matcher. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>enable/disable occlusion interpolation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ada5ea508f85ab70fc2b8a6cdb6bba40e" name="ada5ea508f85ab70fc2b8a6cdb6bba40e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada5ea508f85ab70fc2b8a6cdb6bba40e">&#9670;&nbsp;</a></span>enableSubpixel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::StereoI3DRSGM::enableSubpixel </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable/disable subpixel refinement for matcher. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>enable/disable subpixel refinement </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -288,11 +559,165 @@ Additional Inherited Members</h2></td></tr>
 <p>Get hostid and hostname (useful for displaying to user) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">hostname</td><td>string variable to place hostname</td></tr>
+    <tr><td class="paramname">hostname</td><td>string variable to place hostname </td></tr>
     <tr><td class="paramname">hostid</td><td>string varaible to place hostid </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aedfaf4b3721ea0a331c62e8b406b84f8" name="aedfaf4b3721ea0a331c62e8b406b84f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedfaf4b3721ea0a331c62e8b406b84f8">&#9670;&nbsp;</a></span>getMinDisparity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int I3DR::Phase::StereoI3DRSGM::getMinDisparity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get minimum disparity from matcher. </p>
+<dl class="section return"><dt>Returns</dt><dd>minimum disparity </dd></dl>
+
+</div>
+</div>
+<a id="af2b54fa0350eb0f999778e3711469e4f" name="af2b54fa0350eb0f999778e3711469e4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2b54fa0350eb0f999778e3711469e4f">&#9670;&nbsp;</a></span>getNumDisparities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int I3DR::Phase::StereoI3DRSGM::getNumDisparities </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get number of disparities from matcher. </p>
+<dl class="section return"><dt>Returns</dt><dd>number of disparities </dd></dl>
+
+</div>
+</div>
+<a id="a751e6ea693f6bf9713e08547c896a30d" name="a751e6ea693f6bf9713e08547c896a30d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a751e6ea693f6bf9713e08547c896a30d">&#9670;&nbsp;</a></span>getSpeckleMaxDiff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float I3DR::Phase::StereoI3DRSGM::getSpeckleMaxDiff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get speckle max difference from matcher. </p>
+<dl class="section return"><dt>Returns</dt><dd>speckle max difference </dd></dl>
+
+</div>
+</div>
+<a id="a7ecf5523972f0c33789b14cb18d86cd3" name="a7ecf5523972f0c33789b14cb18d86cd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ecf5523972f0c33789b14cb18d86cd3">&#9670;&nbsp;</a></span>getSpeckleMaxSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int I3DR::Phase::StereoI3DRSGM::getSpeckleMaxSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get speckle max size from matcher. </p>
+<dl class="section return"><dt>Returns</dt><dd>speckle max size </dd></dl>
+
+</div>
+</div>
+<a id="a666d2739959cddfbbc6e476eab24ad30" name="a666d2739959cddfbbc6e476eab24ad30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a666d2739959cddfbbc6e476eab24ad30">&#9670;&nbsp;</a></span>getWindowSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int I3DR::Phase::StereoI3DRSGM::getWindowSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get window size from matcher. </p>
+<dl class="section return"><dt>Returns</dt><dd>window size </dd></dl>
+
+</div>
+</div>
+<a id="a350727d8ff83793080bb4509237125af" name="a350727d8ff83793080bb4509237125af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a350727d8ff83793080bb4509237125af">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::StereoI3DRSGM::init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_i3_d_r_1_1_phase_1_1_stereo_params.html">StereoParams</a>&#160;</td>
+          <td class="paramname"><em>params</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initalise with provided stereo matching parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">params</td><td>stereo matching parameters </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8723c5ea163c9a994595af6c9f24b6ac" name="a8723c5ea163c9a994595af6c9f24b6ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8723c5ea163c9a994595af6c9f24b6ac">&#9670;&nbsp;</a></span>isInterpolationEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool I3DR::Phase::StereoI3DRSGM::isInterpolationEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get enable/disable status of interpolation from matcher. </p>
+<dl class="section return"><dt>Returns</dt><dd>enable/disable status of interpolation </dd></dl>
 
 </div>
 </div>
@@ -319,9 +744,283 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Check if license is valid. </p>
-<p >Looks for license file in the same folder as the application. Checks license against hostinfo and returns a valid matcher handle, if the license is valid. This matcher handle is checked to see if it is null, this is the check returned by the function.</p>
-<dl class="section return"><dt>Returns</dt><dd>license validitiy </dd></dl>
+<p>Check if license is valid <br  />
+Looks for license file in the same folder as the application. </p>
+<p ><br  />
+Checks license against hostinfo and returns a valid matcher handle, <br  />
+if the license is valid. This matcher handle is checked to see if it <br  />
+is null, this is the check returned by the function. <br  />
+ </p><dl class="section return"><dt>Returns</dt><dd>license validitiy </dd></dl>
+
+</div>
+</div>
+<a id="ab28183bbda6c19c5850c0e3a427109a4" name="ab28183bbda6c19c5850c0e3a427109a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab28183bbda6c19c5850c0e3a427109a4">&#9670;&nbsp;</a></span>isOcclusionDetectionEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool I3DR::Phase::StereoI3DRSGM::isOcclusionDetectionEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get enable/disable status of occlusion detection from matcher. </p>
+<dl class="section return"><dt>Returns</dt><dd>enable/disable status of occlusion detection </dd></dl>
+
+</div>
+</div>
+<a id="a718b09a66ee4fe0d88950604f92ed3d1" name="a718b09a66ee4fe0d88950604f92ed3d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a718b09a66ee4fe0d88950604f92ed3d1">&#9670;&nbsp;</a></span>isOcclusionInterpolationEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool I3DR::Phase::StereoI3DRSGM::isOcclusionInterpolationEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get enable/disable status of occlusion interpolation from matcher. </p>
+<dl class="section return"><dt>Returns</dt><dd>enable/disable status of occlusion interpolation </dd></dl>
+
+</div>
+</div>
+<a id="aa1905980bac760b4c79077981695bf5f" name="aa1905980bac760b4c79077981695bf5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1905980bac760b4c79077981695bf5f">&#9670;&nbsp;</a></span>isSubpixelEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool I3DR::Phase::StereoI3DRSGM::isSubpixelEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get enable/disable status of subpixel refinement from matcher. </p>
+<dl class="section return"><dt>Returns</dt><dd>enable/disable status of subpixel refinement </dd></dl>
+
+</div>
+</div>
+<a id="ab26f44f939be38414fac33fa84959ef1" name="ab26f44f939be38414fac33fa84959ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab26f44f939be38414fac33fa84959ef1">&#9670;&nbsp;</a></span>loadLicense()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void I3DR::Phase::StereoI3DRSGM::loadLicense </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>license_filepath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load I3DRSGM license from file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">license_filepath</td><td>filepath to license </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="add4c923701dd0e98efa7a8e25888dc97" name="add4c923701dd0e98efa7a8e25888dc97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add4c923701dd0e98efa7a8e25888dc97">&#9670;&nbsp;</a></span>setMinDisparity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::StereoI3DRSGM::setMinDisparity </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set minimum disparity for matcher. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>minimum disparity </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2e1d4c09b03550185acfb4cba7cd807d" name="a2e1d4c09b03550185acfb4cba7cd807d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e1d4c09b03550185acfb4cba7cd807d">&#9670;&nbsp;</a></span>setNumDisparities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::StereoI3DRSGM::setNumDisparities </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set number of disparities for matcher. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>number of disparities </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4cb6fa05e0ddc7d8a92ecf8e09b75020" name="a4cb6fa05e0ddc7d8a92ecf8e09b75020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb6fa05e0ddc7d8a92ecf8e09b75020">&#9670;&nbsp;</a></span>setSpeckleMaxDiff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::StereoI3DRSGM::setSpeckleMaxDiff </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set speckle max difference for matcher. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>speckle max difference </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a534ad8ef40c8ff8d18384ce355887b1a" name="a534ad8ef40c8ff8d18384ce355887b1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a534ad8ef40c8ff8d18384ce355887b1a">&#9670;&nbsp;</a></span>setSpeckleMaxSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::StereoI3DRSGM::setSpeckleMaxSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set speckle max size for matcher. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>speckle max size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6bd976f4add3208bef0ebb72fd64d992" name="a6bd976f4add3208bef0ebb72fd64d992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bd976f4add3208bef0ebb72fd64d992">&#9670;&nbsp;</a></span>setWindowSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::StereoI3DRSGM::setWindowSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set window size for matcher. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>window size </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afa26d56b9c54e9b3a22e59f525a75002" name="afa26d56b9c54e9b3a22e59f525a75002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa26d56b9c54e9b3a22e59f525a75002">&#9670;&nbsp;</a></span>zeroBlackFromReference()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::StereoI3DRSGM::zeroBlackFromReference </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>reference</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set pixels in image to zero where elements in reference image are zero <br  />
+This is used to remove disparity data where there was no image data so matching would be impossible. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>disparity image (data will be overwritten) </td></tr>
+    <tr><td class="paramname">reference</td><td>reference image </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -346,7 +1045,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereoi3drsgm_8h_source.html#l00100">100</a> of file <a class="el" href="stereoi3drsgm_8h_source.html">stereoi3drsgm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereomatcher_2stereoi3drsgm_8h_source.html#l00319">319</a> of file <a class="el" href="stereomatcher_2stereoi3drsgm_8h_source.html">stereoi3drsgm.h</a>.</p>
 
 </div>
 </div>
@@ -370,7 +1069,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereoi3drsgm_8h_source.html#l00103">103</a> of file <a class="el" href="stereoi3drsgm_8h_source.html">stereoi3drsgm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereomatcher_2stereoi3drsgm_8h_source.html#l00322">322</a> of file <a class="el" href="stereomatcher_2stereoi3drsgm_8h_source.html">stereoi3drsgm.h</a>.</p>
 
 </div>
 </div>
@@ -394,7 +1093,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereoi3drsgm_8h_source.html#l00102">102</a> of file <a class="el" href="stereoi3drsgm_8h_source.html">stereoi3drsgm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereomatcher_2stereoi3drsgm_8h_source.html#l00321">321</a> of file <a class="el" href="stereomatcher_2stereoi3drsgm_8h_source.html">stereoi3drsgm.h</a>.</p>
 
 </div>
 </div>
@@ -418,12 +1117,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="stereoi3drsgm_8h_source.html#l00099">99</a> of file <a class="el" href="stereoi3drsgm_8h_source.html">stereoi3drsgm.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="stereomatcher_2stereoi3drsgm_8h_source.html#l00318">318</a> of file <a class="el" href="stereomatcher_2stereoi3drsgm_8h_source.html">stereoi3drsgm.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/phase/stereomatcher/<a class="el" href="stereoi3drsgm_8h_source.html">stereoi3drsgm.h</a></li>
+<li>include/phase/stereomatcher/<a class="el" href="stereomatcher_2stereoi3drsgm_8h_source.html">stereoi3drsgm.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -431,7 +1130,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>I3DR</b></li><li class="navelem"><b>Phase</b></li><li class="navelem"><a class="el" href="class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html">StereoI3DRSGM</a></li>
-    <li class="footer">Generated on Tue Jun 21 2022 11:19:53 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Sep 2 2022 09:45:15 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>

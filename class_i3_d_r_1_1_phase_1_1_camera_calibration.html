@@ -28,7 +28,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="i3dr_logo_128x128.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Phase<span id="projectnumber">&#160;0.1.1</span>
+   <div id="projectname">Phase<span id="projectnumber">&#160;0.2.0</span>
    </div>
   </td>
  </tr>
@@ -99,143 +99,969 @@ $(document).ready(function(){initNavTree('class_i3_d_r_1_1_phase_1_1_camera_cali
 <p>Camera Calibration class.  
  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa11f8b0611dec4b7e3e5cf489762eb12"><td class="memItemLeft" align="right" valign="top"><a id="aa11f8b0611dec4b7e3e5cf489762eb12" name="aa11f8b0611dec4b7e3e5cf489762eb12"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CameraCalibration</b> (int width, int height, cv::Mat camera_matrix, cv::Mat distortion_coefficients, cv::Mat rectification_matrix, cv::Mat projection_matrix)</td></tr>
+<tr class="memitem:ac1eb4df884b992ee2f65491c029cddc7"><td class="memItemLeft" align="right" valign="top"><a id="ac1eb4df884b992ee2f65491c029cddc7" name="ac1eb4df884b992ee2f65491c029cddc7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CameraCalibration</b> ()</td></tr>
+<tr class="memdesc:ac1eb4df884b992ee2f65491c029cddc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Camera calibration constructor <br  />
+Initalise calibration and set default values. <br /></td></tr>
+<tr class="separator:ac1eb4df884b992ee2f65491c029cddc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11f8b0611dec4b7e3e5cf489762eb12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aa11f8b0611dec4b7e3e5cf489762eb12">CameraCalibration</a> (int <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a04606c5f46e7c9ef0c0ed051900d642b">width</a>, int <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ad2e2cc527684d9bdad8d35bd31b9962b">height</a>, cv::Mat <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aceb0bb04b73b53a7099154cffb7d6eec">camera_matrix</a>, cv::Mat <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#af4594b6cc939f2a515278c823730439b">distortion_coefficients</a>, cv::Mat <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aeb3456cd731b7df7076a3755e5f75ddb">rectification_matrix</a>, cv::Mat <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a6ad6415646f7848cd201e33ac44c3418">projection_matrix</a>)</td></tr>
+<tr class="memdesc:aa11f8b0611dec4b7e3e5cf489762eb12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Camera calibration constructor <br  />
+Initalise camera calibration using the values provided.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aa11f8b0611dec4b7e3e5cf489762eb12">More...</a><br /></td></tr>
 <tr class="separator:aa11f8b0611dec4b7e3e5cf489762eb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bf251d424970974268ff2b1e466c2bd"><td class="memItemLeft" align="right" valign="top"><a id="a2bf251d424970974268ff2b1e466c2bd" name="a2bf251d424970974268ff2b1e466c2bd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CameraCalibration</b> (const char *calibration_filepath)</td></tr>
+<tr class="memitem:a2bf251d424970974268ff2b1e466c2bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a2bf251d424970974268ff2b1e466c2bd">CameraCalibration</a> (const char *calibration_filepath)</td></tr>
+<tr class="memdesc:a2bf251d424970974268ff2b1e466c2bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Camera calibration constructor <br  />
+Initalise camera calibration from calibration file.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a2bf251d424970974268ff2b1e466c2bd">More...</a><br /></td></tr>
 <tr class="separator:a2bf251d424970974268ff2b1e466c2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afeef5926282775852647153c8d8eaed2"><td class="memItemLeft" align="right" valign="top"><a id="afeef5926282775852647153c8d8eaed2" name="afeef5926282775852647153c8d8eaed2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>rectify</b> (cv::Mat image, cv::Mat &amp;rect_image)</td></tr>
+<tr class="memitem:afeef5926282775852647153c8d8eaed2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#afeef5926282775852647153c8d8eaed2">rectify</a> (cv::Mat image, cv::Mat &amp;rect_image)</td></tr>
+<tr class="memdesc:afeef5926282775852647153c8d8eaed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rectify image based on calibration.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#afeef5926282775852647153c8d8eaed2">More...</a><br /></td></tr>
 <tr class="separator:afeef5926282775852647153c8d8eaed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a623732da1ca6b977d2a978458cbb5bea"><td class="memItemLeft" align="right" valign="top"><a id="a623732da1ca6b977d2a978458cbb5bea" name="a623732da1ca6b977d2a978458cbb5bea"></a>
-<a class="el" href="struct_i3_d_r_1_1_phase_1_1_point2i.html">Point2i</a>&#160;</td><td class="memItemRight" valign="bottom"><b>remapPoint</b> (<a class="el" href="struct_i3_d_r_1_1_phase_1_1_point2i.html">Point2i</a> point)</td></tr>
-<tr class="separator:a623732da1ca6b977d2a978458cbb5bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adca53b5b9d046d05c7eeb899fe8ad0db"><td class="memItemLeft" align="right" valign="top"><a id="adca53b5b9d046d05c7eeb899fe8ad0db" name="adca53b5b9d046d05c7eeb899fe8ad0db"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isValid</b> ()</td></tr>
+<tr class="memitem:adca53b5b9d046d05c7eeb899fe8ad0db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#adca53b5b9d046d05c7eeb899fe8ad0db">isValid</a> ()</td></tr>
+<tr class="memdesc:adca53b5b9d046d05c7eeb899fe8ad0db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if loaded calibration is valid.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#adca53b5b9d046d05c7eeb899fe8ad0db">More...</a><br /></td></tr>
 <tr class="separator:adca53b5b9d046d05c7eeb899fe8ad0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a69a4ab07e744d84b3a2b0f5b71d202"><td class="memItemLeft" align="right" valign="top"><a id="a9a69a4ab07e744d84b3a2b0f5b71d202" name="a9a69a4ab07e744d84b3a2b0f5b71d202"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setDownsampleFactor</b> (float value)</td></tr>
+<tr class="memitem:a9a69a4ab07e744d84b3a2b0f5b71d202"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a9a69a4ab07e744d84b3a2b0f5b71d202">setDownsampleFactor</a> (float value)</td></tr>
+<tr class="memdesc:a9a69a4ab07e744d84b3a2b0f5b71d202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set downsample factor for calibration.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a9a69a4ab07e744d84b3a2b0f5b71d202">More...</a><br /></td></tr>
 <tr class="separator:a9a69a4ab07e744d84b3a2b0f5b71d202"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b7255468d6c90310556967326d35d74"><td class="memItemLeft" align="right" valign="top"><a id="a8b7255468d6c90310556967326d35d74" name="a8b7255468d6c90310556967326d35d74"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>getDownsampleFactor</b> ()</td></tr>
+<tr class="memitem:a8b7255468d6c90310556967326d35d74"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a8b7255468d6c90310556967326d35d74">getDownsampleFactor</a> ()</td></tr>
+<tr class="memdesc:a8b7255468d6c90310556967326d35d74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get downsample factor.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a8b7255468d6c90310556967326d35d74">More...</a><br /></td></tr>
 <tr class="separator:a8b7255468d6c90310556967326d35d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a145b8c101ee0c2e7c2d7b701a27cc9d4"><td class="memItemLeft" align="right" valign="top"><a id="a145b8c101ee0c2e7c2d7b701a27cc9d4" name="a145b8c101ee0c2e7c2d7b701a27cc9d4"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getImageHeight</b> ()</td></tr>
+<tr class="memitem:a145b8c101ee0c2e7c2d7b701a27cc9d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a145b8c101ee0c2e7c2d7b701a27cc9d4">getImageHeight</a> ()</td></tr>
+<tr class="memdesc:a145b8c101ee0c2e7c2d7b701a27cc9d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get camera image height in calibration.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a145b8c101ee0c2e7c2d7b701a27cc9d4">More...</a><br /></td></tr>
 <tr class="separator:a145b8c101ee0c2e7c2d7b701a27cc9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecbbc4b58ec4d2ea48b8c3f4102f8c46"><td class="memItemLeft" align="right" valign="top"><a id="aecbbc4b58ec4d2ea48b8c3f4102f8c46" name="aecbbc4b58ec4d2ea48b8c3f4102f8c46"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getImageWidth</b> ()</td></tr>
+<tr class="memitem:aecbbc4b58ec4d2ea48b8c3f4102f8c46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aecbbc4b58ec4d2ea48b8c3f4102f8c46">getImageWidth</a> ()</td></tr>
+<tr class="memdesc:aecbbc4b58ec4d2ea48b8c3f4102f8c46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get camera image width in calibration.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aecbbc4b58ec4d2ea48b8c3f4102f8c46">More...</a><br /></td></tr>
 <tr class="separator:aecbbc4b58ec4d2ea48b8c3f4102f8c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c4609ab44c8ed972407d7edbe6a36ab"><td class="memItemLeft" align="right" valign="top"><a id="a6c4609ab44c8ed972407d7edbe6a36ab" name="a6c4609ab44c8ed972407d7edbe6a36ab"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getCameraFX</b> ()</td></tr>
+<tr class="memitem:a6c4609ab44c8ed972407d7edbe6a36ab"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a6c4609ab44c8ed972407d7edbe6a36ab">getCameraFX</a> ()</td></tr>
+<tr class="memdesc:a6c4609ab44c8ed972407d7edbe6a36ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get camera focal length in X in calibration (in pixels)  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a6c4609ab44c8ed972407d7edbe6a36ab">More...</a><br /></td></tr>
 <tr class="separator:a6c4609ab44c8ed972407d7edbe6a36ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a306bc74d8f1b686beb6ec906475b3a1d"><td class="memItemLeft" align="right" valign="top"><a id="a306bc74d8f1b686beb6ec906475b3a1d" name="a306bc74d8f1b686beb6ec906475b3a1d"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getCameraFY</b> ()</td></tr>
+<tr class="memitem:a306bc74d8f1b686beb6ec906475b3a1d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a306bc74d8f1b686beb6ec906475b3a1d">getCameraFY</a> ()</td></tr>
+<tr class="memdesc:a306bc74d8f1b686beb6ec906475b3a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get camera focal length in Y in calibration (in pixels)  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a306bc74d8f1b686beb6ec906475b3a1d">More...</a><br /></td></tr>
 <tr class="separator:a306bc74d8f1b686beb6ec906475b3a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63e0306f7ac79e227bfdb6509907a01d"><td class="memItemLeft" align="right" valign="top"><a id="a63e0306f7ac79e227bfdb6509907a01d" name="a63e0306f7ac79e227bfdb6509907a01d"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getCameraCX</b> ()</td></tr>
+<tr class="memitem:a63e0306f7ac79e227bfdb6509907a01d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a63e0306f7ac79e227bfdb6509907a01d">getCameraCX</a> ()</td></tr>
+<tr class="memdesc:a63e0306f7ac79e227bfdb6509907a01d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get camera principle point in X in calibration (in pixels)  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a63e0306f7ac79e227bfdb6509907a01d">More...</a><br /></td></tr>
 <tr class="separator:a63e0306f7ac79e227bfdb6509907a01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac461cf5363e9a6ea28b65827238bfed5"><td class="memItemLeft" align="right" valign="top"><a id="ac461cf5363e9a6ea28b65827238bfed5" name="ac461cf5363e9a6ea28b65827238bfed5"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getCameraCY</b> ()</td></tr>
+<tr class="memitem:ac461cf5363e9a6ea28b65827238bfed5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ac461cf5363e9a6ea28b65827238bfed5">getCameraCY</a> ()</td></tr>
+<tr class="memdesc:ac461cf5363e9a6ea28b65827238bfed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get camera principle point in Y in calibration (in pixels)  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ac461cf5363e9a6ea28b65827238bfed5">More...</a><br /></td></tr>
 <tr class="separator:ac461cf5363e9a6ea28b65827238bfed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a276cf3242f2fa4956d1ce1dd8ddb6e67"><td class="memItemLeft" align="right" valign="top"><a id="a276cf3242f2fa4956d1ce1dd8ddb6e67" name="a276cf3242f2fa4956d1ce1dd8ddb6e67"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getProjectionFX</b> ()</td></tr>
+<tr class="memitem:a276cf3242f2fa4956d1ce1dd8ddb6e67"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a276cf3242f2fa4956d1ce1dd8ddb6e67">getProjectionFX</a> ()</td></tr>
+<tr class="memdesc:a276cf3242f2fa4956d1ce1dd8ddb6e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get camera focal length in X in calibration projection (in pixels)  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a276cf3242f2fa4956d1ce1dd8ddb6e67">More...</a><br /></td></tr>
 <tr class="separator:a276cf3242f2fa4956d1ce1dd8ddb6e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49a5267fcee42015c531cbf94d660dbf"><td class="memItemLeft" align="right" valign="top"><a id="a49a5267fcee42015c531cbf94d660dbf" name="a49a5267fcee42015c531cbf94d660dbf"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getProjectionFY</b> ()</td></tr>
+<tr class="memitem:a49a5267fcee42015c531cbf94d660dbf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a49a5267fcee42015c531cbf94d660dbf">getProjectionFY</a> ()</td></tr>
+<tr class="memdesc:a49a5267fcee42015c531cbf94d660dbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get camera focal length in Y in calibration projection (in pixels)  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a49a5267fcee42015c531cbf94d660dbf">More...</a><br /></td></tr>
 <tr class="separator:a49a5267fcee42015c531cbf94d660dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a6ad8fe32f9b8278ab0614b5e2be8d"><td class="memItemLeft" align="right" valign="top"><a id="ab3a6ad8fe32f9b8278ab0614b5e2be8d" name="ab3a6ad8fe32f9b8278ab0614b5e2be8d"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getProjectionCX</b> ()</td></tr>
+<tr class="memitem:ab3a6ad8fe32f9b8278ab0614b5e2be8d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ab3a6ad8fe32f9b8278ab0614b5e2be8d">getProjectionCX</a> ()</td></tr>
+<tr class="memdesc:ab3a6ad8fe32f9b8278ab0614b5e2be8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get camera principle point in X in calibration projection (in pixels)  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ab3a6ad8fe32f9b8278ab0614b5e2be8d">More...</a><br /></td></tr>
 <tr class="separator:ab3a6ad8fe32f9b8278ab0614b5e2be8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b7c04ccd71fe5912979a182a9f2fc63"><td class="memItemLeft" align="right" valign="top"><a id="a7b7c04ccd71fe5912979a182a9f2fc63" name="a7b7c04ccd71fe5912979a182a9f2fc63"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getProjectionCY</b> ()</td></tr>
+<tr class="memitem:a7b7c04ccd71fe5912979a182a9f2fc63"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a7b7c04ccd71fe5912979a182a9f2fc63">getProjectionCY</a> ()</td></tr>
+<tr class="memdesc:a7b7c04ccd71fe5912979a182a9f2fc63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get camera principle point in Y in calibration projection (in pixels)  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a7b7c04ccd71fe5912979a182a9f2fc63">More...</a><br /></td></tr>
 <tr class="separator:a7b7c04ccd71fe5912979a182a9f2fc63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac51686ffb31d16e9e66d7e378830faa2"><td class="memItemLeft" align="right" valign="top"><a id="ac51686ffb31d16e9e66d7e378830faa2" name="ac51686ffb31d16e9e66d7e378830faa2"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getProjectionTX</b> ()</td></tr>
+<tr class="memitem:ac51686ffb31d16e9e66d7e378830faa2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ac51686ffb31d16e9e66d7e378830faa2">getProjectionTX</a> ()</td></tr>
+<tr class="memdesc:ac51686ffb31d16e9e66d7e378830faa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get camera baseline in calibration projection (in pixels)  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ac51686ffb31d16e9e66d7e378830faa2">More...</a><br /></td></tr>
 <tr class="separator:ac51686ffb31d16e9e66d7e378830faa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b15918727f8e3b377dc874d67a7ac3a"><td class="memItemLeft" align="right" valign="top"><a id="a0b15918727f8e3b377dc874d67a7ac3a" name="a0b15918727f8e3b377dc874d67a7ac3a"></a>
-cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>getCameraMatrix</b> ()</td></tr>
+<tr class="memitem:a0b15918727f8e3b377dc874d67a7ac3a"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a0b15918727f8e3b377dc874d67a7ac3a">getCameraMatrix</a> ()</td></tr>
+<tr class="memdesc:a0b15918727f8e3b377dc874d67a7ac3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get camera matrix from calibration.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a0b15918727f8e3b377dc874d67a7ac3a">More...</a><br /></td></tr>
 <tr class="separator:a0b15918727f8e3b377dc874d67a7ac3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab009df1ee1fdda169f97ae8a552b55e4"><td class="memItemLeft" align="right" valign="top"><a id="ab009df1ee1fdda169f97ae8a552b55e4" name="ab009df1ee1fdda169f97ae8a552b55e4"></a>
-cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>getDistortionCoefficients</b> ()</td></tr>
+<tr class="memitem:ab009df1ee1fdda169f97ae8a552b55e4"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ab009df1ee1fdda169f97ae8a552b55e4">getDistortionCoefficients</a> ()</td></tr>
+<tr class="memdesc:ab009df1ee1fdda169f97ae8a552b55e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get distortion coefficients from calibration.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ab009df1ee1fdda169f97ae8a552b55e4">More...</a><br /></td></tr>
 <tr class="separator:ab009df1ee1fdda169f97ae8a552b55e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae828bd1e659c73f98382b89edcb48047"><td class="memItemLeft" align="right" valign="top"><a id="ae828bd1e659c73f98382b89edcb48047" name="ae828bd1e659c73f98382b89edcb48047"></a>
-cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>getRectificationMatrix</b> ()</td></tr>
+<tr class="memitem:ae828bd1e659c73f98382b89edcb48047"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ae828bd1e659c73f98382b89edcb48047">getRectificationMatrix</a> ()</td></tr>
+<tr class="memdesc:ae828bd1e659c73f98382b89edcb48047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rectification matrix from calibration.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ae828bd1e659c73f98382b89edcb48047">More...</a><br /></td></tr>
 <tr class="separator:ae828bd1e659c73f98382b89edcb48047"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab38a2ca8573a724a4036af114ad8a45f"><td class="memItemLeft" align="right" valign="top"><a id="ab38a2ca8573a724a4036af114ad8a45f" name="ab38a2ca8573a724a4036af114ad8a45f"></a>
-cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><b>getProjectionMatrix</b> ()</td></tr>
+<tr class="memitem:ab38a2ca8573a724a4036af114ad8a45f"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ab38a2ca8573a724a4036af114ad8a45f">getProjectionMatrix</a> ()</td></tr>
+<tr class="memdesc:ab38a2ca8573a724a4036af114ad8a45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get projection matrix from calibration.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ab38a2ca8573a724a4036af114ad8a45f">More...</a><br /></td></tr>
 <tr class="separator:ab38a2ca8573a724a4036af114ad8a45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a23a298c95124a56e206afff37568d9a9"><td class="memItemLeft" align="right" valign="top"><a id="a23a298c95124a56e206afff37568d9a9" name="a23a298c95124a56e206afff37568d9a9"></a>
-static <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>calibrationFromIdeal</b> (int width, int height, double pixel_pitch, double focal_length, double translation_x, double translation_y)</td></tr>
+<tr class="memitem:a23a298c95124a56e206afff37568d9a9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a23a298c95124a56e206afff37568d9a9">calibrationFromIdeal</a> (int <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a04606c5f46e7c9ef0c0ed051900d642b">width</a>, int <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ad2e2cc527684d9bdad8d35bd31b9962b">height</a>, double pixel_pitch, double focal_length, double translation_x, double translation_y)</td></tr>
+<tr class="memdesc:a23a298c95124a56e206afff37568d9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create ideal calibration from camera information.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a23a298c95124a56e206afff37568d9a9">More...</a><br /></td></tr>
 <tr class="separator:a23a298c95124a56e206afff37568d9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ae333a897d40a946b4f65c3040ded0a45"><td class="memItemLeft" align="right" valign="top"><a id="ae333a897d40a946b4f65c3040ded0a45" name="ae333a897d40a946b4f65c3040ded0a45"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (int width, int height, cv::Mat camera_matrix, cv::Mat distortion_coefficients, cv::Mat rectification_matrix, cv::Mat projection_matrix)</td></tr>
+<tr class="memitem:ae333a897d40a946b4f65c3040ded0a45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ae333a897d40a946b4f65c3040ded0a45">init</a> (int <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a04606c5f46e7c9ef0c0ed051900d642b">width</a>, int <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ad2e2cc527684d9bdad8d35bd31b9962b">height</a>, cv::Mat <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aceb0bb04b73b53a7099154cffb7d6eec">camera_matrix</a>, cv::Mat <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#af4594b6cc939f2a515278c823730439b">distortion_coefficients</a>, cv::Mat <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aeb3456cd731b7df7076a3755e5f75ddb">rectification_matrix</a>, cv::Mat <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a6ad6415646f7848cd201e33ac44c3418">projection_matrix</a>)</td></tr>
+<tr class="memdesc:ae333a897d40a946b4f65c3040ded0a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalise calibration from values.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ae333a897d40a946b4f65c3040ded0a45">More...</a><br /></td></tr>
 <tr class="separator:ae333a897d40a946b4f65c3040ded0a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:aa54ce04445b6f24b3f8bb6f0bc254f80"><td class="memItemLeft" align="right" valign="top"><a id="aa54ce04445b6f24b3f8bb6f0bc254f80" name="aa54ce04445b6f24b3f8bb6f0bc254f80"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadROSYaml</b> (const char *calibration_filepath, int &amp;out_width, int &amp;out_height, cv::Mat &amp;out_camera_matrix, cv::Mat &amp;out_distortion_coefficients, cv::Mat &amp;out_rectification_matrix, cv::Mat &amp;out_projection_matrix)</td></tr>
+<tr class="memitem:aa54ce04445b6f24b3f8bb6f0bc254f80"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aa54ce04445b6f24b3f8bb6f0bc254f80">loadROSYaml</a> (const char *calibration_filepath, int &amp;out_width, int &amp;out_height, cv::Mat &amp;out_camera_matrix, cv::Mat &amp;out_distortion_coefficients, cv::Mat &amp;out_rectification_matrix, cv::Mat &amp;out_projection_matrix)</td></tr>
+<tr class="memdesc:aa54ce04445b6f24b3f8bb6f0bc254f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load calibration data from ROS Yaml file.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aa54ce04445b6f24b3f8bb6f0bc254f80">More...</a><br /></td></tr>
 <tr class="separator:aa54ce04445b6f24b3f8bb6f0bc254f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae060a4b84f0f3f6e7373f85329af0bf5"><td class="memItemLeft" align="right" valign="top"><a id="ae060a4b84f0f3f6e7373f85329af0bf5" name="ae060a4b84f0f3f6e7373f85329af0bf5"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>loadCVYaml</b> (const char *calibration_filepath, int &amp;out_width, int &amp;out_height, cv::Mat &amp;out_camera_matrix, cv::Mat &amp;out_distortion_coefficients, cv::Mat &amp;out_rectification_matrix, cv::Mat &amp;out_projection_matrix)</td></tr>
+<tr class="memitem:ae060a4b84f0f3f6e7373f85329af0bf5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ae060a4b84f0f3f6e7373f85329af0bf5">loadCVYaml</a> (const char *calibration_filepath, int &amp;out_width, int &amp;out_height, cv::Mat &amp;out_camera_matrix, cv::Mat &amp;out_distortion_coefficients, cv::Mat &amp;out_rectification_matrix, cv::Mat &amp;out_projection_matrix)</td></tr>
+<tr class="memdesc:ae060a4b84f0f3f6e7373f85329af0bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load calibration data from OpenCV Yaml file.  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ae060a4b84f0f3f6e7373f85329af0bf5">More...</a><br /></td></tr>
 <tr class="separator:ae060a4b84f0f3f6e7373f85329af0bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:af3e548274eac53405c6806a4e2550bb0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#af3e548274eac53405c6806a4e2550bb0">downsample_rate</a> = 1.0f</td></tr>
+<tr class="memdesc:af3e548274eac53405c6806a4e2550bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">downsample rate for calibration  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#af3e548274eac53405c6806a4e2550bb0">More...</a><br /></td></tr>
 <tr class="separator:af3e548274eac53405c6806a4e2550bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab64e7699f272344737ed2bc7ef897541"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ab64e7699f272344737ed2bc7ef897541">valid</a> = false</td></tr>
+<tr class="memdesc:ab64e7699f272344737ed2bc7ef897541"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag to indicate if calibration is valid  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ab64e7699f272344737ed2bc7ef897541">More...</a><br /></td></tr>
 <tr class="separator:ab64e7699f272344737ed2bc7ef897541"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04606c5f46e7c9ef0c0ed051900d642b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a04606c5f46e7c9ef0c0ed051900d642b">width</a> = 0</td></tr>
+<tr class="memdesc:a04606c5f46e7c9ef0c0ed051900d642b"><td class="mdescLeft">&#160;</td><td class="mdescRight">camera image width loaded from calibration  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a04606c5f46e7c9ef0c0ed051900d642b">More...</a><br /></td></tr>
 <tr class="separator:a04606c5f46e7c9ef0c0ed051900d642b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2e2cc527684d9bdad8d35bd31b9962b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ad2e2cc527684d9bdad8d35bd31b9962b">height</a> = 0</td></tr>
+<tr class="memdesc:ad2e2cc527684d9bdad8d35bd31b9962b"><td class="mdescLeft">&#160;</td><td class="mdescRight">camera image height loaded from calibration  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ad2e2cc527684d9bdad8d35bd31b9962b">More...</a><br /></td></tr>
 <tr class="separator:ad2e2cc527684d9bdad8d35bd31b9962b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceb0bb04b73b53a7099154cffb7d6eec"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aceb0bb04b73b53a7099154cffb7d6eec">camera_matrix</a></td></tr>
+<tr class="memdesc:aceb0bb04b73b53a7099154cffb7d6eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">camera matrix loaded from calibration  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aceb0bb04b73b53a7099154cffb7d6eec">More...</a><br /></td></tr>
 <tr class="separator:aceb0bb04b73b53a7099154cffb7d6eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4594b6cc939f2a515278c823730439b"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#af4594b6cc939f2a515278c823730439b">distortion_coefficients</a></td></tr>
+<tr class="memdesc:af4594b6cc939f2a515278c823730439b"><td class="mdescLeft">&#160;</td><td class="mdescRight">distortion coefficients loaded from calibration  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#af4594b6cc939f2a515278c823730439b">More...</a><br /></td></tr>
 <tr class="separator:af4594b6cc939f2a515278c823730439b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb3456cd731b7df7076a3755e5f75ddb"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aeb3456cd731b7df7076a3755e5f75ddb">rectification_matrix</a></td></tr>
+<tr class="memdesc:aeb3456cd731b7df7076a3755e5f75ddb"><td class="mdescLeft">&#160;</td><td class="mdescRight">rectification matrix loaded from calibration  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aeb3456cd731b7df7076a3755e5f75ddb">More...</a><br /></td></tr>
 <tr class="separator:aeb3456cd731b7df7076a3755e5f75ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ad6415646f7848cd201e33ac44c3418"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a6ad6415646f7848cd201e33ac44c3418">projection_matrix</a></td></tr>
+<tr class="memdesc:a6ad6415646f7848cd201e33ac44c3418"><td class="mdescLeft">&#160;</td><td class="mdescRight">projection matrix loaded from calibration  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a6ad6415646f7848cd201e33ac44c3418">More...</a><br /></td></tr>
 <tr class="separator:a6ad6415646f7848cd201e33ac44c3418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0eeaf9d4bf9a3b961ac59029daafd4ee"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a0eeaf9d4bf9a3b961ac59029daafd4ee">rect_map_x</a></td></tr>
+<tr class="memdesc:a0eeaf9d4bf9a3b961ac59029daafd4ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">rectification map X loaded from calibration  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a0eeaf9d4bf9a3b961ac59029daafd4ee">More...</a><br /></td></tr>
 <tr class="separator:a0eeaf9d4bf9a3b961ac59029daafd4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d1a3c99127ee1244ec1271585a0c8b8"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a6d1a3c99127ee1244ec1271585a0c8b8">rect_map_y</a></td></tr>
+<tr class="memdesc:a6d1a3c99127ee1244ec1271585a0c8b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">rectification map Y loaded from calibration  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a6d1a3c99127ee1244ec1271585a0c8b8">More...</a><br /></td></tr>
 <tr class="separator:a6d1a3c99127ee1244ec1271585a0c8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4d9065dcb63259477dc557c7b210260"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ad4d9065dcb63259477dc557c7b210260">width_downsampled</a> = 0</td></tr>
+<tr class="memdesc:ad4d9065dcb63259477dc557c7b210260"><td class="mdescLeft">&#160;</td><td class="mdescRight">camera image width after downsampling  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#ad4d9065dcb63259477dc557c7b210260">More...</a><br /></td></tr>
 <tr class="separator:ad4d9065dcb63259477dc557c7b210260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a166ae91d32de2d3cb4e9d9ee455f7f02"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a166ae91d32de2d3cb4e9d9ee455f7f02">height_downsampled</a> = 0</td></tr>
+<tr class="memdesc:a166ae91d32de2d3cb4e9d9ee455f7f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">camera image height after downsampling  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a166ae91d32de2d3cb4e9d9ee455f7f02">More...</a><br /></td></tr>
 <tr class="separator:a166ae91d32de2d3cb4e9d9ee455f7f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d3ac1a74e13c6371edadada10c9f645"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a7d3ac1a74e13c6371edadada10c9f645">camera_matrix_downsampled</a></td></tr>
+<tr class="memdesc:a7d3ac1a74e13c6371edadada10c9f645"><td class="mdescLeft">&#160;</td><td class="mdescRight">camera matrix after downsampling  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a7d3ac1a74e13c6371edadada10c9f645">More...</a><br /></td></tr>
 <tr class="separator:a7d3ac1a74e13c6371edadada10c9f645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa44d887b818662a6cfd39bbfe215c9e1"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aa44d887b818662a6cfd39bbfe215c9e1">distortion_coefficients_downsampled</a></td></tr>
+<tr class="memdesc:aa44d887b818662a6cfd39bbfe215c9e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">distortion coefficients after downsampling  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#aa44d887b818662a6cfd39bbfe215c9e1">More...</a><br /></td></tr>
 <tr class="separator:aa44d887b818662a6cfd39bbfe215c9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94cc9d1d35884a7f5f91dc67230ff9bb"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a94cc9d1d35884a7f5f91dc67230ff9bb">rectification_matrix_downsampled</a></td></tr>
+<tr class="memdesc:a94cc9d1d35884a7f5f91dc67230ff9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">rectification matrix after downsampling  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a94cc9d1d35884a7f5f91dc67230ff9bb">More...</a><br /></td></tr>
 <tr class="separator:a94cc9d1d35884a7f5f91dc67230ff9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7e8ecac7a3be85ed90ce27aa40621b8"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#af7e8ecac7a3be85ed90ce27aa40621b8">projection_matrix_downsampled</a></td></tr>
+<tr class="memdesc:af7e8ecac7a3be85ed90ce27aa40621b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">projection matrix after downsampling  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#af7e8ecac7a3be85ed90ce27aa40621b8">More...</a><br /></td></tr>
 <tr class="separator:af7e8ecac7a3be85ed90ce27aa40621b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdc49fdff71bc2a9a251289e535979c0"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#acdc49fdff71bc2a9a251289e535979c0">rect_map_x_downsampled</a></td></tr>
+<tr class="memdesc:acdc49fdff71bc2a9a251289e535979c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">rectification map X after downsampling  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#acdc49fdff71bc2a9a251289e535979c0">More...</a><br /></td></tr>
 <tr class="separator:acdc49fdff71bc2a9a251289e535979c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f09b1ec907798c266cb634ba8364b66"><td class="memItemLeft" align="right" valign="top">cv::Mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a5f09b1ec907798c266cb634ba8364b66">rect_map_y_downsampled</a></td></tr>
+<tr class="memdesc:a5f09b1ec907798c266cb634ba8364b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">rectification map Y after downsampling  <a href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html#a5f09b1ec907798c266cb634ba8364b66">More...</a><br /></td></tr>
 <tr class="separator:a5f09b1ec907798c266cb634ba8364b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Camera Calibration class. </p>
-<p >Structure to store camera calibration data with rectification function to use the calibration data to rectify images. </p>
+<p >Store and manipulate mono camera calibration data. </p>
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00045">45</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00056">56</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa11f8b0611dec4b7e3e5cf489762eb12" name="aa11f8b0611dec4b7e3e5cf489762eb12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa11f8b0611dec4b7e3e5cf489762eb12">&#9670;&nbsp;</a></span>CameraCalibration() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I3DR::Phase::CameraCalibration::CameraCalibration </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>camera_matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>distortion_coefficients</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>rectification_matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>projection_matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Camera calibration constructor <br  />
+Initalise camera calibration using the values provided. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>image width of camera </td></tr>
+    <tr><td class="paramname">height</td><td>image height of camera </td></tr>
+    <tr><td class="paramname">camera_matrix</td><td>camera matrix of camera </td></tr>
+    <tr><td class="paramname">distortion_coefficients</td><td>distortion coefficients of camera </td></tr>
+    <tr><td class="paramname">rectification_matrix</td><td>rectification matrix of camera </td></tr>
+    <tr><td class="paramname">projection_matrix</td><td>projection matrix of camera </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2bf251d424970974268ff2b1e466c2bd" name="a2bf251d424970974268ff2b1e466c2bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bf251d424970974268ff2b1e466c2bd">&#9670;&nbsp;</a></span>CameraCalibration() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I3DR::Phase::CameraCalibration::CameraCalibration </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>calibration_filepath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Camera calibration constructor <br  />
+Initalise camera calibration from calibration file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calibration_filepath</td><td>filepath to calibration file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a23a298c95124a56e206afff37568d9a9" name="a23a298c95124a56e206afff37568d9a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23a298c95124a56e206afff37568d9a9">&#9670;&nbsp;</a></span>calibrationFromIdeal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a> I3DR::Phase::CameraCalibration::calibrationFromIdeal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>pixel_pitch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>focal_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>translation_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>translation_y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create ideal calibration from camera information. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>image width of camera </td></tr>
+    <tr><td class="paramname">height</td><td>image height of camera </td></tr>
+    <tr><td class="paramname">pixel_pitch</td><td>pixel pitch of camera </td></tr>
+    <tr><td class="paramname">focal_length</td><td>focal length of camera </td></tr>
+    <tr><td class="paramname">translation_x</td><td>translation of principle point in X </td></tr>
+    <tr><td class="paramname">translation_y</td><td>translation of principle point in Y </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a63e0306f7ac79e227bfdb6509907a01d" name="a63e0306f7ac79e227bfdb6509907a01d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63e0306f7ac79e227bfdb6509907a01d">&#9670;&nbsp;</a></span>getCameraCX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double I3DR::Phase::CameraCalibration::getCameraCX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get camera principle point in X in calibration (in pixels) </p>
+<dl class="section return"><dt>Returns</dt><dd>principle point in X </dd></dl>
+
+</div>
+</div>
+<a id="ac461cf5363e9a6ea28b65827238bfed5" name="ac461cf5363e9a6ea28b65827238bfed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac461cf5363e9a6ea28b65827238bfed5">&#9670;&nbsp;</a></span>getCameraCY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double I3DR::Phase::CameraCalibration::getCameraCY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get camera principle point in Y in calibration (in pixels) </p>
+<dl class="section return"><dt>Returns</dt><dd>principle point in Y </dd></dl>
+
+</div>
+</div>
+<a id="a6c4609ab44c8ed972407d7edbe6a36ab" name="a6c4609ab44c8ed972407d7edbe6a36ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c4609ab44c8ed972407d7edbe6a36ab">&#9670;&nbsp;</a></span>getCameraFX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double I3DR::Phase::CameraCalibration::getCameraFX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get camera focal length in X in calibration (in pixels) </p>
+<dl class="section return"><dt>Returns</dt><dd>focal length in X </dd></dl>
+
+</div>
+</div>
+<a id="a306bc74d8f1b686beb6ec906475b3a1d" name="a306bc74d8f1b686beb6ec906475b3a1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a306bc74d8f1b686beb6ec906475b3a1d">&#9670;&nbsp;</a></span>getCameraFY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double I3DR::Phase::CameraCalibration::getCameraFY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get camera focal length in Y in calibration (in pixels) </p>
+<dl class="section return"><dt>Returns</dt><dd>focal length in Y </dd></dl>
+
+</div>
+</div>
+<a id="a0b15918727f8e3b377dc874d67a7ac3a" name="a0b15918727f8e3b377dc874d67a7ac3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b15918727f8e3b377dc874d67a7ac3a">&#9670;&nbsp;</a></span>getCameraMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat I3DR::Phase::CameraCalibration::getCameraMatrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get camera matrix from calibration. </p>
+<dl class="section return"><dt>Returns</dt><dd>camera matrix </dd></dl>
+
+</div>
+</div>
+<a id="ab009df1ee1fdda169f97ae8a552b55e4" name="ab009df1ee1fdda169f97ae8a552b55e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab009df1ee1fdda169f97ae8a552b55e4">&#9670;&nbsp;</a></span>getDistortionCoefficients()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat I3DR::Phase::CameraCalibration::getDistortionCoefficients </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get distortion coefficients from calibration. </p>
+<dl class="section return"><dt>Returns</dt><dd>distortion coefficients </dd></dl>
+
+</div>
+</div>
+<a id="a8b7255468d6c90310556967326d35d74" name="a8b7255468d6c90310556967326d35d74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b7255468d6c90310556967326d35d74">&#9670;&nbsp;</a></span>getDownsampleFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float I3DR::Phase::CameraCalibration::getDownsampleFactor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get downsample factor. </p>
+<dl class="section return"><dt>Returns</dt><dd>downsample factor value </dd></dl>
+
+</div>
+</div>
+<a id="a145b8c101ee0c2e7c2d7b701a27cc9d4" name="a145b8c101ee0c2e7c2d7b701a27cc9d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a145b8c101ee0c2e7c2d7b701a27cc9d4">&#9670;&nbsp;</a></span>getImageHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int I3DR::Phase::CameraCalibration::getImageHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get camera image height in calibration. </p>
+<dl class="section return"><dt>Returns</dt><dd>camera image height </dd></dl>
+
+</div>
+</div>
+<a id="aecbbc4b58ec4d2ea48b8c3f4102f8c46" name="aecbbc4b58ec4d2ea48b8c3f4102f8c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecbbc4b58ec4d2ea48b8c3f4102f8c46">&#9670;&nbsp;</a></span>getImageWidth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int I3DR::Phase::CameraCalibration::getImageWidth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get camera image width in calibration. </p>
+<dl class="section return"><dt>Returns</dt><dd>camera image width </dd></dl>
+
+</div>
+</div>
+<a id="ab3a6ad8fe32f9b8278ab0614b5e2be8d" name="ab3a6ad8fe32f9b8278ab0614b5e2be8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3a6ad8fe32f9b8278ab0614b5e2be8d">&#9670;&nbsp;</a></span>getProjectionCX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double I3DR::Phase::CameraCalibration::getProjectionCX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get camera principle point in X in calibration projection (in pixels) </p>
+<dl class="section return"><dt>Returns</dt><dd>principle point in X </dd></dl>
+
+</div>
+</div>
+<a id="a7b7c04ccd71fe5912979a182a9f2fc63" name="a7b7c04ccd71fe5912979a182a9f2fc63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b7c04ccd71fe5912979a182a9f2fc63">&#9670;&nbsp;</a></span>getProjectionCY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double I3DR::Phase::CameraCalibration::getProjectionCY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get camera principle point in Y in calibration projection (in pixels) </p>
+<dl class="section return"><dt>Returns</dt><dd>principle point in Y </dd></dl>
+
+</div>
+</div>
+<a id="a276cf3242f2fa4956d1ce1dd8ddb6e67" name="a276cf3242f2fa4956d1ce1dd8ddb6e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a276cf3242f2fa4956d1ce1dd8ddb6e67">&#9670;&nbsp;</a></span>getProjectionFX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double I3DR::Phase::CameraCalibration::getProjectionFX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get camera focal length in X in calibration projection (in pixels) </p>
+<dl class="section return"><dt>Returns</dt><dd>focal length in X </dd></dl>
+
+</div>
+</div>
+<a id="a49a5267fcee42015c531cbf94d660dbf" name="a49a5267fcee42015c531cbf94d660dbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49a5267fcee42015c531cbf94d660dbf">&#9670;&nbsp;</a></span>getProjectionFY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double I3DR::Phase::CameraCalibration::getProjectionFY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get camera focal length in Y in calibration projection (in pixels) </p>
+<dl class="section return"><dt>Returns</dt><dd>focal length in Y </dd></dl>
+
+</div>
+</div>
+<a id="ab38a2ca8573a724a4036af114ad8a45f" name="ab38a2ca8573a724a4036af114ad8a45f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab38a2ca8573a724a4036af114ad8a45f">&#9670;&nbsp;</a></span>getProjectionMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat I3DR::Phase::CameraCalibration::getProjectionMatrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get projection matrix from calibration. </p>
+<dl class="section return"><dt>Returns</dt><dd>projection matrix </dd></dl>
+
+</div>
+</div>
+<a id="ac51686ffb31d16e9e66d7e378830faa2" name="ac51686ffb31d16e9e66d7e378830faa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac51686ffb31d16e9e66d7e378830faa2">&#9670;&nbsp;</a></span>getProjectionTX()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double I3DR::Phase::CameraCalibration::getProjectionTX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get camera baseline in calibration projection (in pixels) </p>
+<dl class="section return"><dt>Returns</dt><dd>baseline </dd></dl>
+
+</div>
+</div>
+<a id="ae828bd1e659c73f98382b89edcb48047" name="ae828bd1e659c73f98382b89edcb48047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae828bd1e659c73f98382b89edcb48047">&#9670;&nbsp;</a></span>getRectificationMatrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cv::Mat I3DR::Phase::CameraCalibration::getRectificationMatrix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get rectification matrix from calibration. </p>
+<dl class="section return"><dt>Returns</dt><dd>rectification matrix </dd></dl>
+
+</div>
+</div>
+<a id="ae333a897d40a946b4f65c3040ded0a45" name="ae333a897d40a946b4f65c3040ded0a45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae333a897d40a946b4f65c3040ded0a45">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::CameraCalibration::init </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>camera_matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>distortion_coefficients</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>rectification_matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>projection_matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initalise calibration from values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>camera image width </td></tr>
+    <tr><td class="paramname">height</td><td>camera image height </td></tr>
+    <tr><td class="paramname">camera_matrix</td><td>camera matrix </td></tr>
+    <tr><td class="paramname">distortion_coefficients</td><td>camera distortion coefficients </td></tr>
+    <tr><td class="paramname">rectification_matrix</td><td>camera rectification matrix </td></tr>
+    <tr><td class="paramname">projection_matrix</td><td>camera projection matrix </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adca53b5b9d046d05c7eeb899fe8ad0db" name="adca53b5b9d046d05c7eeb899fe8ad0db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adca53b5b9d046d05c7eeb899fe8ad0db">&#9670;&nbsp;</a></span>isValid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool I3DR::Phase::CameraCalibration::isValid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if loaded calibration is valid. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if valid calibration </dd></dl>
+
+</div>
+</div>
+<a id="ae060a4b84f0f3f6e7373f85329af0bf5" name="ae060a4b84f0f3f6e7373f85329af0bf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae060a4b84f0f3f6e7373f85329af0bf5">&#9670;&nbsp;</a></span>loadCVYaml()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool I3DR::Phase::CameraCalibration::loadCVYaml </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>calibration_filepath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>out_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>out_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>out_camera_matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>out_distortion_coefficients</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>out_rectification_matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>out_projection_matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load calibration data from OpenCV Yaml file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calibration_filepath</td><td>input calibration filepath (.yaml) </td></tr>
+    <tr><td class="paramname">out_width</td><td>output variable to store image width </td></tr>
+    <tr><td class="paramname">out_height</td><td>output variable to store image height </td></tr>
+    <tr><td class="paramname">out_camera_matrix</td><td>output matrix to store camera matrix </td></tr>
+    <tr><td class="paramname">out_distortion_coefficients</td><td>output matrix to store camera distortion coefficients </td></tr>
+    <tr><td class="paramname">out_rectification_matrix</td><td>output matrix to store camera rectification matrix </td></tr>
+    <tr><td class="paramname">out_projection_matrix</td><td>output matrix to store camera projection matrix </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa54ce04445b6f24b3f8bb6f0bc254f80" name="aa54ce04445b6f24b3f8bb6f0bc254f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa54ce04445b6f24b3f8bb6f0bc254f80">&#9670;&nbsp;</a></span>loadROSYaml()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool I3DR::Phase::CameraCalibration::loadROSYaml </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>calibration_filepath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>out_width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>out_height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>out_camera_matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>out_distortion_coefficients</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>out_rectification_matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>out_projection_matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load calibration data from ROS Yaml file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">calibration_filepath</td><td>input calibration filepath (.yaml) </td></tr>
+    <tr><td class="paramname">out_width</td><td>output variable to store image width </td></tr>
+    <tr><td class="paramname">out_height</td><td>output variable to store image height </td></tr>
+    <tr><td class="paramname">out_camera_matrix</td><td>output matrix to store camera matrix </td></tr>
+    <tr><td class="paramname">out_distortion_coefficients</td><td>output matrix to store camera distortion coefficients </td></tr>
+    <tr><td class="paramname">out_rectification_matrix</td><td>output matrix to store camera rectification matrix </td></tr>
+    <tr><td class="paramname">out_projection_matrix</td><td>output matrix to store camera projection matrix </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afeef5926282775852647153c8d8eaed2" name="afeef5926282775852647153c8d8eaed2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeef5926282775852647153c8d8eaed2">&#9670;&nbsp;</a></span>rectify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::CameraCalibration::rectify </td>
+          <td>(</td>
+          <td class="paramtype">cv::Mat&#160;</td>
+          <td class="paramname"><em>image</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv::Mat &amp;&#160;</td>
+          <td class="paramname"><em>rect_image</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rectify image based on calibration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">image</td><td>image to rectify </td></tr>
+    <tr><td class="paramname">rect_image</td><td>image to store rectified image </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9a69a4ab07e744d84b3a2b0f5b71d202" name="a9a69a4ab07e744d84b3a2b0f5b71d202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a69a4ab07e744d84b3a2b0f5b71d202">&#9670;&nbsp;</a></span>setDownsampleFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void I3DR::Phase::CameraCalibration::setDownsampleFactor </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set downsample factor for calibration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>value of downsample factor </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="aceb0bb04b73b53a7099154cffb7d6eec" name="aceb0bb04b73b53a7099154cffb7d6eec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aceb0bb04b73b53a7099154cffb7d6eec">&#9670;&nbsp;</a></span>camera_matrix</h2>
 
@@ -256,7 +1082,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00088">88</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>camera matrix loaded from calibration </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00290">290</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -280,7 +1108,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00097">97</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>camera matrix after downsampling </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00299">299</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -304,7 +1134,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00089">89</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>distortion coefficients loaded from calibration </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00291">291</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -328,7 +1160,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00098">98</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>distortion coefficients after downsampling </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00300">300</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -352,7 +1186,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00083">83</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>downsample rate for calibration </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00285">285</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -376,7 +1212,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00087">87</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>camera image height loaded from calibration </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00289">289</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -400,7 +1238,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00096">96</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>camera image height after downsampling </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00298">298</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -424,7 +1264,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00091">91</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>projection matrix loaded from calibration </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00293">293</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -448,7 +1290,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00100">100</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>projection matrix after downsampling </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00302">302</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -472,7 +1316,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00092">92</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>rectification map X loaded from calibration </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00294">294</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -496,7 +1342,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00101">101</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>rectification map X after downsampling </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00303">303</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -520,7 +1368,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00093">93</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>rectification map Y loaded from calibration </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00295">295</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -544,7 +1394,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00102">102</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>rectification map Y after downsampling </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00304">304</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -568,7 +1420,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00090">90</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>rectification matrix loaded from calibration </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00292">292</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -592,7 +1446,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00099">99</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>rectification matrix after downsampling </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00301">301</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -616,7 +1472,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00084">84</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>flag to indicate if calibration is valid </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00286">286</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -640,7 +1498,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00086">86</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>camera image width loaded from calibration </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00288">288</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
@@ -664,12 +1524,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="cameracalibration_8h_source.html#l00095">95</a> of file <a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
+<p>camera image width after downsampling </p>
+
+<p class="definition">Definition at line <a class="el" href="calib_2cameracalibration_8h_source.html#l00297">297</a> of file <a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/phase/calib/<a class="el" href="cameracalibration_8h_source.html">cameracalibration.h</a></li>
+<li>include/phase/calib/<a class="el" href="calib_2cameracalibration_8h_source.html">cameracalibration.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -677,7 +1539,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>I3DR</b></li><li class="navelem"><b>Phase</b></li><li class="navelem"><a class="el" href="class_i3_d_r_1_1_phase_1_1_camera_calibration.html">CameraCalibration</a></li>
-    <li class="footer">Generated on Tue Jun 21 2022 11:19:53 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+    <li class="footer">Generated on Fri Sep 2 2022 09:45:15 for Phase by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
 </body>
