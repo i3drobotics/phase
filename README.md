@@ -7,7 +7,7 @@ Find the latest releases [here](https://github.com/i3drobotics/phase/releases/la
 ## Compatibility
 ### Supported platforms
  - Windows (tested on Windows 10)
- - Linux (tested on Ubuntu 20.04 & 18.04)
+ - Linux (tested on Ubuntu 20.04)
  - MacOS (tested on MacOS BigSur) [Coming soon]
  - Jetson (test on Jetson Nano) [Coming soon]
 
