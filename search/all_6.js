@@ -48,7 +48,8 @@ var searchData=
   ['getspecklemaxdiff_45',['getSpeckleMaxDiff',['../class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a751e6ea693f6bf9713e08547c896a30d',1,'I3DR::Phase::StereoI3DRSGM']]],
   ['getspecklemaxsize_46',['getSpeckleMaxSize',['../class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a7ecf5523972f0c33789b14cb18d86cd3',1,'I3DR::Phase::StereoI3DRSGM']]],
   ['getuniqueserial_47',['getUniqueSerial',['../class_i3_d_r_1_1_phase_1_1_camera_device_info.html#a2a6c8b77866fdf766933d8a664879b6a',1,'I3DR::Phase::CameraDeviceInfo']]],
-  ['getwidth_48',['getWidth',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a1da64ec8b2598212aca0d52f6f8d1d02',1,'I3DR::Phase::AbstractStereoCamera']]],
-  ['getwindowsize_49',['getWindowSize',['../class_i3_d_r_1_1_phase_1_1_stereo_b_m.html#a56e02f7a49ae0d54d7b39916ce720ef5',1,'I3DR::Phase::StereoBM::getWindowSize()'],['../class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a666d2739959cddfbbc6e476eab24ad30',1,'I3DR::Phase::StereoI3DRSGM::getWindowSize()'],['../class_i3_d_r_1_1_phase_1_1_stereo_s_g_b_m.html#a4fef95e19223d4ef3d172dab59a88cf5',1,'I3DR::Phase::StereoSGBM::getWindowSize()']]],
-  ['grabimage2mat_50',['grabImage2mat',['../class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#a3504dbbc81901a9928f2367793fe4a36',1,'I3DR::Phase::PylonStereoCamera']]]
+  ['getuniqueserialfromuserdefinedname_48',['getUniqueSerialFromUserDefinedName',['../class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#a67df99b38b00d6792d61fc275fe3386c',1,'I3DR::Phase::PylonStereoCamera']]],
+  ['getwidth_49',['getWidth',['../class_i3_d_r_1_1_phase_1_1_abstract_stereo_camera.html#a1da64ec8b2598212aca0d52f6f8d1d02',1,'I3DR::Phase::AbstractStereoCamera']]],
+  ['getwindowsize_50',['getWindowSize',['../class_i3_d_r_1_1_phase_1_1_stereo_b_m.html#a56e02f7a49ae0d54d7b39916ce720ef5',1,'I3DR::Phase::StereoBM::getWindowSize()'],['../class_i3_d_r_1_1_phase_1_1_stereo_i3_d_r_s_g_m.html#a666d2739959cddfbbc6e476eab24ad30',1,'I3DR::Phase::StereoI3DRSGM::getWindowSize()'],['../class_i3_d_r_1_1_phase_1_1_stereo_s_g_b_m.html#a4fef95e19223d4ef3d172dab59a88cf5',1,'I3DR::Phase::StereoSGBM::getWindowSize()']]],
+  ['grabimage2mat_51',['grabImage2mat',['../class_i3_d_r_1_1_phase_1_1_pylon_stereo_camera.html#a3504dbbc81901a9928f2367793fe4a36',1,'I3DR::Phase::PylonStereoCamera']]]
 ];
